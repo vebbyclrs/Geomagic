@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70B922D48893001C402C /* AppDelegate.swift */; };
-		CC4D70BC22D48893001C402C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70BB22D48893001C402C /* ViewController.swift */; };
+		CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70BB22D48893001C402C /* HomeViewController.swift */; };
 		CC4D70BF22D48893001C402C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70BD22D48893001C402C /* Main.storyboard */; };
 		CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70C022D48893001C402C /* Geomagic.xcdatamodeld */; };
 		CC4D70C422D48894001C402C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70C322D48894001C402C /* Assets.xcassets */; };
 		CC4D70C722D48894001C402C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70C522D48894001C402C /* LaunchScreen.storyboard */; };
+		CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D022D48975001C402C /* MenuViewController.swift */; };
+		CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D222D4901D001C402C /* InformationPageViewController.swift */; };
+		CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */; };
+		CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D622D49037001C402C /* LetsGoViewController.swift */; };
+		CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D822D49045001C402C /* ExplanationShapeViewController.swift */; };
+		CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */; };
+		CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */; };
+		CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC4D70B622D48893001C402C /* Geomagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geomagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D70B922D48893001C402C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC4D70BB22D48893001C402C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC4D70BB22D48893001C402C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC4D70BE22D48893001C402C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC4D70C122D48893001C402C /* Geomagic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Geomagic.xcdatamodel; sourceTree = "<group>"; };
 		CC4D70C322D48894001C402C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4D70C622D48894001C402C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4D70C822D48894001C402C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4D70D022D48975001C402C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CC4D70D222D4901D001C402C /* InformationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPageViewController.swift; sourceTree = "<group>"; };
+		CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionShapeViewController.swift; sourceTree = "<group>"; };
+		CC4D70D622D49037001C402C /* LetsGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoViewController.swift; sourceTree = "<group>"; };
+		CC4D70D822D49045001C402C /* ExplanationShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationShapeViewController.swift; sourceTree = "<group>"; };
+		CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterShapeViewController.swift; sourceTree = "<group>"; };
+		CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareAreaViewController.swift; sourceTree = "<group>"; };
+		CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,47 @@
 		CC4D70B822D48893001C402C /* Geomagic */ = {
 			isa = PBXGroup;
 			children = (
+				CC4D70E222D492F7001C402C /* Controller */,
+				CC4D70E122D492F2001C402C /* View */,
+				CC4D70E022D492EB001C402C /* Model */,
 				CC4D70B922D48893001C402C /* AppDelegate.swift */,
-				CC4D70BB22D48893001C402C /* ViewController.swift */,
-				CC4D70BD22D48893001C402C /* Main.storyboard */,
 				CC4D70C322D48894001C402C /* Assets.xcassets */,
-				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
 				CC4D70C822D48894001C402C /* Info.plist */,
 				CC4D70C022D48893001C402C /* Geomagic.xcdatamodeld */,
 			);
 			path = Geomagic;
+			sourceTree = "<group>";
+		};
+		CC4D70E022D492EB001C402C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC4D70E122D492F2001C402C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
+				CC4D70BD22D48893001C402C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC4D70E222D492F7001C402C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC4D70BB22D48893001C402C /* HomeViewController.swift */,
+				CC4D70D022D48975001C402C /* MenuViewController.swift */,
+				CC4D70D222D4901D001C402C /* InformationPageViewController.swift */,
+				CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */,
+				CC4D70D622D49037001C402C /* LetsGoViewController.swift */,
+				CC4D70D822D49045001C402C /* ExplanationShapeViewController.swift */,
+				CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */,
+				CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */,
+				CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4D70BC22D48893001C402C /* ViewController.swift in Sources */,
+				CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */,
+				CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */,
+				CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */,
+				CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */,
+				CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */,
+				CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,
+				CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */,
+				CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */,
+				CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
