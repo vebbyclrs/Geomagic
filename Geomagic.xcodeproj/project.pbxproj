@@ -72,9 +72,9 @@
 		CC4D70B822D48893001C402C /* Geomagic */ = {
 			isa = PBXGroup;
 			children = (
-				CC4D70E222D492F7001C402C /* Controller */,
-				CC4D70E122D492F2001C402C /* View */,
 				CC4D70E022D492EB001C402C /* Model */,
+				CC4D70E122D492F2001C402C /* View */,
+				CC4D70E222D492F7001C402C /* Controller */,
 				CC4D70B922D48893001C402C /* AppDelegate.swift */,
 				CC4D70C322D48894001C402C /* Assets.xcassets */,
 				CC4D70C822D48894001C402C /* Info.plist */,
