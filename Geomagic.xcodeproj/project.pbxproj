@@ -21,6 +21,12 @@
 		CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */; };
 		CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */; };
 		CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */; };
+		CCA1511922D7BF44004627CE /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1511822D7BF44004627CE /* Shape.swift */; };
+		CCA1511B22D7C2CB004627CE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1511A22D7C2CB004627CE /* AppData.swift */; };
+		CCA1511D22D7D4AD004627CE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1511C22D7D4AD004627CE /* RoundButton.swift */; };
+		CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */; };
+		CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCB07122D7192D00EE5FDD /* MenuModel.swift */; };
+		CCDD036322D7B46D00C7FBD8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterShapeViewController.swift; sourceTree = "<group>"; };
 		CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareAreaViewController.swift; sourceTree = "<group>"; };
 		CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsPageViewController.swift; sourceTree = "<group>"; };
+		CCA1511822D7BF44004627CE /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		CCA1511A22D7C2CB004627CE /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		CCA1511C22D7D4AD004627CE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backsound.mp3; sourceTree = "<group>"; };
+		CCDCB07122D7192D00EE5FDD /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +84,11 @@
 		CC4D70B822D48893001C402C /* Geomagic */ = {
 			isa = PBXGroup;
 			children = (
-				CC4D70E222D492F7001C402C /* Controller */,
-				CC4D70E122D492F2001C402C /* View */,
+				CCDCB07022D5E03300EE5FDD /* Extras */,
+				CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */,
 				CC4D70E022D492EB001C402C /* Model */,
+				CC4D70E122D492F2001C402C /* View */,
+				CC4D70E222D492F7001C402C /* Controller */,
 				CC4D70B922D48893001C402C /* AppDelegate.swift */,
 				CC4D70C322D48894001C402C /* Assets.xcassets */,
 				CC4D70C822D48894001C402C /* Info.plist */,
@@ -86,6 +100,9 @@
 		CC4D70E022D492EB001C402C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCDCB07122D7192D00EE5FDD /* MenuModel.swift */,
+				CCA1511822D7BF44004627CE /* Shape.swift */,
+				CCA1511A22D7C2CB004627CE /* AppData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +112,8 @@
 			children = (
 				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
 				CC4D70BD22D48893001C402C /* Main.storyboard */,
+				CCA1511C22D7D4AD004627CE /* RoundButton.swift */,
+				CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +132,13 @@
 				CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CCDCB07022D5E03300EE5FDD /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +201,7 @@
 			files = (
 				CC4D70C722D48894001C402C /* LaunchScreen.storyboard in Resources */,
 				CC4D70C422D48894001C402C /* Assets.xcassets in Resources */,
+				CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */,
 				CC4D70BF22D48893001C402C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA1511D22D7D4AD004627CE /* RoundButton.swift in Sources */,
 				CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */,
 				CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */,
 				CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */,
@@ -194,6 +222,10 @@
 				CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,
+				CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */,
+				CCA1511922D7BF44004627CE /* Shape.swift in Sources */,
+				CCA1511B22D7C2CB004627CE /* AppData.swift in Sources */,
+				CCDD036322D7B46D00C7FBD8 /* CollectionViewCell.swift in Sources */,
 				CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */,
 				CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */,
 				CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */,
