@@ -25,13 +25,14 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     ]
     
     let userDefault : UserDefaults = .standard //to get user level
-    var userLevel : Int = 0 //memungkinkan data redundan(?)
+    var userLevel : Int = 0 //akan diganti pada didload
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let appData = AppData()
-        self.userLevel = appData.level
+//        self.userLevel = appData.level
+        self.userLevel = 3
         print ("in")
         // Do any additional setup after loading the view.
     }
@@ -43,33 +44,39 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //Apple Documentation: Asks your data source object for the cell that corresponds to the specified item in the collection view
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionShapeMenu", for: indexPath) as? CollectionViewCell
-        cell?.baseView.backgroundColor = .white
-        cell?.baseView.layer.cornerRadius = 30.0
-        cell?.baseView.layer
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionShapeMenu", for: indexPath) as! CollectionViewCell
+        cell.baseView.backgroundColor = .white
+        cell.baseView.layer.cornerRadius = 30.0
+        cell.baseView.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 0.2).cgColor
+        cell.baseView.layer.borderWidth = CGFloat(5.0)
         
-        cell?.shapeImage.image = shapes[indexPath.row].shapeImage
-        cell?.shapeNameLabel.text = shapes[indexPath.row].shapeName
-        cell?.shapeNameLabel.textColor = .white
+        //give shadow effect
+        cell.baseView.layer.shadowOpacity = 0.3
+        cell.baseView.layer.shadowRadius = 4
+        let roundedRect = CGRect(x: 5, y: 5, width: cell.baseView.frame.width, height: cell.baseView.frame.height)
+        cell.baseView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: CGFloat(34.0) ).cgPath
+        
+        cell.shapeImage.image = shapes[indexPath.row].shapeImage
+        cell.shapeNameLabel.text = shapes[indexPath.row].shapeName
+        cell.shapeNameLabel.textColor = .black
         
         //menangani tampilan shapes yang harus dikunci sesuai level
         let shouldHide = !(shapes[indexPath.row].level > userLevel)
-        cell?.upperLayer.layer.cornerRadius = 30.0
-        cell?.upperLayer.isHidden = shouldHide
-        cell?.locker.isHidden = shouldHide
+        cell.upperLayer.layer.cornerRadius = 30.0
+        cell.upperLayer.isHidden = shouldHide
+        cell.locker.isHidden = shouldHide
         
         //hide semua button
-        cell?.luasButton.isHidden = true
-        cell?.latihanButton.isHidden = true
-        cell?.kelilingButton.isHidden = true
-        cell?.pengenalanButton.isHidden = true
+        cell.luasButton.isHidden = true
+        cell.latihanButton.isHidden = true
+        cell.kelilingButton.isHidden = true
+        cell.pengenalanButton.isHidden = true
         
-        
-        return cell!
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell
+        let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
         let isHidden = (shapes[indexPath.row].level > userLevel)
 
         if isHidden {
@@ -77,19 +84,27 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         else {
             print ("In")
-//            cell?.upperLayer.backgroundColor = UIColor(hex: "0xBDE2EE", alpha: 1)
-            cell?.upperLayer.backgroundColor = UIColor(red: CGFloat(189/255), green: CGFloat(226/255), blue: CGFloat(239/255), alpha: 0.4)
-            cell?.upperLayer.layer.cornerRadius = 30.0
-            cell?.upperLayer.isHidden = false
+            cell.upperLayer.isHidden = false
+            cell.upperLayer.backgroundColor = UIColor(red: 189/255, green: 226/255, blue: 238/225, alpha: 0.3)
+            cell.upperLayer.layer.cornerRadius = 30.0
             
-            cell?.luasButton.isHidden =  false
-            
-            cell?.latihanButton.isHidden =  false
-            cell?.kelilingButton.isHidden =  false
-            cell?.pengenalanButton.isHidden =  false
+            cell.luasButton.isHidden =  false
+            cell.latihanButton.isHidden =  false
+            cell.kelilingButton.isHidden =  false
+            cell.pengenalanButton.isHidden =  false
         }
     }
-    func hideButtons() {
-
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
+        
+        cell.luasButton.isHidden =  true
+        cell.latihanButton.isHidden =  true
+        cell.kelilingButton.isHidden =  true
+        cell.pengenalanButton.isHidden =  true
+        cell.upperLayer.isHidden = true
     }
+    
+    
+    
 }
