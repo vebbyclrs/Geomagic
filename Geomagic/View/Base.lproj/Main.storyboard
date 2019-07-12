@@ -82,29 +82,96 @@
                                                     <rect key="frame" x="5" y="5" width="481" height="486"/>
                                                     <subviews>
                                                         <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tt4-cJ-10V">
-                                                            <rect key="frame" x="30" y="90" width="421" height="204.5"/>
+                                                            <rect key="frame" x="30" y="78" width="421" height="204.5"/>
+                                                            <gestureRecognizers/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="204.5" id="inV-0h-S8g"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSEGI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-e7-iZT">
-                                                            <rect key="frame" x="8" y="331.5" width="465" height="64.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                                            <rect key="frame" x="8" y="319.5" width="465" height="76.5"/>
+                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="54"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-cC-fsW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="481" height="486"/>
+                                                            <subviews>
+                                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Locker" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-y0-CAi">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="481" height="486"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-IG-ZDo">
+                                                                    <rect key="frame" x="75" y="25" width="331" height="436"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-cr-LJ2" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="331" height="90.5"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="Pengenalan">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTu-Jh-c5S" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="115.5" width="331" height="90"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="Keliling">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-Hb-Tpp" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="230.5" width="331" height="90.5"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="Luas">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doW-kA-xfG" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="346" width="331" height="90"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="Latihan">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="dVt-y0-CAi" secondAttribute="trailing" id="3uQ-mJ-clR"/>
+                                                                <constraint firstItem="hjt-IG-ZDo" firstAttribute="centerY" secondItem="jAc-cC-fsW" secondAttribute="centerY" id="56t-9V-ne0"/>
+                                                                <constraint firstItem="dVt-y0-CAi" firstAttribute="top" secondItem="jAc-cC-fsW" secondAttribute="top" id="KwC-bi-r9K"/>
+                                                                <constraint firstItem="hjt-IG-ZDo" firstAttribute="leading" secondItem="jAc-cC-fsW" secondAttribute="leading" constant="75" id="XwN-IR-Ypp"/>
+                                                                <constraint firstItem="hjt-IG-ZDo" firstAttribute="centerX" secondItem="jAc-cC-fsW" secondAttribute="centerX" id="Z94-j4-AxW"/>
+                                                                <constraint firstItem="dVt-y0-CAi" firstAttribute="leading" secondItem="jAc-cC-fsW" secondAttribute="leading" id="bxo-uv-pc3"/>
+                                                                <constraint firstItem="hjt-IG-ZDo" firstAttribute="top" secondItem="jAc-cC-fsW" secondAttribute="top" constant="25" id="caT-qQ-99R"/>
+                                                                <constraint firstAttribute="bottom" secondItem="dVt-y0-CAi" secondAttribute="bottom" id="jqz-1f-Fy4"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="cIO-e7-iZT" secondAttribute="trailing" constant="8" id="IuW-uL-p5h"/>
-                                                        <constraint firstAttribute="bottom" secondItem="cIO-e7-iZT" secondAttribute="bottom" constant="90" id="ReN-Mt-SpP"/>
-                                                        <constraint firstItem="Tt4-cJ-10V" firstAttribute="top" secondItem="fEj-Xc-YTL" secondAttribute="top" constant="90" id="Udf-3t-4rp"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Tt4-cJ-10V" secondAttribute="trailing" constant="30" id="bZA-Mk-0ff"/>
-                                                        <constraint firstItem="cIO-e7-iZT" firstAttribute="leading" secondItem="fEj-Xc-YTL" secondAttribute="leading" constant="8" id="o4J-S7-XJW"/>
-                                                        <constraint firstItem="Tt4-cJ-10V" firstAttribute="centerX" secondItem="fEj-Xc-YTL" secondAttribute="centerX" id="ons-o6-k6m"/>
-                                                        <constraint firstItem="Tt4-cJ-10V" firstAttribute="leading" secondItem="fEj-Xc-YTL" secondAttribute="leading" constant="30" id="uQy-N3-cYW"/>
-                                                        <constraint firstItem="cIO-e7-iZT" firstAttribute="top" secondItem="Tt4-cJ-10V" secondAttribute="bottom" constant="37" id="yZq-M1-DPq"/>
+                                                        <constraint firstItem="cIO-e7-iZT" firstAttribute="top" secondItem="Tt4-cJ-10V" secondAttribute="bottom" constant="37" id="4wW-Xj-VvK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jAc-cC-fsW" secondAttribute="bottom" id="Bbh-qj-Pib"/>
+                                                        <constraint firstItem="jAc-cC-fsW" firstAttribute="leading" secondItem="fEj-Xc-YTL" secondAttribute="leading" id="FaA-bd-C3G"/>
+                                                        <constraint firstItem="Tt4-cJ-10V" firstAttribute="leading" secondItem="fEj-Xc-YTL" secondAttribute="leading" constant="30" id="QEZ-hk-ASL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cIO-e7-iZT" secondAttribute="trailing" constant="8" id="Rtd-Gv-BAo"/>
+                                                        <constraint firstItem="jAc-cC-fsW" firstAttribute="top" secondItem="fEj-Xc-YTL" secondAttribute="top" id="TAr-Qh-6pJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Tt4-cJ-10V" secondAttribute="trailing" constant="30" id="Tuc-8d-fpR"/>
+                                                        <constraint firstItem="cIO-e7-iZT" firstAttribute="leading" secondItem="fEj-Xc-YTL" secondAttribute="leading" constant="8" id="VwO-cg-2jx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="cIO-e7-iZT" secondAttribute="bottom" constant="90" id="krz-tf-D0C"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jAc-cC-fsW" secondAttribute="trailing" id="v8F-eX-9Vb"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="fEj-Xc-YTL" firstAttribute="top" secondItem="XBb-pH-XNS" secondAttribute="top" constant="5" id="D7S-UY-n73"/>
                                             <constraint firstAttribute="bottom" secondItem="fEj-Xc-YTL" secondAttribute="bottom" constant="5" id="Oy8-Au-fl1"/>
@@ -113,13 +180,20 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="baseView" destination="fEj-Xc-YTL" id="acH-EW-TRC"/>
+                                            <outlet property="kelilingButton" destination="HTu-Jh-c5S" id="ifk-EX-AN9"/>
+                                            <outlet property="latihanButton" destination="doW-kA-xfG" id="DzB-rx-Q2j"/>
+                                            <outlet property="locker" destination="dVt-y0-CAi" id="1Nn-mx-ax7"/>
+                                            <outlet property="luasButton" destination="pxF-Hb-Tpp" id="lN2-mR-1p9"/>
+                                            <outlet property="pengenalanButton" destination="jHo-cr-LJ2" id="QCp-AZ-6V0"/>
                                             <outlet property="shapeImage" destination="Tt4-cJ-10V" id="ceI-kJ-feQ"/>
                                             <outlet property="shapeNameLabel" destination="cIO-e7-iZT" id="n2y-eC-WyG"/>
+                                            <outlet property="upperLayer" destination="jAc-cC-fsW" id="nKF-3e-z3K"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="CXd-QR-bwy" id="qsL-Ni-RCF"/>
+                                    <outlet property="delegate" destination="CXd-QR-bwy" id="lrJ-I9-Zyg"/>
                                 </connections>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
@@ -127,6 +201,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="sxr-TW-OTp" firstAttribute="bottom" secondItem="WUy-Dm-Nm0" secondAttribute="bottom" constant="60" id="KUy-B2-khb"/>
                             <constraint firstItem="WUy-Dm-Nm0" firstAttribute="top" secondItem="uUr-eH-jRW" secondAttribute="bottom" constant="65" id="LHd-He-LBu"/>
@@ -138,7 +213,7 @@
                         <viewLayoutGuide key="safeArea" id="sxr-TW-OTp"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="WUy-Dm-Nm0" id="7Ay-Sl-IPO"/>
+                        <outlet property="collectionView" destination="WUy-Dm-Nm0" id="qtN-YX-eNr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atE-s1-xJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -316,5 +391,6 @@
     </scenes>
     <resources>
         <image name="Icon" width="400" height="300"/>
+        <image name="Locker" width="180" height="209"/>
     </resources>
 </document>

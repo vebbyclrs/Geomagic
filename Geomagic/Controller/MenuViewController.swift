@@ -8,7 +8,8 @@
 
 import UIKit
 
-class MenuViewController: UIViewController, UICollectionViewDataSource {
+class MenuViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -42,17 +43,53 @@ class MenuViewController: UIViewController, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //Apple Documentation: Asks your data source object for the cell that corresponds to the specified item in the collection view
-        print ("in2")
-        print ("******\(indexPath)*****")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionShapeMenu", for: indexPath) as? CollectionViewCell
-        cell?.baseView.backgroundColor = .black
-        cell?.baseView.layer.cornerRadius = CGFloat(30.0)
+        cell?.baseView.backgroundColor = .white
+        cell?.baseView.layer.cornerRadius = 30.0
+        cell?.baseView.layer
         
         cell?.shapeImage.image = shapes[indexPath.row].shapeImage
         cell?.shapeNameLabel.text = shapes[indexPath.row].shapeName
         cell?.shapeNameLabel.textColor = .white
         
+        //menangani tampilan shapes yang harus dikunci sesuai level
+        let shouldHide = !(shapes[indexPath.row].level > userLevel)
+        cell?.upperLayer.layer.cornerRadius = 30.0
+        cell?.upperLayer.isHidden = shouldHide
+        cell?.locker.isHidden = shouldHide
+        
+        //hide semua button
+        cell?.luasButton.isHidden = true
+        cell?.latihanButton.isHidden = true
+        cell?.kelilingButton.isHidden = true
+        cell?.pengenalanButton.isHidden = true
+        
+        
         return cell!
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell
+        let isHidden = (shapes[indexPath.row].level > userLevel)
+
+        if isHidden {
+            print ("LOCKED")
+        }
+        else {
+            print ("In")
+//            cell?.upperLayer.backgroundColor = UIColor(hex: "0xBDE2EE", alpha: 1)
+            cell?.upperLayer.backgroundColor = UIColor(red: CGFloat(189/255), green: CGFloat(226/255), blue: CGFloat(239/255), alpha: 0.4)
+            cell?.upperLayer.layer.cornerRadius = 30.0
+            cell?.upperLayer.isHidden = false
+            
+            cell?.luasButton.isHidden =  false
+            
+            cell?.latihanButton.isHidden =  false
+            cell?.kelilingButton.isHidden =  false
+            cell?.pengenalanButton.isHidden =  false
+        }
+    }
+    func hideButtons() {
+
+    }
 }
