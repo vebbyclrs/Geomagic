@@ -27,9 +27,11 @@ import UIKit
     override func prepareForInterfaceBuilder() {
         sharedInit()
     }
+    
     func refreshCorners(value: CGFloat) {
         layer.cornerRadius = value
     }
+    
     @IBInspectable var cornerRadius: CGFloat = 15 {
         didSet {
             refreshCorners(value: cornerRadius)
