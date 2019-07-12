@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1EAA2F22D86D1D00BEF02A /* backsoundbutterfly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB1EAA2E22D86D1D00BEF02A /* backsoundbutterfly.mp3 */; };
+		AB1EAA3322D87CAC00BEF02A /* BirdScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AB1EAA3222D87CAC00BEF02A /* BirdScene.sks */; };
+		AB1EAA3522D87D3900BEF02A /* BirdScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1EAA3422D87D3900BEF02A /* BirdScene.swift */; };
+		AB1EAA3722D881A600BEF02A /* Images.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AB1EAA3622D881A500BEF02A /* Images.atlas */; };
 		CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70B922D48893001C402C /* AppDelegate.swift */; };
 		CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70BB22D48893001C402C /* HomeViewController.swift */; };
 		CC4D70BF22D48893001C402C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70BD22D48893001C402C /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB1EAA2E22D86D1D00BEF02A /* backsoundbutterfly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backsoundbutterfly.mp3; sourceTree = "<group>"; };
+		AB1EAA3222D87CAC00BEF02A /* BirdScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BirdScene.sks; sourceTree = "<group>"; };
+		AB1EAA3422D87D3900BEF02A /* BirdScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdScene.swift; sourceTree = "<group>"; };
+		AB1EAA3622D881A500BEF02A /* Images.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Images.atlas; sourceTree = "<group>"; };
 		CC4D70B622D48893001C402C /* Geomagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geomagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D70B922D48893001C402C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4D70BB22D48893001C402C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -86,10 +94,12 @@
 			children = (
 				CCDCB07022D5E03300EE5FDD /* Extras */,
 				CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */,
+				AB1EAA2E22D86D1D00BEF02A /* backsoundbutterfly.mp3 */,
 				CC4D70E022D492EB001C402C /* Model */,
 				CC4D70E122D492F2001C402C /* View */,
 				CC4D70E222D492F7001C402C /* Controller */,
 				CC4D70B922D48893001C402C /* AppDelegate.swift */,
+				AB1EAA3622D881A500BEF02A /* Images.atlas */,
 				CC4D70C322D48894001C402C /* Assets.xcassets */,
 				CC4D70C822D48894001C402C /* Info.plist */,
 				CC4D70C022D48893001C402C /* Geomagic.xcdatamodeld */,
@@ -110,6 +120,8 @@
 		CC4D70E122D492F2001C402C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB1EAA3222D87CAC00BEF02A /* BirdScene.sks */,
+				AB1EAA3422D87D3900BEF02A /* BirdScene.swift */,
 				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
 				CC4D70BD22D48893001C402C /* Main.storyboard */,
 				CCA1511C22D7D4AD004627CE /* RoundButton.swift */,
@@ -200,6 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4D70C722D48894001C402C /* LaunchScreen.storyboard in Resources */,
+				AB1EAA3722D881A600BEF02A /* Images.atlas in Resources */,
+				AB1EAA3322D87CAC00BEF02A /* BirdScene.sks in Resources */,
+				AB1EAA2F22D86D1D00BEF02A /* backsoundbutterfly.mp3 in Resources */,
 				CC4D70C422D48894001C402C /* Assets.xcassets in Resources */,
 				CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */,
 				CC4D70BF22D48893001C402C /* Main.storyboard in Resources */,
@@ -219,6 +234,7 @@
 				CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */,
 				CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */,
 				CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */,
+				AB1EAA3522D87D3900BEF02A /* BirdScene.swift in Sources */,
 				CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,

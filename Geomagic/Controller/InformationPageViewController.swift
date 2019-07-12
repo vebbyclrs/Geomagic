@@ -9,11 +9,21 @@
 import UIKit
 
 class InformationPageViewController: UIViewController {
-
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        var imagesNames = ["owl1", "owl2"]
+        var images = [UIImage]()
+        
+        for i in 0...imagesNames.count-1{
+            images.append(UIImage(named: imagesNames[i])!)
+        }
+        imageView.animationImages = images
+        imageView.animationDuration = 0.3
+        imageView.startAnimating()
+        
     }
     
 
