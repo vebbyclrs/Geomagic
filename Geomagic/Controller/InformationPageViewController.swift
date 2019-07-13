@@ -9,6 +9,7 @@
 import UIKit
 
 class InformationPageViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var baseTitleView: UIView!
     
     @IBOutlet var titleLabel: UILabel!
@@ -16,12 +17,20 @@ class InformationPageViewController: UIViewController {
     @IBOutlet var informationTextField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        BirdMove()
         constructView()
         writeTitle(title: "This is the title")
         writeInformationText(longText: "adhfbk asdbhfahbd acbdkjhfasdhf basdkhbfalshdbflaksdjbasdhfba \n- dajdfhaksdjfa sdbfa \n- kadsjhfka hdsbfahd")
         // Do any additional setup after loading the view.
     }
-    
+    func BirdMove(){
+        let images: [UIImage] = [UIImage(named: "Owl1")!, UIImage(named: "Owl2")!]
+        
+        imageView.animationImages = images
+        imageView.animationDuration = 0.3
+        imageView.startAnimating()
+
+    }
     func constructView () {
         //create round corner
         baseTitleView.layer.cornerRadius = 30
