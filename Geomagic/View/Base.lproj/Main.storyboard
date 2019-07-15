@@ -214,6 +214,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WUy-Dm-Nm0" id="qtN-YX-eNr"/>
+                        <segue destination="IeM-Mb-b0L" kind="show" id="NMx-Jr-GGN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atE-s1-xJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
