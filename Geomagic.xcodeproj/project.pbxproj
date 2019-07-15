@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB00838D22DCA91700060F77 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB00838C22DCA91700060F77 /* Second.storyboard */; };
 		ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497822DA3AA10073E30E /* Owl2.png */; };
 		ABF0497B22DA3AA10073E30E /* Owl1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497922DA3AA10073E30E /* Owl1.png */; };
 		ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0497F22DA463A0073E30E /* BirdAnimate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB00838C22DCA91700060F77 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		ABF0497822DA3AA10073E30E /* Owl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl2.png; sourceTree = "<group>"; };
 		ABF0497922DA3AA10073E30E /* Owl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl1.png; sourceTree = "<group>"; };
 		ABF0497F22DA463A0073E30E /* BirdAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
+				AB00838C22DCA91700060F77 /* Second.storyboard */,
 				CC4D70BD22D48893001C402C /* Main.storyboard */,
 				CCA1511C22D7D4AD004627CE /* RoundButton.swift */,
 				CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */,
@@ -222,6 +225,7 @@
 				ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */,
 				CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */,
 				CC4D70BF22D48893001C402C /* Main.storyboard in Resources */,
+				AB00838D22DCA91700060F77 /* Second.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
