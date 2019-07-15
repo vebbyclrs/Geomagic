@@ -50,11 +50,13 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.baseView.layer.cornerRadius = 30.0
         cell.baseView.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 0.2).cgColor
         cell.baseView.layer.borderWidth = CGFloat(5.0)
+        
         //give shadow effect
         cell.baseView.layer.shadowOpacity = 0.3
         cell.baseView.layer.shadowRadius = 4
         let roundedRect = CGRect(x: 5, y: 5, width: cell.baseView.frame.width, height: cell.baseView.frame.height)
         cell.baseView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: CGFloat(34.0) ).cgPath
+        
         //load image for each square
         cell.shapeImage.image = shapes[indexPath.row].shapeImage
         cell.shapeNameLabel.text = shapes[indexPath.row].shapeName
@@ -67,6 +69,9 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         } else {
             showBlueUpperLayerWithButtons(show: false, cell: cell)
         }
+        cell.collectionViewDelegate = self
+        cell.initClickButton()
+        cell.tag = indexPath.row
         return cell
     }
     
@@ -79,6 +84,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         else {
             showBlueUpperLayerWithButtons(show: true, cell: cell)
+            
         }
     }
     
@@ -91,7 +97,6 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
                 showBlueUpperLayerWithButtons(show: false, cell: lastCell)
             }
         }
-        
     }
     
     func showHiddenCell(cell:CollectionViewCell) {
@@ -104,7 +109,6 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.latihanButton.isHidden = true
         cell.kelilingButton.isHidden = true
         cell.pengenalanButton.isHidden = true
-        
     }
     
     func showAvailCell(cell:CollectionViewCell){
@@ -118,7 +122,6 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.latihanButton.isHidden = !show
         cell.kelilingButton.isHidden = !show
         cell.pengenalanButton.isHidden = !show
-        
     }
     
     func showBlueUpperLayerWithButtons (show: Bool , cell: CollectionViewCell) {
@@ -133,4 +136,30 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.luasButton.isHidden = !show
         showBlueButtons(show: true, cell: cell)
     }
+    
+}
+
+// MARK: - Button Click
+extension MenuViewController:CollectionViewCellDelegate{
+    
+    func pressPengenalanButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Pengenalan")
+    }
+    
+    func pressKelilingButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Keliling")
+    }
+    
+    func pressLuasButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Luas")
+    }
+    
+    func pressLatihanButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Latihan")
+    }
+    
 }
