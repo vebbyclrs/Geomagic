@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB00838D22DCA91700060F77 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB00838C22DCA91700060F77 /* Second.storyboard */; };
+		ABC6C3F422DF11CE0024A04A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F322DF11CE0024A04A /* Question.swift */; };
+		ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */; };
+		ABC6C3F822DF11F00024A04A /* ExcerciseButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */; };
+		ABC6C3FA22DF11F40024A04A /* OptionLatihanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */; };
+		ABC6C3FC22DF12150024A04A /* ExcerciseSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */; };
+		ABC6C3FE22DF122E0024A04A /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC6C3FD22DF122E0024A04A /* Second.storyboard */; };
 		ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497822DA3AA10073E30E /* Owl2.png */; };
 		ABF0497B22DA3AA10073E30E /* Owl1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497922DA3AA10073E30E /* Owl1.png */; };
 		ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0497F22DA463A0073E30E /* BirdAnimate.swift */; };
@@ -36,7 +41,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB00838C22DCA91700060F77 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		ABC6C3F322DF11CE0024A04A /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareQuestion.swift; sourceTree = "<group>"; };
+		ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseButtonExtension.swift; sourceTree = "<group>"; };
+		ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionLatihanButton.swift; sourceTree = "<group>"; };
+		ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseSquare.swift; sourceTree = "<group>"; };
+		ABC6C3FD22DF122E0024A04A /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Second.storyboard; path = ../../../../Desktop/Second.storyboard; sourceTree = "<group>"; };
 		ABF0497822DA3AA10073E30E /* Owl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl2.png; sourceTree = "<group>"; };
 		ABF0497922DA3AA10073E30E /* Owl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl1.png; sourceTree = "<group>"; };
 		ABF0497F22DA463A0073E30E /* BirdAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimate.swift; sourceTree = "<group>"; };
@@ -125,6 +135,8 @@
 				CCDCB07122D7192D00EE5FDD /* MenuModel.swift */,
 				CCA1511822D7BF44004627CE /* Shape.swift */,
 				CCA1511A22D7C2CB004627CE /* AppData.swift */,
+				ABC6C3F322DF11CE0024A04A /* Question.swift */,
+				ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,11 +145,13 @@
 			isa = PBXGroup;
 			children = (
 				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
-				AB00838C22DCA91700060F77 /* Second.storyboard */,
 				CC4D70BD22D48893001C402C /* Main.storyboard */,
+				ABC6C3FD22DF122E0024A04A /* Second.storyboard */,
 				CCA1511C22D7D4AD004627CE /* RoundButton.swift */,
 				CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */,
 				ABF0497F22DA463A0073E30E /* BirdAnimate.swift */,
+				ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */,
+				ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */,
 				DC7687E522DEEA4400F547E7 /* squareArea.storyboard */,
 			);
 			path = View;
@@ -156,6 +170,7 @@
 				CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */,
 				CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */,
 				DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */,
+				ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,10 +244,10 @@
 				CC4D70C722D48894001C402C /* LaunchScreen.storyboard in Resources */,
 				CC4D70C422D48894001C402C /* Assets.xcassets in Resources */,
 				ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */,
+				ABC6C3FE22DF122E0024A04A /* Second.storyboard in Resources */,
 				CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */,
 				CC4D70BF22D48893001C402C /* Main.storyboard in Resources */,
 				DC7687E622DEEA4400F547E7 /* squareArea.storyboard in Resources */,
-				AB00838D22DCA91700060F77 /* Second.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,16 +266,21 @@
 				CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */,
 				CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */,
 				CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */,
+				ABC6C3FC22DF12150024A04A /* ExcerciseSquare.swift in Sources */,
+				ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
+				ABC6C3FA22DF11F40024A04A /* OptionLatihanButton.swift in Sources */,
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,
 				CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */,
 				CCA1511922D7BF44004627CE /* Shape.swift in Sources */,
 				CCA1511B22D7C2CB004627CE /* AppData.swift in Sources */,
+				ABC6C3F422DF11CE0024A04A /* Question.swift in Sources */,
 				CCDD036322D7B46D00C7FBD8 /* CollectionViewCell.swift in Sources */,
 				CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */,
 				CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */,
 				CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */,
 				DC7687E822DEEC0200F547E7 /* squareAreaNewViewController.swift in Sources */,
+				ABC6C3F822DF11F00024A04A /* ExcerciseButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
