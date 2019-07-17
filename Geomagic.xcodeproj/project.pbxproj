@@ -46,7 +46,7 @@
 		ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseButtonExtension.swift; sourceTree = "<group>"; };
 		ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionLatihanButton.swift; sourceTree = "<group>"; };
 		ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseSquare.swift; sourceTree = "<group>"; };
-		ABC6C3FD22DF122E0024A04A /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Second.storyboard; path = ../../../../Desktop/Second.storyboard; sourceTree = "<group>"; };
+		ABC6C3FD22DF122E0024A04A /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		ABF0497822DA3AA10073E30E /* Owl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl2.png; sourceTree = "<group>"; };
 		ABF0497922DA3AA10073E30E /* Owl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl1.png; sourceTree = "<group>"; };
 		ABF0497F22DA463A0073E30E /* BirdAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimate.swift; sourceTree = "<group>"; };
