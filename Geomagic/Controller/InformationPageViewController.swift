@@ -9,39 +9,34 @@
 import UIKit
 
 class InformationPageViewController: UIViewController {
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var baseTitleView: UIView!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private var titleBackgroundView: UIView!
+    @IBOutlet private var informationBackgroundView: UIView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var informationTextField: UITextView!
     
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var baseInformationTextField: UIView!
-    @IBOutlet var informationTextField: UITextView!
+    var titled = ""
+    var informationContent = ""
+    
+//    var
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        BirdMove()
-        constructView()
-        writeTitle(title: "This is the title")
-        writeInformationText(longText: "adhfbk asdbhfahbd acbdkjhfasdhf basdkhbfalshdbflaksdjbasdhfba \n- dajdfhaksdjfa sdbfa \n- kadsjhfka hdsbfahd")
-        // Do any additional setup after loading the view.
+        titleLabel.text = titled
+        informationTextField.text = informationContent
     }
-    func BirdMove(){
-        let images: [UIImage] = [UIImage(named: "Owl1")!, UIImage(named: "Owl2")!]
-        
-        imageView.animationImages = images
-        imageView.animationDuration = 0.3
-        imageView.startAnimating()
-
-    }
+    
     func constructView () {
         //create round corner
-        baseTitleView.layer.cornerRadius = 30
-        
+        titleBackgroundView.layer.cornerRadius = 30
+
         //create shadow
-        baseTitleView.layer.shadowOpacity = 0.5
-        baseTitleView.layer.shadowRadius = 4
-        
-        let roundedRect = CGRect(x: 5, y: 5, width: baseTitleView.frame.width*0.82, height: baseTitleView.frame.height)
-        print (roundedRect, 370 ,  baseTitleView.frame.height)
-        baseTitleView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: baseTitleView.layer.cornerRadius).cgPath
+        titleBackgroundView.layer.shadowOpacity = 0.5
+        titleBackgroundView.layer.shadowRadius = 4
+
+        let roundedRect = CGRect(x: 5, y: 5, width: titleBackgroundView.frame.width, height: titleBackgroundView.frame.height)
+        print (roundedRect, 370 ,  titleBackgroundView.frame.height)
+        titleBackgroundView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: titleBackgroundView.layer.cornerRadius).cgPath
     }
     
     func writeTitle(title:String) {
@@ -50,6 +45,26 @@ class InformationPageViewController: UIViewController {
     
     func writeInformationText (longText : String) {
         informationTextField.text = longText
+    }
+    
+    @IBAction func tapped(_ sender: Any) {
+        performSegue(withIdentifier: "goToIntroductionShape", sender: sender)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToIntroductionShape" {
+            let destinationVC = segue.destination as!  IntroductionShapeViewController
+            destinationVC.titlePassed = "Sisi-sisi persegi:"
+        }
+    }
+    
+    func BirdMove(){
+        let images: [UIImage] = [UIImage(named: "Owl1")!, UIImage(named: "Owl2")!]
+        
+        imageView.animationImages = images
+        imageView.animationDuration = 0.3
+        imageView.startAnimating()
+        
     }
 
 }

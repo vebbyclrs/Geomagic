@@ -145,6 +145,11 @@ extension MenuViewController:CollectionViewCellDelegate{
     func pressPengenalanButton(sender: UIButton, cell: UICollectionViewCell) {
         print(cell.tag)
         print("Pengenalan")
+        if cell.tag == 0 { //go to pengenalan persegi
+            
+            performSegue(withIdentifier: "goToPengenalanPersegi", sender: sender)
+            
+        }
     }
     
     func pressKelilingButton(sender: UIButton, cell: UICollectionViewCell) {
@@ -162,4 +167,13 @@ extension MenuViewController:CollectionViewCellDelegate{
         print("Latihan")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPengenalanPersegi" {
+            let nextVC = segue.destination as! InformationPageViewController
+            
+            nextVC.titled = "Ciri-ciri Persegi"
+            let informationContent : String = "1. Memiliki 4 sisi yang sama panjang \n2. Memiliki 4 sudut yang sama besar, yaitu 90°. (disebut sebagai sudut siku-siku"
+            nextVC.informationContent = informationContent
+        }
+    }
 }
