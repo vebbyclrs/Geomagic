@@ -51,7 +51,30 @@ class ExcerciseSquareViewController: UIViewController {
             pickedValue = "c"
         }
         
-        checkAnswer()
+        let correctAnswer = questions.list[numOfQuestion].answer
+        
+        if correctAnswer == pickedValue{
+            numOfQuestion += 1
+            score += 10
+            kllButton1.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
+            kllButton2.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
+            kllButton3.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
+        }
+        else if correctAnswer != pickedValue {
+            if sender.tag == 1{
+                kllButton1.layer.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+                kllButton1.shake()
+            }
+            else if sender.tag == 2{
+                kllButton2.layer.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+                kllButton2.shake()
+            }
+            else if sender.tag == 3{
+                kllButton3.layer.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+                kllButton3.shake()
+            }
+            score -= 5
+        }
         nextQuestion()
     }
     
@@ -100,18 +123,22 @@ class ExcerciseSquareViewController: UIViewController {
     }
     func nextQuestion(){
         if numOfQuestion <= 12 {
+//            kllButton1.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
+//            kllButton2.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
+//            kllButton3.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
             updateUI()
         }
     }
     func checkAnswer(){
-        let correctAnswer = questions.list[numOfQuestion].answer
-        
-        if correctAnswer == pickedValue{
-            numOfQuestion += 1
-            score += 10
-        }
-        else {
-        }
+//        let correctAnswer = questions.list[numOfQuestion].answer
+//
+//        if correctAnswer == pickedValue{
+//            numOfQuestion += 1
+//            score += 10
+//        }
+//        else {
+//            score -= 5
+//        }
     }
     
     
