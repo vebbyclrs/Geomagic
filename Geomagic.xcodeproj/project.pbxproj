@@ -31,6 +31,8 @@
 		CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */; };
 		CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCB07122D7192D00EE5FDD /* MenuModel.swift */; };
 		CCDD036322D7B46D00C7FBD8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */; };
+		DC7687E622DEEA4400F547E7 /* squareArea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7687E522DEEA4400F547E7 /* squareArea.storyboard */; };
+		DC7687E822DEEC0200F547E7 /* squareAreaNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backsound.mp3; sourceTree = "<group>"; };
 		CCDCB07122D7192D00EE5FDD /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DC7687E522DEEA4400F547E7 /* squareArea.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = squareArea.storyboard; sourceTree = "<group>"; };
+		DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squareAreaNewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 				CCA1511C22D7D4AD004627CE /* RoundButton.swift */,
 				CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */,
 				ABF0497F22DA463A0073E30E /* BirdAnimate.swift */,
+				DC7687E522DEEA4400F547E7 /* squareArea.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */,
 				CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */,
 				CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */,
+				DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 				ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */,
 				CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */,
 				CC4D70BF22D48893001C402C /* Main.storyboard in Resources */,
+				DC7687E622DEEA4400F547E7 /* squareArea.storyboard in Resources */,
 				AB00838D22DCA91700060F77 /* Second.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +260,7 @@
 				CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */,
 				CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */,
 				CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */,
+				DC7687E822DEEC0200F547E7 /* squareAreaNewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
