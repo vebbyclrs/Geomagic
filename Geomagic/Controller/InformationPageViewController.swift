@@ -12,18 +12,24 @@ class InformationPageViewController: UIViewController {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private var titleBackgroundView: UIView!
     @IBOutlet private var informationBackgroundView: UIView!
-    @IBOutlet private var titleLabel: UILabel!
-    @IBOutlet private var informationTextField: UITextView!
+    @IBOutlet  var titleLabel: UILabel!
+    @IBOutlet  var informationTextField: UITextView!
     
-    var titled = ""
-    var informationContent = ""
+    var shapeType : ShapeType? {
+        didSet {
+            updateTitleAndContent(shape:shapeType!)
+        }
+    }
+    
+    var shapeSegitiga: SegitigaTypes?// add didset!
+    
     
 //    var
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = titled
-        informationTextField.text = informationContent
+        
+        updateTitleAndContent(shape: self.shapeType!)
     }
     
     func constructView () {
@@ -39,24 +45,34 @@ class InformationPageViewController: UIViewController {
         titleBackgroundView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: titleBackgroundView.layer.cornerRadius).cgPath
     }
     
-    func writeTitle(title:String) {
-        titleLabel.text = title
-    }
-    
-    func writeInformationText (longText : String) {
-        informationTextField.text = longText
-    }
-    
     @IBAction func tapped(_ sender: Any) {
         performSegue(withIdentifier: "goToIntroductionShape", sender: sender)
     }
     
+    func updateTitleAndContent(shape:ShapeType) {
+        switch shape {
+        case .persegi:
+            titleLabel?.text = "Ciri-ciri persegi"
+            informationTextField?.text = "1. Memiliki 4 sisi yang sama panjang \n2. Memiliki 4 sudut yang sama besar, yaitu 90°. (disebut sebagai sudut siku-siku"
+        case .segitiga:
+            titleLabel?.text = "hbljhb"
+            informationTextField?.text = "jvkgvj"
+        default:
+            titleLabel?.text = "Title"
+            informationTextField?.text = "content points"
+            
+        }
+        
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToIntroductionShape" {
             let destinationVC = segue.destination as!  IntroductionShapeViewController
-            destinationVC.titlePassed = "Sisi-sisi persegi:"
+            destinationVC.shapeType = self.shapeType
         }
     }
+    
     
     func BirdMove(){
         let images: [UIImage] = [UIImage(named: "Owl1")!, UIImage(named: "Owl2")!]
