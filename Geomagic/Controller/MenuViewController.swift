@@ -14,14 +14,14 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     
     var shapes : [Shape] = [
-        Shape(shapeName: "PERSEGI",imageAssetTittled:"Square", level: 0),
-        Shape(shapeName: "PERSEGI PANJANG",imageAssetTittled:"Rectangle", level: 1),
-        Shape(shapeName: "SEGITIGA",imageAssetTittled:"Triangle", level: 2),
-        Shape(shapeName: "BELAH KETUPAT",imageAssetTittled:"Diamond", level: 3),
-        Shape(shapeName: "LAYANG-LAYANG",imageAssetTittled:"Kite", level: 4),
-        Shape(shapeName: "JAJAR GENJANG",imageAssetTittled:"Parallelogram", level: 5),
-        Shape(shapeName: "TRAPESIUM",imageAssetTittled:"Trapesium", level: 6),
-        Shape(shapeName: "LINGKARAN",imageAssetTittled:"Circle", level: 7)
+        Shape(shapeName: "PERSEGI",shapeType: .persegi, imageAssetTittled:"Square", level: 0),
+        Shape(shapeName: "PERSEGI PANJANG",shapeType: .persegiPanjang, imageAssetTittled:"Rectangle", level: 1),
+        Shape(shapeName: "SEGITIGA",shapeType: .segitiga, imageAssetTittled:"Triangle", level: 2),
+        Shape(shapeName: "BELAH KETUPAT",shapeType: .belahketupat, imageAssetTittled:"Diamond", level: 3),
+        Shape(shapeName: "LAYANG-LAYANG",shapeType: .layangLayang, imageAssetTittled:"Kite", level: 4),
+        Shape(shapeName: "JAJAR GENJANG",shapeType: .jajarGenjang, imageAssetTittled:"Parallelogram", level: 5),
+        Shape(shapeName: "TRAPESIUM",shapeType: .trapesium, imageAssetTittled:"Trapesium", level: 6),
+        Shape(shapeName: "LINGKARAN",shapeType: .lingkaran, imageAssetTittled:"Circle", level: 7)
     ]
     
     let userDefault : UserDefaults = .standard //to get user level
@@ -170,10 +170,7 @@ extension MenuViewController:CollectionViewCellDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToPengenalanPersegi" {
             let nextVC = segue.destination as! InformationPageViewController
-            
-            nextVC.titled = "Ciri-ciri Persegi"
-            let informationContent : String = "1. Memiliki 4 sisi yang sama panjang \n2. Memiliki 4 sudut yang sama besar, yaitu 90°. (disebut sebagai sudut siku-siku"
-            nextVC.informationContent = informationContent
+            nextVC.shapeType = .persegi
         }
     }
 }

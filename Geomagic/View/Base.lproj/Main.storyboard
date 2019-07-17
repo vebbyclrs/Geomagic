@@ -224,16 +224,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-PL-tyk" userLabel="right container">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-PL-tyk" userLabel="right container">
                                 <rect key="frame" x="516" y="182" width="750" height="700"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-Vd-F1h">
-                                        <rect key="frame" x="83" y="0.0" width="600" height="100"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNM-vi-IgK">
+                                        <rect key="frame" x="0.0" y="200" width="780" height="500"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRa-5s-IJQ">
-                                                <rect key="frame" x="0.0" y="15" width="600" height="71"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1. Lorem Ipsum point" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuG-2m-87k">
+                                                <rect key="frame" x="14" y="0.0" width="766" height="500"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8784313725490196" green="0.96470588235294119" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-Vd-F1h">
+                                        <rect key="frame" x="0.0" y="0.0" width="780" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRa-5s-IJQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="780" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -241,52 +255,21 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.87843137250000003" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNM-vi-IgK">
-                                        <rect key="frame" x="0.0" y="200" width="766" height="500"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1. Lorem Ipsum point" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuG-2m-87k">
-                                                <rect key="frame" x="0.0" y="0.0" width="766" height="500"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.8784313725490196" green="0.96470588235294119" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="750" id="46E-tQ-2xa"/>
-                                    <constraint firstAttribute="height" constant="700" id="bfB-X5-ev1"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-1P-d6A" userLabel="left container">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIB-1P-d6A" userLabel="left container">
                                 <rect key="frame" x="100" y="0.0" width="416" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRv-WX-IDY">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRv-WX-IDY">
                                         <rect key="frame" x="0.0" y="385.5" width="311" height="253"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="311" id="3Vb-jh-bXd"/>
-                                            <constraint firstAttribute="height" constant="253" id="PCQ-gW-ZT0"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="WRv-WX-IDY" firstAttribute="leading" secondItem="cIB-1P-d6A" secondAttribute="leading" id="VtU-54-4bm"/>
-                                    <constraint firstItem="WRv-WX-IDY" firstAttribute="centerY" secondItem="cIB-1P-d6A" secondAttribute="centerY" id="ZSI-6k-hdw"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="cIB-1P-d6A" firstAttribute="top" secondItem="G9G-SW-Nmh" secondAttribute="top" id="BQC-y1-GwK"/>
-                            <constraint firstItem="cIB-1P-d6A" firstAttribute="leading" secondItem="I92-uX-yDO" secondAttribute="leading" constant="100" id="CQT-pw-bZK"/>
-                            <constraint firstItem="fsq-PL-tyk" firstAttribute="centerY" secondItem="G9G-SW-Nmh" secondAttribute="centerY" constant="20" id="HpQ-gs-5Hf"/>
-                            <constraint firstItem="fsq-PL-tyk" firstAttribute="leading" secondItem="cIB-1P-d6A" secondAttribute="trailing" id="gcC-Gf-AEa"/>
-                            <constraint firstItem="I92-uX-yDO" firstAttribute="trailing" secondItem="fsq-PL-tyk" secondAttribute="trailing" constant="100" id="rj7-ks-caW"/>
-                            <constraint firstAttribute="bottom" secondItem="cIB-1P-d6A" secondAttribute="bottom" id="xcK-xB-654"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="I92-uX-yDO"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="eKE-Ch-hgp" appends="YES" id="lAi-sa-8oZ"/>

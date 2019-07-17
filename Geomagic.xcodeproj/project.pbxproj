@@ -147,12 +147,12 @@
 				CC4D70C522D48894001C402C /* LaunchScreen.storyboard */,
 				CC4D70BD22D48893001C402C /* Main.storyboard */,
 				ABC6C3FD22DF122E0024A04A /* Second.storyboard */,
+				DC7687E522DEEA4400F547E7 /* squareArea.storyboard */,
 				CCA1511C22D7D4AD004627CE /* RoundButton.swift */,
 				CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */,
 				ABF0497F22DA463A0073E30E /* BirdAnimate.swift */,
 				ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */,
 				ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */,
-				DC7687E522DEEA4400F547E7 /* squareArea.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
