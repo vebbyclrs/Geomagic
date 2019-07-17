@@ -11,12 +11,15 @@ import UIKit
 class IntroductionShapeViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var baseTitleView: UIView!
-    @IBOutlet var shape: UIView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var baseTitleView: UIView!
+    @IBOutlet private var shape: UIView!
+    
+    var titlePassed = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        BirdMove()
+        titleLabel.text = titlePassed
 
     }
     
