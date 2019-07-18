@@ -53,7 +53,7 @@ class ExcerciseSquareViewController: UIViewController {
         
         let correctAnswer = questions.list[numOfQuestion].answer
         
-        if correctAnswer == pickedValue{
+        if correctAnswer == pickedValue && numOfQuestion <= 10{
             numOfQuestion += 1
             score += 10
             kllButton1.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
@@ -122,7 +122,7 @@ class ExcerciseSquareViewController: UIViewController {
         }
     }
     func nextQuestion(){
-        if numOfQuestion <= 12 {
+        if numOfQuestion < 10 {
 //            kllButton1.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
 //            kllButton2.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
 //            kllButton3.layer.backgroundColor = #colorLiteral(red: 0.8799760342, green: 0.6950199008, blue: 0.6898319721, alpha: 1)
