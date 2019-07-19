@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C6DB9A22E076E4005DC375 /* perimeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C6DB9922E076E4005DC375 /* perimeter.storyboard */; };
+		85C6DB9C22E07754005DC375 /* PerimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6DB9B22E07754005DC375 /* PerimeterViewController.swift */; };
 		ABC6C3F422DF11CE0024A04A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F322DF11CE0024A04A /* Question.swift */; };
 		ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */; };
 		ABC6C3F822DF11F00024A04A /* ExcerciseButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85C6DB9922E076E4005DC375 /* perimeter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = perimeter.storyboard; sourceTree = "<group>"; };
+		85C6DB9B22E07754005DC375 /* PerimeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterViewController.swift; sourceTree = "<group>"; };
 		ABC6C3F322DF11CE0024A04A /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareQuestion.swift; sourceTree = "<group>"; };
 		ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseButtonExtension.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 				ABF0497F22DA463A0073E30E /* BirdAnimate.swift */,
 				ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */,
 				ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */,
+				85C6DB9922E076E4005DC375 /* perimeter.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */,
 				DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */,
 				ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */,
+
 				DC16BFF922E0AA38004802D0 /* SquareArea1ViewController.swift */,
 				DC16BFFB22E0B36F004802D0 /* SquareAreaExerciseViewController.swift */,
 				DC16BFFD22E1AFEB004802D0 /* SquareAreaEndViewController.swift */,
@@ -258,6 +264,7 @@
 				ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */,
 				ABC6C3FE22DF122E0024A04A /* Second.storyboard in Resources */,
 				CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */,
+				85C6DB9A22E076E4005DC375 /* perimeter.storyboard in Resources */,
 				CC4D70BF22D48893001C402C /* Main.storyboard in Resources */,
 				DC7687E622DEEA4400F547E7 /* squareArea.storyboard in Resources */,
 			);
@@ -283,7 +290,11 @@
 				ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
 				ABC6C3FA22DF11F40024A04A /* OptionLatihanButton.swift in Sources */,
+
 				DC16BFFA22E0AA38004802D0 /* SquareArea1ViewController.swift in Sources */,
+
+				85C6DB9C22E07754005DC375 /* PerimeterViewController.swift in Sources */,
+
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,
 				CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */,
 				CCA1511922D7BF44004627CE /* Shape.swift in Sources */,
@@ -443,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4H65A594JP;
+				DEVELOPMENT_TEAM = ML73UMRN9R;
 				INFOPLIST_FILE = Geomagic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,7 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4H65A594JP;
+				DEVELOPMENT_TEAM = ML73UMRN9R;
 				INFOPLIST_FILE = Geomagic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
