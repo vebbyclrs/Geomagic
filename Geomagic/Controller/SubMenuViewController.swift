@@ -11,15 +11,18 @@ import UIKit
 class SubMenuViewController: UIViewController {
 
     @IBOutlet var titleLabel: UILabel!
+    var shape:Shape?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareView()
 
         // Do any additional setup after loading the view.
     }
     
     func prepareView() {
-//        titleLabel.frame. = self.view.frame.width
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        titleLabel.text = shape?.shapeName
         
     }
 
