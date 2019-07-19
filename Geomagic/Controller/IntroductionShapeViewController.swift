@@ -13,8 +13,8 @@ class IntroductionShapeViewController: UIViewController {
     
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var baseTitleView: UIView!
-    @IBOutlet private var shape: UIView!
-    weak var shapeLayer : CAShapeLayer?
+    @IBOutlet var shape: UIView!
+    weak var shapeLayer :CAShapeLayer?
     
     var shapeType: ShapeType? {
         didSet{
@@ -24,8 +24,9 @@ class IntroductionShapeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         updateTitle(shape: shapeType!)
-        animasiSisi(shape: shape)
+        self.shapeLayer = addAnimationRectanglePerimeter(shape: shape)
 
     }
     
@@ -51,8 +52,8 @@ class IntroductionShapeViewController: UIViewController {
     func addAnimationRectanglePerimeter (shape:UIView) -> CAShapeLayer{
         let shapeLayer = CAShapeLayer()
         shapeLayer.fillColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 0).cgColor
-        shapeLayer.strokeColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1).cgColor
-        shapeLayer.lineWidth = 12
+        shapeLayer.strokeColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1).cgColor
+        shapeLayer.lineWidth = 14
         
         let path = UIBezierPath()
         if let frame = shape.superview?.convert(shape.frame, to: self.view) {
@@ -65,18 +66,18 @@ class IntroductionShapeViewController: UIViewController {
         }
         
         shapeLayer.path = path.cgPath
-        self.view.layer.addSublayer(shapeLayer)
+        view.layer.addSublayer(shapeLayer)
         
         let animation = CABasicAnimation(keyPath: "strokeEnd")
-//        animation.fromValue = 0
-        animation.duration = 12
+        animation.fromValue = 0
+        animation.duration = 2
         
-//        let animationGroup = CAAnimationGroup()
-//        animationGroup.animations = [animation]
-//        animationGroup.duration = animation.duration + 0.5
-//        animationGroup.repeatCount = HUGE
+        let animationGroup = CAAnimationGroup()
+        animationGroup.animations = [animation]
+        animationGroup.duration = animation.duration*2 + 0.5
+        animationGroup.repeatCount = HUGE
         
-        shapeLayer.add(animation, forKey: "animasiKeliling")
+        shapeLayer.add(animationGroup, forKey: "AnimasiKeliling")
         
         return shapeLayer
     }
