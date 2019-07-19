@@ -276,9 +276,33 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgw-UD-U29">
+                                <rect key="frame" x="1233" y="84" width="73" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="A7W-GY-xPO"/>
+                                    <constraint firstAttribute="height" constant="71" id="T7F-bl-2a4"/>
+                                    <constraint firstAttribute="width" constant="73" id="Zym-rU-f5N"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="71" id="suS-g7-zmc"/>
+                                </constraints>
+                                <state key="normal" image="homeButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBp-pa-v7e">
+                                <rect key="frame" x="90" y="827" width="107" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="YfC-N7-WgH"/>
+                                    <constraint firstAttribute="height" constant="87" id="gR4-y4-nAV"/>
+                                </constraints>
+                                <state key="normal" image="back button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I92-uX-yDO" firstAttribute="trailing" secondItem="lgw-UD-U29" secondAttribute="trailing" constant="60" id="GeT-ad-nFQ"/>
+                            <constraint firstItem="lgw-UD-U29" firstAttribute="top" secondItem="I92-uX-yDO" secondAttribute="top" constant="60" id="UAg-1Z-9bb"/>
+                            <constraint firstItem="I92-uX-yDO" firstAttribute="bottom" secondItem="eBp-pa-v7e" secondAttribute="bottom" constant="90" id="xUg-k8-HKD"/>
+                            <constraint firstItem="eBp-pa-v7e" firstAttribute="leading" secondItem="I92-uX-yDO" secondAttribute="leading" constant="90" id="yUk-0Q-xTZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="I92-uX-yDO"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="eKE-Ch-hgp" appends="YES" id="lAi-sa-8oZ"/>
@@ -559,64 +583,67 @@
             </objects>
             <point key="canvasLocation" x="2111.8594436310395" y="271.875"/>
         </scene>
-        <!--View Controller-->
+        <!--subMenu-->
         <scene sceneID="Q0u-Qq-nrk">
             <objects>
-                <viewController id="Idq-6w-9FF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZEV-kT-sZm">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="subMenu" id="Idq-6w-9FF" customClass="SubMenuViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kbz-WH-T9w">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEs-CZ-9fb">
-                                <rect key="frame" x="406" y="391" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNc-R2-Ibj">
+                                <rect key="frame" x="1208" y="68" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="did-fX-KDQ">
-                                <rect key="frame" x="732" y="342" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="did-fX-KDQ" id="PaN-uD-EcO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9rN-Zi-hRU">
-                                <rect key="frame" x="289" y="178" width="240" height="128"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-Xe-Vjb">
+                                <rect key="frame" x="132" y="865" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HfW-gh-rqh">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UqN-89-NZr">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Rz-BS-QdM" customClass="CollectionViewCell" customModule="Geomagic" customModuleProvider="target">
-                                        <rect key="frame" x="63.5" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-6r-MBB">
+                                <rect key="frame" x="433" y="338" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6e-hh-1ta">
+                                <rect key="frame" x="838" y="338" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHm-JE-U6F">
+                                <rect key="frame" x="433" y="573" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bt4-ku-fd3">
+                                <rect key="frame" x="838" y="573" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpy-XJ-SP8">
+                                <rect key="frame" x="167" y="182" width="1032" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1032" id="Egq-sP-IaG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="S9W-GB-0q3"/>
+                        <constraints>
+                            <constraint firstItem="tpy-XJ-SP8" firstAttribute="centerX" secondItem="Kbz-WH-T9w" secondAttribute="centerX" placeholder="YES" id="kJn-fu-OtA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ibd-gL-rKZ"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="tpy-XJ-SP8" id="5Jj-jm-5Ed"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2269" y="1457"/>
+            <point key="canvasLocation" x="815.66617862371879" y="-1144.3359375"/>
         </scene>
         <!--Lets Go View Controller-->
         <scene sceneID="O3J-Lo-ylZ">
@@ -670,6 +697,7 @@
     <resources>
         <image name="Locker" width="180" height="209"/>
         <image name="Owl1.png" width="400" height="400"/>
+        <image name="back button" width="107" height="87"/>
         <image name="big logo" width="415" height="312"/>
         <image name="homeButton" width="73" height="71"/>
         <image name="small logo" width="253" height="190"/>

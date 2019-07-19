@@ -59,18 +59,12 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.tag = indexPath.row
         return cell
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        <#code#>
+    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
-//        let isLocked : Bool = userLevel < shapes[indexPath.row].level
-//
-//        if isLocked{
-//            print ("Locked. Unlock first")
-//        }
-//        else {
-//            showBlueUpperLayerWithButtons(show: true, cell: cell)
-//
-//        }
+        
+        performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

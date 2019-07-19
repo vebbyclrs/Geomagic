@@ -18,5 +18,8 @@ extension UIButton {
         layer.shadowOpacity = opacity
         layer.shadowRadius = blur
         layer.shadowColor = shadowColor ?? UIColor.black.cgColor
+        
+        
+        //apalah ini capek gue
     }
 }
