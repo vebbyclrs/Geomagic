@@ -9,24 +9,24 @@
 import Foundation
 import UIKit
 
-enum ShapeType : String {
-    case persegi = "Persegi"
-    case persegiPanjang = "Persegi panjang"
-    case segitiga = "Segitiga"
-    case belahketupat = "Belah ketupat"
-    case layangLayang = "Layang-layang"
-    case jajarGenjang = "Jajar genjang"
-    case trapesium = "Trapesium"
-    case lingkaran = "Lingkaran"
+enum ShapeType {
+    case persegi
+    case persegiPanjang
+    case segitiga
+    case belahketupat
+    case layangLayang
+    case jajarGenjang
+    case trapesium
+    case lingkaran
 }
 
-enum SegitigaTypes : String{
-    case segitigaSamaSisi = "Segitiga sama sisi"
-    case segitigaSamaKaki = "Segitiga sama kaki"
-    case segitigaSembarang = "Segitiga sembarang"
-    case segitigaLancip = "Segitiga lancip"
-    case segitigaSikuSiku = "Segitiga siku-siku"
-    case segitigaTumpul = "Segitiga tumpul"
+enum SegitigaTypes {
+    case segitigaSamaSisi
+    case segitigaSamaKaki
+    case segitigaSembarang
+    case segitigaLancip
+    case segitigaSikuSiku
+    case segitigaTumpul
 }
 
 class Shape {
@@ -34,14 +34,9 @@ class Shape {
     var shapeType : ShapeType
     var shapeImage : UIImage
     var level : Int
-    var segitiga:SegitigaTypes? {
-        didSet{
-            shapeType = .segitiga
-        }
-    }
     
-    init(shapeType:ShapeType,imageAssetTittled:String, level : Int) {
-        self.shapeName = shapeType.rawValue
+    init(shapeName: String,shapeType:ShapeType,imageAssetTittled:String, level : Int) {
+        self.shapeName = shapeName
         self.level = level
         self.shapeType = shapeType
         if let image = UIImage(named: imageAssetTittled) {

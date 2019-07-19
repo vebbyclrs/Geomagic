@@ -14,14 +14,14 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     
     var shapes : [Shape] = [
-        Shape(shapeType: .persegi, imageAssetTittled:"Square", level: 0),
-        Shape(shapeType: .persegiPanjang, imageAssetTittled:"Rectangle", level: 1),
-        Shape(shapeType: .segitiga, imageAssetTittled:"Triangle", level: 2),
-        Shape(shapeType: .belahketupat, imageAssetTittled:"Diamond", level: 3),
-        Shape(shapeType: .layangLayang, imageAssetTittled:"Kite", level: 4),
-        Shape(shapeType: .jajarGenjang, imageAssetTittled:"Parallelogram", level: 5),
-        Shape(shapeType: .trapesium, imageAssetTittled:"Trapesium", level: 6),
-        Shape(shapeType: .lingkaran, imageAssetTittled:"Circle", level: 7)
+        Shape(shapeName: "PERSEGI",shapeType: .persegi, imageAssetTittled:"Square", level: 0),
+        Shape(shapeName: "PERSEGI PANJANG",shapeType: .persegiPanjang, imageAssetTittled:"Rectangle", level: 1),
+        Shape(shapeName: "SEGITIGA",shapeType: .segitiga, imageAssetTittled:"Triangle", level: 2),
+        Shape(shapeName: "BELAH KETUPAT",shapeType: .belahketupat, imageAssetTittled:"Diamond", level: 3),
+        Shape(shapeName: "LAYANG-LAYANG",shapeType: .layangLayang, imageAssetTittled:"Kite", level: 4),
+        Shape(shapeName: "JAJAR GENJANG",shapeType: .jajarGenjang, imageAssetTittled:"Parallelogram", level: 5),
+        Shape(shapeName: "TRAPESIUM",shapeType: .trapesium, imageAssetTittled:"Trapesium", level: 6),
+        Shape(shapeName: "LINGKARAN",shapeType: .lingkaran, imageAssetTittled:"Circle", level: 7)
     ]
     
     let userDefault : UserDefaults = .standard //to get user level
@@ -30,7 +30,6 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         let appData = AppData()
         self.userLevel = appData.level
         self.userLevel = 3
@@ -47,7 +46,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionShapeMenu", for: indexPath) as! CollectionViewCell
         
         //bikin kotak2 view cell dulu
-//        cell.baseView.backgroundColor = .white
+        cell.baseView.backgroundColor = .white
         cell.baseView.layer.cornerRadius = 30.0
         cell.baseView.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 0.2).cgColor
         cell.baseView.layer.borderWidth = CGFloat(5.0)
@@ -140,38 +139,38 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     
 }
 
-//// MARK: - Button Click
-//extension MenuViewController:CollectionViewCellDelegate{
-//    
-//    func pressPengenalanButton(sender: UIButton, cell: UICollectionViewCell) {
-//        print(cell.tag)
-//        print("Pengenalan")
-//        if cell.tag == 0 { //go to pengenalan persegi
-//            
-//            performSegue(withIdentifier: "goToPengenalanPersegi", sender: sender)
-//            
-//        }
-//    }
-//    
-//    func pressKelilingButton(sender: UIButton, cell: UICollectionViewCell) {
-//        print(cell.tag)
-//        print("Keliling")
-//    }
-//    
-//    func pressLuasButton(sender: UIButton, cell: UICollectionViewCell) {
-//        print(cell.tag)
-//        print("Luas")
-//    }
-//    
-//    func pressLatihanButton(sender: UIButton, cell: UICollectionViewCell) {
-//        print(cell.tag)
-//        print("Latihan")
-//    }
-//    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "goToPengenalanPersegi" {
-//            let nextVC = segue.destination as! InformationPageViewController
-//            nextVC.shapeType = .persegi
-//        }
-//    }
-//}
+// MARK: - Button Click
+extension MenuViewController:CollectionViewCellDelegate{
+    
+    func pressPengenalanButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Pengenalan")
+        if cell.tag == 0 { //go to pengenalan persegi
+            
+            performSegue(withIdentifier: "goToPengenalanPersegi", sender: sender)
+            
+        }
+    }
+    
+    func pressKelilingButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Keliling")
+    }
+    
+    func pressLuasButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Luas")
+    }
+    
+    func pressLatihanButton(sender: UIButton, cell: UICollectionViewCell) {
+        print(cell.tag)
+        print("Latihan")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPengenalanPersegi" {
+            let nextVC = segue.destination as! InformationPageViewController
+            nextVC.shapeType = .persegi
+        }
+    }
+}
