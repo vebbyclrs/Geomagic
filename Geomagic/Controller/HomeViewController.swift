@@ -11,16 +11,10 @@ import AVFoundation
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet var buttonMulai: RoundButton!
-    
     var backgroundMusic : AVAudioPlayer?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
-        setButtonView()
         initBackgroundMusic()
-        
-        
         // Do any additional setup after loading the view.
     }
     
@@ -37,20 +31,6 @@ class HomeViewController: UIViewController {
         backgroundMusic?.play()
         
     }
-    
-    @IBAction func unwindToHome(_ unwindSegue: UIStoryboardSegue) {
-        let _ = unwindSegue.source
-        // Use data from the view controller which initiated the unwind segue
-    }
-    
-    func setButtonView() {
-        buttonMulai.layer.shadowRadius = 4
-        buttonMulai.layer.shadowOpacity = 0.5
-        let roundedRect = CGRect(x: 0, y: 2, width: buttonMulai.frame.width, height: buttonMulai.frame.height)
-        buttonMulai.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: buttonMulai.cornerRadius).cgPath
-    }
-    
-    
 
 
 }

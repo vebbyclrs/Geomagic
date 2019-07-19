@@ -5,6 +5,10 @@
 //  Created by Vebby Clarissa on 12/07/19.
 //  Copyright © 2019 Geomecin. All rights reserved.
 //
+
+import Foundation
+
+
 import Foundation
 
 import UIKit

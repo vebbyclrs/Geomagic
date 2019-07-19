@@ -28,14 +28,12 @@ class InformationPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         
         updateTitleAndContent(shape: self.shapeType!)
     }
     
     func constructView () {
         //create round corner
-        
         titleBackgroundView.layer.cornerRadius = 30
 
         //create shadow
