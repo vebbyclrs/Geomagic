@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMN-EQ-miF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k8f-Qs-J4P">
     <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -235,6 +235,7 @@
                         <outlet property="square7" destination="A25-EW-kbS" id="o8b-xR-8LS"/>
                         <outlet property="square8" destination="SBd-Ue-DBg" id="CfA-f6-tr2"/>
                         <outlet property="square9" destination="0Jk-9R-Csc" id="b5O-P5-3Sg"/>
+                        <segue destination="k8f-Qs-J4P" kind="show" identifier="nextViewController" id="9ad-Pw-Dhb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fm-Jt-Gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -314,7 +315,62 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2717" y="-781"/>
+            <point key="canvasLocation" x="-2743" y="-781"/>
+        </scene>
+        <!--Square Area Formula View Controller-->
+        <scene sceneID="0ar-dm-VcG">
+            <objects>
+                <viewController storyboardIdentifier="squareFormula" id="k8f-Qs-J4P" customClass="SquareAreaFormulaViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t0f-xC-Ffn">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qg4-Ak-WET">
+                                <rect key="frame" x="140" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkw-nU-IdX">
+                                <rect key="frame" x="782" y="577" width="193" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Keterangan :
+p = panjang
+l = lebar</string>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBj-Og-Aid">
+                                <rect key="frame" x="728" y="505" width="300" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luas = p x l" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiE-jc-Svh">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93143671751022339" green="0.86298221349716187" blue="0.5411144495010376" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selain dengan menghitung area didalamnya, luas dapat dihitung dengan cara :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-qw-TE7">
+                                <rect key="frame" x="647" y="312" width="462" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RmG-Sa-hF5"/>
+                    </view>
+                    <connections>
+                        <outlet property="formulaView" destination="lBj-Og-Aid" id="ibx-ck-lCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMV-Sg-WxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2044.2166910688138" y="-781.0546875"/>
         </scene>
         <!--Square Area Exercise-->
         <scene sceneID="oFr-a4-lnl">
@@ -426,7 +482,7 @@
                                 <color key="backgroundColor" red="0.70470577478408813" green="0.59782689809799194" blue="0.48233306407928467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="rzy-3z-loq" appends="YES" id="piu-9G-kyJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="Wke-Hp-3dr" appends="YES" id="pne-fb-t1B"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-Oy-vlv">
@@ -451,9 +507,10 @@
                                 <rect key="frame" x="711" y="878" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-SC-JHw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-SC-JHw">
                                         <rect key="frame" x="22" y="17" width="46" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -462,7 +519,7 @@
                                 <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="VAF-P8-uzS" appends="YES" id="wa4-Qd-RHt"/>
+                                    <outletCollection property="gestureRecognizers" destination="qFU-YP-88J" appends="YES" id="vLU-L5-ZqA"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -480,8 +537,9 @@
                         <outlet property="label4" destination="m06-0x-Li3" id="xjn-ix-PIB"/>
                         <outlet property="label5" destination="Rgv-Q9-Zgf" id="g8J-72-qe8"/>
                         <outlet property="option18" destination="k6r-2P-tgi" id="cIn-Sm-tEG"/>
-                        <outlet property="option19" destination="Yaw-4Q-Cvr" id="LdQ-6y-pP2"/>
                         <outlet property="option20" destination="rTg-Oy-vlv" id="lql-5r-Zwl"/>
+                        <outlet property="option22" destination="Yaw-4Q-Cvr" id="dkc-7A-U1m"/>
+                        <segue destination="X6W-Io-hde" kind="show" id="TMX-7L-DcR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVl-Gg-zEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -500,18 +558,58 @@
                         <action selector="pan20Handle:" destination="lnE-ZZ-ufz" id="qwI-H6-dVj"/>
                     </connections>
                 </panGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rzy-3z-loq">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Wke-Hp-3dr" userLabel="Pan18">
                     <connections>
-                        <action selector="press18:" destination="lnE-ZZ-ufz" id="ZHw-A9-ewc"/>
+                        <action selector="pan18handle:" destination="lnE-ZZ-ufz" id="dnM-Aj-ljO"/>
                     </connections>
-                </pongPressGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="VAF-P8-uzS">
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qFU-YP-88J" userLabel="Pan 22">
                     <connections>
-                        <action selector="press19:" destination="lnE-ZZ-ufz" id="Pe0-tW-6g6"/>
+                        <action selector="pan22Handle:" destination="lnE-ZZ-ufz" id="yDb-gB-YU0"/>
                     </connections>
-                </pongPressGestureRecognizer>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2051.2445095168373" y="-781.0546875"/>
+            <point key="canvasLocation" x="-1372" y="-781"/>
+        </scene>
+        <!--Square Area End View Controller-->
+        <scene sceneID="Kjg-WT-dqM">
+            <objects>
+                <viewController id="X6W-Io-hde" customClass="SquareAreaEndViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9AR-M8-IAk">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-0K-C0M">
+                                <rect key="frame" x="107" y="312" width="400" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGT-gi-wnM">
+                                <rect key="frame" x="693" y="567" width="335" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86610072849999997" green="0.82436388729999999" blue="0.77254199980000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Yuk!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wah kamu berhasil menyelesaikan tentang luas persegi panjang! Kamu hebat ^^" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKT-XT-2f9">
+                                <rect key="frame" x="619" y="360" width="483" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dxu-ea-vpe"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOutlet" destination="jGT-gi-wnM" id="1LY-Yw-8ba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcy-Yc-wWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="-781"/>
         </scene>
     </scenes>
     <resources>
