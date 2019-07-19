@@ -44,9 +44,6 @@ class HomeViewController: UIViewController {
         buttonMulai.giveShadow(x: 3.0, y: 3.0, opacity: 0.5, blur: 10,shadowColor: UIColor.black.cgColor)
     }
     
-    @IBAction func mulaiTapped(_ sender: Any) {
-        performSegue(withIdentifier: "startSegue", sender: self)
-    }
     
 }
 

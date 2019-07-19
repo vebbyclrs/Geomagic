@@ -56,7 +56,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="388" id="jTW-nl-3mc"/>
                                     <constraint firstAttribute="height" constant="95" id="mT8-pj-LS2"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="388" id="qPh-Cq-9bO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                 <state key="normal" title="MULAI">
@@ -67,9 +66,6 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="mulaiTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oda-X2-7to"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,7 +82,7 @@
                     <navigationItem key="navigationItem" id="O54-80-DCv"/>
                     <connections>
                         <outlet property="buttonMulai" destination="P9L-C3-pop" id="OVz-Ay-irF"/>
-                        <segue destination="CXd-QR-bwy" kind="show" identifier="startSegue" id="sa0-gu-xH4"/>
+                        <segue destination="CXd-QR-bwy" kind="show" id="sa0-gu-xH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -143,6 +139,48 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="471" height="476"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-IG-ZDo">
+                                                                    <rect key="frame" x="75" y="25" width="306" height="407"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-cr-LJ2" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="306" height="83"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="PENGENALAN">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTu-Jh-c5S" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="108" width="306" height="83"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="KELILING">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-Hb-Tpp" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="216" width="306" height="83"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="LUAS">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doW-kA-xfG" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="324" width="306" height="83"/>
+                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                                            <size key="titleShadowOffset" width="2" height="2"/>
+                                                                            <state key="normal" title="LATIHAN">
+                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            </state>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </view>
@@ -154,7 +192,11 @@
                                         <gestureRecognizers/>
                                         <connections>
                                             <outlet property="baseView" destination="fEj-Xc-YTL" id="acH-EW-TRC"/>
+                                            <outlet property="kelilingButton" destination="HTu-Jh-c5S" id="ifk-EX-AN9"/>
+                                            <outlet property="latihanButton" destination="doW-kA-xfG" id="DzB-rx-Q2j"/>
                                             <outlet property="locker" destination="dVt-y0-CAi" id="1Nn-mx-ax7"/>
+                                            <outlet property="luasButton" destination="pxF-Hb-Tpp" id="lN2-mR-1p9"/>
+                                            <outlet property="pengenalanButton" destination="jHo-cr-LJ2" id="QCp-AZ-6V0"/>
                                             <outlet property="shapeImage" destination="Tt4-cJ-10V" id="ceI-kJ-feQ"/>
                                             <outlet property="shapeNameLabel" destination="cIO-e7-iZT" id="n2y-eC-WyG"/>
                                             <outlet property="upperLayer" destination="jAc-cC-fsW" id="nKF-3e-z3K"/>
@@ -170,20 +212,9 @@
                                 <rect key="frame" x="613" y="128" width="200" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HZ-ey-zCQ">
-                                <rect key="frame" x="1233" y="84" width="73" height="71"/>
-                                <state key="normal" image="homeButton"/>
-                                <connections>
-                                    <segue destination="mWe-A0-NyL" kind="unwind" unwindAction="unwindToHome:" id="17R-6C-dDd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="0HZ-ey-zCQ" firstAttribute="top" secondItem="sxr-TW-OTp" secondAttribute="top" constant="60" id="FIQ-rf-bjE"/>
-                            <constraint firstItem="sxr-TW-OTp" firstAttribute="trailing" secondItem="0HZ-ey-zCQ" secondAttribute="trailing" constant="60" id="GbW-9b-ToK"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sxr-TW-OTp"/>
                     </view>
                     <connections>
@@ -194,7 +225,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atE-s1-xJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="mWe-A0-NyL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="815.66617862371879" y="-466.40624999999994"/>
         </scene>
@@ -668,7 +698,6 @@
         <image name="Locker" width="180" height="209"/>
         <image name="Owl1.png" width="400" height="400"/>
         <image name="big logo" width="415" height="312"/>
-        <image name="homeButton" width="73" height="71"/>
         <image name="small logo" width="253" height="190"/>
     </resources>
 </document>
