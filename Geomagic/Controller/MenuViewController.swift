@@ -42,61 +42,34 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //Apple Documentation: Asks your data source object for the cell that corresponds to the specified item in the collection view
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionShapeMenu", for: indexPath) as! CollectionViewCell
-        
-        //bikin kotak2 view cell dulu
-        cell.baseView.backgroundColor = .white
-        cell.baseView.layer.cornerRadius = 30.0
-        cell.baseView.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 0.2).cgColor
-        cell.baseView.layer.borderWidth = CGFloat(5.0)
-        
-        //give shadow effect
-        cell.baseView.layer.shadowOpacity = 0.3
-        cell.baseView.layer.shadowRadius = 4
-        let roundedRect = CGRect(x: 5, y: 5, width: cell.baseView.frame.width, height: cell.baseView.frame.height)
-        cell.baseView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: CGFloat(34.0) ).cgPath
-        
-        //load image for each square
-        cell.shapeImage.image = shapes[indexPath.row].shapeImage
-        cell.shapeNameLabel.text = shapes[indexPath.row].shapeName
-        cell.shapeNameLabel.textColor = .black
-
-        let shouldHide : Bool = userLevel < shapes[indexPath.row].level //user level lebih kecil -> lock shape
-        if shouldHide {
-            showHiddenCell(cell: cell)
-            showBlueButtons(show: false, cell: cell)
-        } else {
-            showBlueUpperLayerWithButtons(show: false, cell: cell)
-        }
-        cell.collectionViewDelegate = self
-        cell.initClickButton()
-        cell.tag = indexPath.row
+//        //Apple Documentation: Asks your data source object for the cell that corresponds to the specified item in the collection view
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionShapeMenu", for: indexPath) as! CollectionViewCell
+        cell = prepareCollectionView(cell: cell, indexPath: indexPath)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
-        let isLocked : Bool = userLevel < shapes[indexPath.row].level
-        
-        if isLocked{
-            print ("Locked. Unlock first")
-        }
-        else {
-            showBlueUpperLayerWithButtons(show: true, cell: cell)
-            
-        }
+//        let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
+//        let isLocked : Bool = userLevel < shapes[indexPath.row].level
+//
+//        if isLocked{
+//            print ("Locked. Unlock first")
+//        }
+//        else {
+//            showBlueUpperLayerWithButtons(show: true, cell: cell)
+//
+//        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell
-        let isLocked : Bool = userLevel < shapes[indexPath.row].level
-        
-        if !isLocked {
-            if let lastCell = cell {
-                showBlueUpperLayerWithButtons(show: false, cell: lastCell)
-            }
-        }
+//        let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell
+//        let isLocked : Bool = userLevel < shapes[indexPath.row].level
+//
+//        if !isLocked {
+//            if let lastCell = cell {
+//                showBlueUpperLayerWithButtons(show: false, cell: lastCell)
+//            }
+//        }
     }
     
     func showHiddenCell(cell:CollectionViewCell) {
@@ -105,10 +78,6 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.upperLayer.layer.cornerRadius = 30.0
         cell.locker.isHidden = false
         cell.upperLayer.isHidden = false
-        cell.luasButton.isHidden = true
-        cell.latihanButton.isHidden = true
-        cell.kelilingButton.isHidden = true
-        cell.pengenalanButton.isHidden = true
     }
     
     func showAvailCell(cell:CollectionViewCell){
@@ -116,61 +85,77 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.locker.isHidden = true
     }
     
-    func showBlueButtons(show:Bool, cell : CollectionViewCell) {
-        print ("in\(show)")
-        cell.luasButton.isHidden = !show
-        cell.latihanButton.isHidden = !show
-        cell.kelilingButton.isHidden = !show
-        cell.pengenalanButton.isHidden = !show
-    }
-    
-    func showBlueUpperLayerWithButtons (show: Bool , cell: CollectionViewCell) {
-        cell.upperLayer.layer.cornerRadius = 30.0
-        cell.upperLayer.backgroundColor = UIColor(red: 189/255, green: 226/255, blue: 238/225, alpha: 0.3)
-        cell.locker.isHidden = true //harus false
-        cell.upperLayer.isHidden = !show
+    func prepareCollectionView(cell: CollectionViewCell, indexPath: IndexPath) -> CollectionViewCell{
+        //bikin kotak2 view cell dulu
+        cell.baseView.backgroundColor = .white
+        cell.baseView.layer.cornerRadius = 30.0
+        cell.baseView.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 0.2).cgColor
+        cell.baseView.layer.borderWidth = CGFloat(5.0)
+
+        //give shadow effect
+        cell.baseView.layer.shadowOpacity = 0.3
+        cell.baseView.layer.shadowRadius = 4
+        let roundedRect = CGRect(x: 5, y: 5, width: cell.baseView.frame.width, height: cell.baseView.frame.height)
+        cell.baseView.layer.shadowPath = UIBezierPath(roundedRect: roundedRect, cornerRadius: CGFloat(34.0) ).cgPath
+
+        //load image for each square
+        cell.shapeImage.image = shapes[indexPath.row].shapeImage
+        cell.shapeNameLabel.text = shapes[indexPath.row].shapeName
+        cell.shapeNameLabel.textColor = .black
+
+        let shouldHide : Bool = userLevel < shapes[indexPath.row].level //user level lebih kecil -> lock shape
+        if shouldHide {
+            showHiddenCell(cell: cell)
+        } else {
+            showAvailCell(cell: cell)
+        }
+//        cell.collectionViewDelegate = self
+//        cell.initClickButton()
+        cell.tag = indexPath.row
         
-        cell.pengenalanButton.isHidden = !show
-        cell.kelilingButton.isHidden = !show
-        cell.latihanButton.isHidden = !show
-        cell.luasButton.isHidden = !show
-        showBlueButtons(show: true, cell: cell)
+        return cell
     }
-    
 }
 
+
+
+
+
+
+
+
 // MARK: - Button Click
-extension MenuViewController:CollectionViewCellDelegate{
-    
-    func pressPengenalanButton(sender: UIButton, cell: UICollectionViewCell) {
-        print(cell.tag)
-        print("Pengenalan")
-        if cell.tag == 0 { //go to pengenalan persegi
-            
-            performSegue(withIdentifier: "goToPengenalanPersegi", sender: sender)
-            
-        }
-    }
-    
-    func pressKelilingButton(sender: UIButton, cell: UICollectionViewCell) {
-        print(cell.tag)
-        print("Keliling")
-    }
-    
-    func pressLuasButton(sender: UIButton, cell: UICollectionViewCell) {
-        print(cell.tag)
-        print("Luas")
-    }
-    
-    func pressLatihanButton(sender: UIButton, cell: UICollectionViewCell) {
-        print(cell.tag)
-        print("Latihan")
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToPengenalanPersegi" {
-            let nextVC = segue.destination as! InformationPageViewController
-            nextVC.shapeType = .persegi
-        }
-    }
-}
+//extension MenuViewController:CollectionViewCellDelegate{
+//
+//    func pressPengenalanButton(sender: UIButton, cell: UICollectionViewCell) {
+//        print(cell.tag)
+//        print("Pengenalan")
+//        if cell.tag == 0 { //go to pengenalan persegi
+//
+//            performSegue(withIdentifier: "goToPengenalanPersegi", sender: sender)
+//
+//        }
+//    }
+//
+//    func pressKelilingButton(sender: UIButton, cell: UICollectionViewCell) {
+//        print(cell.tag)
+//        print("Keliling")
+//    }
+//
+//    func pressLuasButton(sender: UIButton, cell: UICollectionViewCell) {
+//        print(cell.tag)
+//        print("Luas")
+//    }
+//
+//    func pressLatihanButton(sender: UIButton, cell: UICollectionViewCell) {
+//        print(cell.tag)
+//        print("Latihan")
+//    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "goToPengenalanPersegi" {
+//            let nextVC = segue.destination as! InformationPageViewController
+//            nextVC.shapeType = .persegi
+//        }
+//    }
+//}
