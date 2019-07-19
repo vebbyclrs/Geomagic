@@ -60,6 +60,82 @@
         <!--Square Area New View Controller-->
         <scene sceneID="VIE-jz-4po">
             <objects>
+                <tapGestureRecognizer id="x2C-xK-0l9">
+                    <connections>
+                        <action selector="tap2:" destination="lTM-hH-38L" id="CHV-UT-on6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cSx-zZ-6xP">
+                    <connections>
+                        <action selector="tap7:" destination="lTM-hH-38L" id="mjB-Ge-e9y"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fm-Jt-Gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MCF-SI-Ae1">
+                    <connections>
+                        <action selector="tap1:" destination="lTM-hH-38L" id="6lT-gq-yQ2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qyP-Ed-zgM">
+                    <connections>
+                        <action selector="tap3:" destination="lTM-hH-38L" id="Kaf-ho-4VA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fuW-9d-yDr">
+                    <connections>
+                        <action selector="tap5:" destination="lTM-hH-38L" id="0EW-k7-brB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Fvb-7Z-KDW">
+                    <connections>
+                        <action selector="tap8:" destination="lTM-hH-38L" id="gOj-dC-iE4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YCO-zf-ukH">
+                    <connections>
+                        <action selector="tap6:" destination="lTM-hH-38L" id="whV-FO-3aP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vfM-fy-meZ">
+                    <connections>
+                        <action selector="tap11:" destination="lTM-hH-38L" id="wiG-80-syo"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="43e-T5-9S6">
+                    <connections>
+                        <action selector="tap10:" destination="lTM-hH-38L" id="egQ-Tl-dgi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="yed-U6-XxA">
+                    <connections>
+                        <action selector="tap14:" destination="lTM-hH-38L" id="FsP-bL-3ez"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sRP-U0-A38">
+                    <connections>
+                        <action selector="tap12:" destination="lTM-hH-38L" id="PJN-a2-5PK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uBs-0q-ewg">
+                    <connections>
+                        <action selector="tap4:" destination="lTM-hH-38L" id="PXX-Lx-rpA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="OoB-Ri-1Ht">
+                    <connections>
+                        <action selector="tap9:" destination="lTM-hH-38L" id="D1q-ye-ZO2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VET-tw-OAV">
+                    <connections>
+                        <action selector="tap15:" destination="lTM-hH-38L" id="Og8-Nb-WDA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aoG-hb-te7">
+                    <connections>
+                        <action selector="tap13:" destination="lTM-hH-38L" id="fea-42-i2a"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <viewController id="lTM-hH-38L" customClass="squareAreaNewViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PWt-0F-Yk4">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
@@ -237,83 +313,205 @@
                         <outlet property="square9" destination="0Jk-9R-Csc" id="b5O-P5-3Sg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4fm-Jt-Gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="MCF-SI-Ae1">
-                    <connections>
-                        <action selector="tap1:" destination="lTM-hH-38L" id="6lT-gq-yQ2"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="x2C-xK-0l9">
-                    <connections>
-                        <action selector="tap2:" destination="lTM-hH-38L" id="CHV-UT-on6"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="qyP-Ed-zgM">
-                    <connections>
-                        <action selector="tap3:" destination="lTM-hH-38L" id="Kaf-ho-4VA"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="uBs-0q-ewg">
-                    <connections>
-                        <action selector="tap4:" destination="lTM-hH-38L" id="PXX-Lx-rpA"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="fuW-9d-yDr">
-                    <connections>
-                        <action selector="tap5:" destination="lTM-hH-38L" id="0EW-k7-brB"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="YCO-zf-ukH">
-                    <connections>
-                        <action selector="tap6:" destination="lTM-hH-38L" id="whV-FO-3aP"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="cSx-zZ-6xP">
-                    <connections>
-                        <action selector="tap7:" destination="lTM-hH-38L" id="mjB-Ge-e9y"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Fvb-7Z-KDW">
-                    <connections>
-                        <action selector="tap8:" destination="lTM-hH-38L" id="gOj-dC-iE4"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="OoB-Ri-1Ht">
-                    <connections>
-                        <action selector="tap9:" destination="lTM-hH-38L" id="D1q-ye-ZO2"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="43e-T5-9S6">
-                    <connections>
-                        <action selector="tap10:" destination="lTM-hH-38L" id="egQ-Tl-dgi"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="vfM-fy-meZ">
-                    <connections>
-                        <action selector="tap11:" destination="lTM-hH-38L" id="wiG-80-syo"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="sRP-U0-A38">
-                    <connections>
-                        <action selector="tap12:" destination="lTM-hH-38L" id="PJN-a2-5PK"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="aoG-hb-te7">
-                    <connections>
-                        <action selector="tap13:" destination="lTM-hH-38L" id="fea-42-i2a"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="yed-U6-XxA">
-                    <connections>
-                        <action selector="tap14:" destination="lTM-hH-38L" id="FsP-bL-3ez"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="VET-tw-OAV">
-                    <connections>
-                        <action selector="tap15:" destination="lTM-hH-38L" id="Og8-Nb-WDA"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-2717" y="-781"/>
+        </scene>
+        <!--Square Area Exercise-->
+        <scene sceneID="oFr-a4-lnl">
+            <objects>
+                <viewController title="Square Area Exercise" id="lnE-ZZ-ufz" customClass="SquareAreaExerciseViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B9C-gr-xsQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KAt-fh-5q5">
+                                <rect key="frame" x="127" y="223" width="350" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgv-Q9-Zgf">
+                                <rect key="frame" x="897" y="491" width="18" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="St7-WB-iXg" appends="YES" id="j68-G4-NaJ"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m06-0x-Li3">
+                                <rect key="frame" x="604" y="338" width="18" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vn6-Ml-Gk3" appends="YES" id="Chi-S8-hHG"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iox-RZ-hUw">
+                                <rect key="frame" x="444" y="737" width="28" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-9L-VWw">
+                                <rect key="frame" x="660" y="244" width="493" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78283488750457764" green="0.6890454888343811" blue="0.49016028642654419" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eC-8u-XzI">
+                                <rect key="frame" x="288" y="738" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrq-Nd-81k">
+                                        <rect key="frame" x="21" y="-1" width="29" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83108538389205933" green="0.82415944337844849" blue="0.78430908918380737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFF-WG-d4U">
+                                <rect key="frame" x="578" y="738" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnV-vA-u1r">
+                                        <rect key="frame" x="21" y="-1" width="29" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAn-bQ-BMW">
+                                <rect key="frame" x="897" y="738" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6E-6p-cCa">
+                                        <rect key="frame" x="0.0" y="-1" width="70" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaH-Rh-5h4">
+                                <rect key="frame" x="761" y="737" width="25" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k6r-2P-tgi">
+                                <rect key="frame" x="422" y="878" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oul-zW-pOJ">
+                                        <rect key="frame" x="22" y="17" width="46" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70470577478408813" green="0.59782689809799194" blue="0.48233306407928467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rzy-3z-loq" appends="YES" id="piu-9G-kyJ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-Oy-vlv">
+                                <rect key="frame" x="566" y="878" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91N-MJ-LqF">
+                                        <rect key="frame" x="22" y="17" width="46" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9yD-dp-G2w" appends="YES" id="wCL-u8-EFa"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-4Q-Cvr">
+                                <rect key="frame" x="711" y="878" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-SC-JHw">
+                                        <rect key="frame" x="22" y="17" width="46" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VAF-P8-uzS" appends="YES" id="wa4-Qd-RHt"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HQn-eK-2ui"/>
+                    </view>
+                    <connections>
+                        <outlet property="box1" destination="8eC-8u-XzI" id="1jZ-BM-C9F"/>
+                        <outlet property="box2" destination="UFF-WG-d4U" id="DfL-lR-S1W"/>
+                        <outlet property="boxLabel1" destination="xrq-Nd-81k" id="ejk-ub-gNL"/>
+                        <outlet property="boxLabel2" destination="mnV-vA-u1r" id="Hl5-rO-TKk"/>
+                        <outlet property="boxLabelResult" destination="O6E-6p-cCa" id="Wzr-u9-8oA"/>
+                        <outlet property="boxResult" destination="tAn-bQ-BMW" id="9YA-0T-395"/>
+                        <outlet property="label20" destination="91N-MJ-LqF" id="Ll3-XJ-SoI"/>
+                        <outlet property="label4" destination="m06-0x-Li3" id="xjn-ix-PIB"/>
+                        <outlet property="label5" destination="Rgv-Q9-Zgf" id="g8J-72-qe8"/>
+                        <outlet property="option18" destination="k6r-2P-tgi" id="cIn-Sm-tEG"/>
+                        <outlet property="option19" destination="Yaw-4Q-Cvr" id="LdQ-6y-pP2"/>
+                        <outlet property="option20" destination="rTg-Oy-vlv" id="lql-5r-Zwl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVl-Gg-zEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="vn6-Ml-Gk3" userLabel="Pan 4">
+                    <connections>
+                        <action selector="pan4Handle:" destination="lnE-ZZ-ufz" id="fGc-du-RlI"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="St7-WB-iXg" userLabel="Pan 5">
+                    <connections>
+                        <action selector="pan5Handle:" destination="lnE-ZZ-ufz" id="VpN-oX-GwD"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="9yD-dp-G2w" userLabel="Pan 20">
+                    <connections>
+                        <action selector="pan20Handle:" destination="lnE-ZZ-ufz" id="qwI-H6-dVj"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rzy-3z-loq">
+                    <connections>
+                        <action selector="press18:" destination="lnE-ZZ-ufz" id="ZHw-A9-ewc"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="VAF-P8-uzS">
+                    <connections>
+                        <action selector="press19:" destination="lnE-ZZ-ufz" id="Pe0-tW-6g6"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+
             <point key="canvasLocation" x="-2717" y="-781"/>
         </scene>
         <!--Square Area Exercise-->

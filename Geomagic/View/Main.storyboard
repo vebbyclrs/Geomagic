@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CXd-QR-bwy">
-    <device id="ipad12_9rounded" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3X4-2b-gqL">
+    <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,11 +14,15 @@
         <scene sceneID="utp-5a-G06">
             <objects>
                 <navigationController navigationBarHidden="YES" id="3X4-2b-gqL" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eHO-vS-48P">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2RO-f5-d5e">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uOk-5A-Z51"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e3s-Jm-bY7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF0-di-KG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,25 +37,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HomeView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUq-XB-lXx">
-                                <rect key="frame" x="1186" y="79" width="140" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big logo" translatesAutoresizingMaskIntoConstraints="NO" id="jrC-eR-kxD">
+                                <rect key="frame" x="475.5" y="95" width="415" height="312"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEOMAGIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-ep-5YE">
+                                <rect key="frame" x="498" y="462" width="370" height="100"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rh-ez-hLy" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                <rect key="frame" x="484" y="698" width="398" height="95"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.87450980389999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="DeN-iN-1bN"/>
+                                    <constraint firstAttribute="width" constant="398" id="u5S-8U-nGO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
+                                <state key="normal" title="MULAI">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="CXd-QR-bwy" kind="show" id="H83-kR-Fg0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jrC-eR-kxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OO4-uP-M5l"/>
+                            <constraint firstItem="ahO-ep-5YE" firstAttribute="top" secondItem="jrC-eR-kxD" secondAttribute="bottom" constant="55" id="VVP-HC-AIV"/>
+                            <constraint firstItem="0rh-ez-hLy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xig-RE-34t"/>
+                            <constraint firstItem="ahO-ep-5YE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hcm-uk-NOa"/>
+                            <constraint firstItem="0rh-ez-hLy" firstAttribute="top" secondItem="ahO-ep-5YE" secondAttribute="bottom" constant="136" id="kzv-l7-TLg"/>
+                            <constraint firstItem="ahO-ep-5YE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p2x-nc-4Rk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="O54-80-DCv"/>
                     <connections>
-                        <segue destination="CXd-QR-bwy" kind="show" id="sa0-gu-xH4"/>
+                        <outlet property="buttonMulai" destination="0rh-ez-hLy" id="d4h-Nd-HLA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="-466"/>
+            <point key="canvasLocation" x="169.98535871156662" y="-466.40624999999994"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="4bh-z4-Ub3">
@@ -64,7 +99,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WUy-Dm-Nm0">
                                 <rect key="frame" x="60" y="458" width="1306" height="486"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="60" minimumInteritemSpacing="60" id="1YY-Xf-LlS">
                                     <size key="itemSize" width="491" height="496"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -95,75 +130,16 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jAc-cC-fsW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="471" height="476"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Locker" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-y0-CAi">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="471" height="476"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                </imageView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-IG-ZDo">
-                                                                    <rect key="frame" x="75" y="25" width="306" height="407"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <subviews>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-cr-LJ2" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="306" height="83"/>
-                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                                                            <size key="titleShadowOffset" width="2" height="2"/>
-                                                                            <state key="normal" title="PENGENALAN">
-                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </state>
-                                                                        </button>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTu-Jh-c5S" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="108" width="306" height="83"/>
-                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                                                            <size key="titleShadowOffset" width="2" height="2"/>
-                                                                            <state key="normal" title="KELILING">
-                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </state>
-                                                                        </button>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-Hb-Tpp" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="216" width="306" height="83"/>
-                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                                                            <size key="titleShadowOffset" width="2" height="2"/>
-                                                                            <state key="normal" title="LUAS">
-                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </state>
-                                                                        </button>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doW-kA-xfG" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="324" width="306" height="83"/>
-                                                                            <color key="backgroundColor" red="0.5490196078431373" green="0.73333333333333328" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                                                            <size key="titleShadowOffset" width="2" height="2"/>
-                                                                            <state key="normal" title="LATIHAN">
-                                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            </state>
-                                                                        </button>
-                                                                    </subviews>
-                                                                </stackView>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.91764705882352937" green="0.87450980392156863" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
                                         </view>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outlet property="baseView" destination="fEj-Xc-YTL" id="acH-EW-TRC"/>
-                                            <outlet property="kelilingButton" destination="HTu-Jh-c5S" id="ifk-EX-AN9"/>
-                                            <outlet property="latihanButton" destination="doW-kA-xfG" id="DzB-rx-Q2j"/>
-                                            <outlet property="locker" destination="dVt-y0-CAi" id="1Nn-mx-ax7"/>
-                                            <outlet property="luasButton" destination="pxF-Hb-Tpp" id="lN2-mR-1p9"/>
-                                            <outlet property="pengenalanButton" destination="jHo-cr-LJ2" id="QCp-AZ-6V0"/>
                                             <outlet property="shapeImage" destination="Tt4-cJ-10V" id="ceI-kJ-feQ"/>
                                             <outlet property="shapeNameLabel" destination="cIO-e7-iZT" id="n2y-eC-WyG"/>
-                                            <outlet property="upperLayer" destination="jAc-cC-fsW" id="nKF-3e-z3K"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -172,15 +148,27 @@
                                     <outlet property="delegate" destination="CXd-QR-bwy" id="lrJ-I9-Zyg"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small logo" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
                                 <rect key="frame" x="613" y="128" width="200" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSY-j3-wAP">
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
+                                <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="K8Z-rU-GU2" kind="unwind" unwindAction="unwindToHome:" id="uln-2w-RQo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cSY-j3-wAP" firstAttribute="top" secondItem="sxr-TW-OTp" secondAttribute="top" constant="60" id="Jer-Dn-EUv"/>
+                            <constraint firstItem="sxr-TW-OTp" firstAttribute="trailing" secondItem="cSY-j3-wAP" secondAttribute="trailing" constant="60" id="Qkw-Yb-pbO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sxr-TW-OTp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tIj-1R-5Uz"/>
                     <connections>
                         <outlet property="collectionView" destination="WUy-Dm-Nm0" id="qtN-YX-eNr"/>
                         <segue destination="IeM-Mb-b0L" kind="show" identifier="goToPengenalanPersegi" id="NMx-Jr-GGN"/>
@@ -189,6 +177,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atE-s1-xJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="K8Z-rU-GU2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="815.66617862371879" y="-466.40624999999994"/>
         </scene>
@@ -215,6 +204,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Op-Cm-Vef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="816" y="272"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gDU-vy-tqf">
+            <objects>
+                <viewController id="de9-Ge-nXR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dtS-Qc-y7I">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="chx-hN-NZd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMW-mc-mrp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="-1158"/>
         </scene>
         <!--Information Page View Controller-->
         <scene sceneID="aS0-X3-4vp">
@@ -267,9 +271,21 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjS-Ol-MpC">
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="TVO-fc-eFg"/>
+                                    <constraint firstAttribute="height" constant="71" id="cyf-mf-3Qc"/>
+                                </constraints>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I92-uX-yDO" firstAttribute="trailing" secondItem="KjS-Ol-MpC" secondAttribute="trailing" constant="60" id="GJ0-Aw-A9s"/>
+                            <constraint firstItem="KjS-Ol-MpC" firstAttribute="top" secondItem="I92-uX-yDO" secondAttribute="top" constant="60" id="VWz-7y-LGH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="I92-uX-yDO"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="eKE-Ch-hgp" appends="YES" id="lAi-sa-8oZ"/>
@@ -550,65 +566,6 @@
             </objects>
             <point key="canvasLocation" x="2111.8594436310395" y="271.875"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Q0u-Qq-nrk">
-            <objects>
-                <viewController id="Idq-6w-9FF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZEV-kT-sZm">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEs-CZ-9fb">
-                                <rect key="frame" x="406" y="391" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="did-fX-KDQ">
-                                <rect key="frame" x="732" y="342" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="did-fX-KDQ" id="PaN-uD-EcO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9rN-Zi-hRU">
-                                <rect key="frame" x="289" y="178" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HfW-gh-rqh">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UqN-89-NZr">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3Rz-BS-QdM" customClass="CollectionViewCell" customModule="Geomagic" customModuleProvider="target">
-                                        <rect key="frame" x="63.5" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="S9W-GB-0q3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2269" y="1457"/>
-        </scene>
         <!--Lets Go View Controller-->
         <scene sceneID="O3J-Lo-ylZ">
             <objects>
@@ -659,8 +616,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="400" height="300"/>
-        <image name="Locker" width="180" height="209"/>
         <image name="Owl1.png" width="400" height="400"/>
+        <image name="big logo" width="415" height="312"/>
+        <image name="homeButton" width="73" height="71"/>
+        <image name="small logo" width="253" height="190"/>
     </resources>
 </document>
