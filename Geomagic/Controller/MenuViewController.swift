@@ -32,7 +32,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
         let appData = AppData()
         self.userLevel = appData.level
-        self.userLevel = 3
+        self.userLevel = 2
         // Do any additional setup after loading the view.
     }
     

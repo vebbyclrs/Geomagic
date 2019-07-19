@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CXd-QR-bwy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3X4-2b-gqL">
     <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,25 +33,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HomeView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUq-XB-lXx">
-                                <rect key="frame" x="1186" y="79" width="140" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big logo" translatesAutoresizingMaskIntoConstraints="NO" id="ay1-PR-8ij">
+                                <rect key="frame" x="475.5" y="179" width="415" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="60a-AG-AAb"/>
+                                    <constraint firstAttribute="width" constant="415" id="HoA-d4-3Vh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEOMAGIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-FX-qIS">
+                                <rect key="frame" x="489" y="544" width="388" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BcS-FY-Wg8"/>
+                                    <constraint firstAttribute="width" constant="388" id="c1d-SI-l5f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9L-C3-pop" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                <rect key="frame" x="489" y="779" width="388" height="95"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.87450980392156863" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="jTW-nl-3mc"/>
+                                    <constraint firstAttribute="height" constant="95" id="mT8-pj-LS2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <state key="normal" title="MULAI">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nnn-FX-qIS" firstAttribute="top" secondItem="ay1-PR-8ij" secondAttribute="bottom" constant="53" id="24O-KB-qgP"/>
+                            <constraint firstItem="nnn-FX-qIS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GxG-z0-FeQ"/>
+                            <constraint firstItem="ay1-PR-8ij" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2G-GQ-X85"/>
+                            <constraint firstItem="P9L-C3-pop" firstAttribute="top" secondItem="nnn-FX-qIS" secondAttribute="bottom" constant="135" id="aBL-9R-Kt3"/>
+                            <constraint firstItem="P9L-C3-pop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bqz-vW-gKQ"/>
+                            <constraint firstItem="ay1-PR-8ij" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="g96-6I-YcM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="O54-80-DCv"/>
                     <connections>
+                        <outlet property="buttonMulai" destination="P9L-C3-pop" id="OVz-Ay-irF"/>
                         <segue destination="CXd-QR-bwy" kind="show" id="sa0-gu-xH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="-466"/>
+            <point key="canvasLocation" x="169.98535871156662" y="-466.40624999999994"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="4bh-z4-Ub3">
@@ -172,7 +208,7 @@
                                     <outlet property="delegate" destination="CXd-QR-bwy" id="lrJ-I9-Zyg"/>
                                 </connections>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small logo" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
                                 <rect key="frame" x="613" y="128" width="200" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -659,8 +695,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon" width="400" height="300"/>
         <image name="Locker" width="180" height="209"/>
         <image name="Owl1.png" width="400" height="400"/>
+        <image name="big logo" width="415" height="312"/>
+        <image name="small logo" width="253" height="190"/>
     </resources>
 </document>
