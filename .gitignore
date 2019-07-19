@@ -176,3 +176,4 @@ Carthage/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/xcode,swift,macos
+*.pbxproj
