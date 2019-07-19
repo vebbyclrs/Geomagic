@@ -20,13 +20,13 @@
 		ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0497F22DA463A0073E30E /* BirdAnimate.swift */; };
 		CC36920A22E1B6E100CEB078 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920922E1B6E100CEB078 /* Template.swift */; };
 		CC36920C22E1D8A900CEB078 /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920B22E1D8A900CEB078 /* SubMenuViewController.swift */; };
+		CC36920E22E1E39100CEB078 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920D22E1E39100CEB078 /* MenuViewController.swift */; };
 		CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70B922D48893001C402C /* AppDelegate.swift */; };
 		CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70BB22D48893001C402C /* HomeViewController.swift */; };
 		CC4D70BF22D48893001C402C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70BD22D48893001C402C /* Main.storyboard */; };
 		CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70C022D48893001C402C /* Geomagic.xcdatamodeld */; };
 		CC4D70C422D48894001C402C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70C322D48894001C402C /* Assets.xcassets */; };
 		CC4D70C722D48894001C402C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70C522D48894001C402C /* LaunchScreen.storyboard */; };
-		CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D022D48975001C402C /* MenuViewController.swift */; };
 		CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D222D4901D001C402C /* InformationPageViewController.swift */; };
 		CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */; };
 		CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D622D49037001C402C /* LetsGoViewController.swift */; };
@@ -60,6 +60,7 @@
 		ABF0497F22DA463A0073E30E /* BirdAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimate.swift; sourceTree = "<group>"; };
 		CC36920922E1B6E100CEB078 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		CC36920B22E1D8A900CEB078 /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
+		CC36920D22E1E39100CEB078 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CC4D70B622D48893001C402C /* Geomagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geomagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D70B922D48893001C402C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4D70BB22D48893001C402C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		CC4D70C322D48894001C402C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4D70C622D48894001C402C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4D70C822D48894001C402C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC4D70D022D48975001C402C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CC4D70D222D4901D001C402C /* InformationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPageViewController.swift; sourceTree = "<group>"; };
 		CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionShapeViewController.swift; sourceTree = "<group>"; };
 		CC4D70D622D49037001C402C /* LetsGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoViewController.swift; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 		CC4D70E222D492F7001C402C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CC36920D22E1E39100CEB078 /* MenuViewController.swift */,
 				CC4D70BB22D48893001C402C /* HomeViewController.swift */,
-				CC4D70D022D48975001C402C /* MenuViewController.swift */,
 				CC4D70D222D4901D001C402C /* InformationPageViewController.swift */,
 				CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */,
 				CC4D70D622D49037001C402C /* LetsGoViewController.swift */,
@@ -280,6 +280,7 @@
 				CCA1511D22D7D4AD004627CE /* RoundButton.swift in Sources */,
 				ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */,
 				CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */,
+				CC36920E22E1E39100CEB078 /* MenuViewController.swift in Sources */,
 				CC36920A22E1B6E100CEB078 /* Template.swift in Sources */,
 				CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */,
 				CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */,
@@ -287,7 +288,6 @@
 				CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */,
 				CC36920C22E1D8A900CEB078 /* SubMenuViewController.swift in Sources */,
 				CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */,
-				CC4D70D122D48975001C402C /* MenuViewController.swift in Sources */,
 				ABC6C3FC22DF12150024A04A /* ExcerciseSquare.swift in Sources */,
 				ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
