@@ -22,6 +22,8 @@ class SquareQuestion {
         list.append(Question(num: 9, correctAnswer: "c", pil1: "18", pil2: "36", pil3: "81"))
         list.append(Question(num: 10, correctAnswer: "a", pil1: "40", pil2: "50", pil3: "100"))
         list.append(Question(num: 10, correctAnswer: "c", pil1: "40", pil2: "70", pil3: "100"))
+        list.append(Question(num: 11, correctAnswer: "c", pil1: "11", pil2: "22", pil3: "44"))
+        list.append(Question(num: 11, correctAnswer: "b", pil1: "44", pil2: "121", pil3: "144"))
         
     }
 }
