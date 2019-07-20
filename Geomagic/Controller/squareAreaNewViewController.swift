@@ -26,6 +26,7 @@ class squareAreaNewViewController: UIViewController {
     @IBOutlet weak var square13: UIView!
     @IBOutlet weak var square14: UIView!
     @IBOutlet weak var square15: UIView!
+    @IBOutlet weak var birdImageView: UIImageView!
     
     var resultValue = 0{
         didSet{
@@ -35,6 +36,11 @@ class squareAreaNewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var owlImage: [UIImage] = []
+        
+        owlImage = createImageArray(total: 2, imagePrefix: "Owl")
+        animate(imageView: birdImageView, images: owlImage)
+        prepareView()
         squareBorder()
         resultLabel.isHidden = true
     }
@@ -207,4 +213,26 @@ class squareAreaNewViewController: UIViewController {
         square15.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 
+    func createImageArray(total: Int, imagePrefix: String) -> [UIImage]{
+        
+        var imageArray:[UIImage] = []
+        
+        for imageCount in 0..<total{
+            let imageName = "\(imagePrefix)-\(imageCount).png"
+            let image = UIImage(named: imageName)!
+            
+            imageArray.append(image)
+        }
+        return imageArray
+    }
+    
+    func animate(imageView: UIImageView, images: [UIImage]){
+        imageView.animationImages = images
+        imageView.animationDuration = 0.7
+        imageView.startAnimating()
+    }
+    
+    func prepareView () {
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+    }
 }

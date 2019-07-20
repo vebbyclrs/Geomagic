@@ -73,7 +73,8 @@ class SquareAreaTutorialViewController: UIViewController {
                                     UIView.animate(withDuration: 1, animations: {
                                         self.square8.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
                                         self.resultValue += 1
-//                                        self.performSegue(withIdentifier: "squareAreaNew", sender: animated)
+                                    }, completion: { (true) in
+                                        self.performSegue(withIdentifier: "squareAreaNew", sender: animated)
                                     })
                                 })
                             })
