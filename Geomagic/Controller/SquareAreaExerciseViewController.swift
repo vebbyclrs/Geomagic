@@ -22,6 +22,7 @@ class SquareAreaExerciseViewController: UIViewController {
     @IBOutlet weak var option18: UIView!
     @IBOutlet weak var label20: UILabel!
     @IBOutlet weak var option22: UIView!
+    @IBOutlet weak var birdImageView: UIImageView!
     
     
     var label4Origin: CGPoint!
@@ -38,7 +39,14 @@ class SquareAreaExerciseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         resultValue = 0
+       
+        var owlImage: [UIImage] = []
+        
+        owlImage = createImageArray(total: 2, imagePrefix: "Owl")
+        animate(imageView: birdImageView, images: owlImage)
+        
         boxLabelResult.isHidden = true
         boxLabel1.isHidden = true
         boxLabel2.isHidden = true
@@ -55,6 +63,8 @@ class SquareAreaExerciseViewController: UIViewController {
         option18.isHidden = true
         option22.isHidden = true
         option20.isHidden = true
+        
+        prepareView()
         roundedOption()
     }
     
@@ -229,18 +239,28 @@ class SquareAreaExerciseViewController: UIViewController {
         }
     }
     
-   
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func createImageArray(total: Int, imagePrefix: String) -> [UIImage]{
+        
+        var imageArray:[UIImage] = []
+        
+        for imageCount in 0..<total{
+            let imageName = "\(imagePrefix)-\(imageCount).png"
+            let image = UIImage(named: imageName)!
+            
+            imageArray.append(image)
+        }
+        return imageArray
     }
-    */
+    
+    func animate(imageView: UIImageView, images: [UIImage]){
+        imageView.animationImages = images
+        imageView.animationDuration = 0.7
+        imageView.startAnimating()
+    }
+    
+    func prepareView () {
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+    }
 
 }
 extension UIView{
@@ -261,4 +281,5 @@ extension UIView{
         
         layer.add(shake, forKey: nil)
     }
+    
 }
