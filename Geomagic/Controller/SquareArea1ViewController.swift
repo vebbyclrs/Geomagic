@@ -9,12 +9,19 @@
 import UIKit
 
 class SquareArea1ViewController: UIViewController {
+    
     @IBOutlet weak var buttonOutlet: UIButton!
+    @IBOutlet weak var birdImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var owlImage: [UIImage] = []
+        
+        owlImage = createImageArray(total: 2, imagePrefix: "Owl")
+        animate(imageView: birdImageView, images: owlImage)
+        prepareView()
         customButton()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -28,14 +35,26 @@ class SquareArea1ViewController: UIViewController {
         buttonOutlet.layer.shadowPath = UIBezierPath(roundedRect: roundedButton, cornerRadius: CGFloat(34.0)).cgPath
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func createImageArray(total: Int, imagePrefix: String) -> [UIImage]{
+        
+        var imageArray:[UIImage] = []
+        
+        for imageCount in 0..<total{
+            let imageName = "\(imagePrefix)-\(imageCount).png"
+            let image = UIImage(named: imageName)!
+            
+            imageArray.append(image)
+        }
+        return imageArray
     }
-    */
-
+    
+    func animate(imageView: UIImageView, images: [UIImage]){
+        imageView.animationImages = images
+        imageView.animationDuration = 0.7
+        imageView.startAnimating()
+    }
+    
+    func prepareView () {
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+    }
 }

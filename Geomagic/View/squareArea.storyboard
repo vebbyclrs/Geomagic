@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k8f-Qs-J4P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMN-EQ-miF">
     <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="svk-vj-w0Y">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="svk-vj-w0Y">
                                 <rect key="frame" x="140" y="312" width="400" height="400"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mulai membahas mengenai rumus luas persegi yuk!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g85-eD-NJm">
@@ -38,7 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonAction:" destination="rMN-EQ-miF" eventType="touchUpInside" id="Zho-Q0-486"/>
-                                    <segue destination="lTM-hH-38L" kind="show" id="kTM-do-ZTc"/>
+                                    <segue destination="CtK-fm-FRK" kind="show" identifier="squareAreaNew" id="DCG-Q9-Fg8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,12 +50,113 @@
                         <viewLayoutGuide key="safeArea" id="qXr-Wy-eiX"/>
                     </view>
                     <connections>
+                        <outlet property="birdImageView" destination="svk-vj-w0Y" id="X0V-cf-K9V"/>
                         <outlet property="buttonOutlet" destination="kZt-P9-6l3" id="RMe-X5-bJp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERJ-Ss-xit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3397.0717423133233" y="-781.0546875"/>
+        </scene>
+        <!--Square Area Tutorial View Controller-->
+        <scene sceneID="pmx-OO-6fe">
+            <objects>
+                <viewController id="CtK-fm-FRK" customClass="SquareAreaTutorialViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B11-zY-co0">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="j0A-1X-K2k">
+                                <rect key="frame" x="86" y="312" width="400" height="400"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-ED-LLe">
+                                <rect key="frame" x="1085" y="470" width="175" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-lm-mPX">
+                                <rect key="frame" x="524" y="362" width="520" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ie-jW-0sc">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFN-y2-FIT">
+                                        <rect key="frame" x="130" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4dg-Li-c1c">
+                                        <rect key="frame" x="260" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="94n-ZE-9cV">
+                                        <rect key="frame" x="390" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5e-ex-DY3">
+                                        <rect key="frame" x="0.0" y="130" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnc-Ec-id5">
+                                        <rect key="frame" x="130" y="130" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Hb-ql-rhY">
+                                        <rect key="frame" x="260" y="130" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1YM-eq-cZ7">
+                                        <rect key="frame" x="390" y="130" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.78283488749999997" green="0.68904548880000005" blue="0.49016028639999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j0A-1X-K2k" firstAttribute="leading" secondItem="1ZX-fi-7Hz" secondAttribute="leading" constant="86" id="EE9-5x-dAq"/>
+                            <constraint firstItem="j0A-1X-K2k" firstAttribute="centerY" secondItem="B11-zY-co0" secondAttribute="centerY" id="Z2J-Cb-OXa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1ZX-fi-7Hz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qxw-S3-fAr"/>
+                    <connections>
+                        <outlet property="birdImageView" destination="j0A-1X-K2k" id="ffJ-Kt-9st"/>
+                        <outlet property="result" destination="kE9-ED-LLe" id="p12-b2-OwK"/>
+                        <outlet property="square1" destination="9ie-jW-0sc" id="3Yd-54-FBU"/>
+                        <outlet property="square2" destination="oFN-y2-FIT" id="ZTg-S1-Qlo"/>
+                        <outlet property="square3" destination="4dg-Li-c1c" id="TFn-ff-MNI"/>
+                        <outlet property="square4" destination="94n-ZE-9cV" id="yka-fk-rO2"/>
+                        <outlet property="square5" destination="f5e-ex-DY3" id="eK2-Na-gbz"/>
+                        <outlet property="square6" destination="fnc-Ec-id5" id="vub-8Y-wIh"/>
+                        <outlet property="square7" destination="3Hb-ql-rhY" id="sCL-LH-bl6"/>
+                        <outlet property="square8" destination="1YM-eq-cZ7" id="fgL-SB-DwX"/>
+                        <segue destination="lTM-hH-38L" kind="show" identifier="squareAreaNew" animates="NO" id="ly1-bE-YSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDg-jU-m7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3397" y="-8"/>
         </scene>
         <!--Square Area New View Controller-->
         <scene sceneID="VIE-jz-4po">
@@ -325,7 +426,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qg4-Ak-WET">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="Qg4-Ak-WET">
                                 <rect key="frame" x="140" y="312" width="400" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -370,7 +471,7 @@ l = lebar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMV-Sg-WxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2044.2166910688138" y="-781.0546875"/>
+            <point key="canvasLocation" x="-2049" y="-781"/>
         </scene>
         <!--Square Area Exercise-->
         <scene sceneID="oFr-a4-lnl">
@@ -380,7 +481,7 @@ l = lebar</string>
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KAt-fh-5q5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="KAt-fh-5q5">
                                 <rect key="frame" x="127" y="223" width="350" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -527,6 +628,7 @@ l = lebar</string>
                         <viewLayoutGuide key="safeArea" id="HQn-eK-2ui"/>
                     </view>
                     <connections>
+                        <outlet property="birdImageView" destination="KAt-fh-5q5" id="jAb-Ai-Yay"/>
                         <outlet property="box1" destination="8eC-8u-XzI" id="1jZ-BM-C9F"/>
                         <outlet property="box2" destination="UFF-WG-d4U" id="DfL-lR-S1W"/>
                         <outlet property="boxLabel1" destination="xrq-Nd-81k" id="ejk-ub-gNL"/>
@@ -579,7 +681,7 @@ l = lebar</string>
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-0K-C0M">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-0K-C0M">
                                 <rect key="frame" x="107" y="312" width="400" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -604,6 +706,7 @@ l = lebar</string>
                         <viewLayoutGuide key="safeArea" id="Dxu-ea-vpe"/>
                     </view>
                     <connections>
+                        <outlet property="birdImageView" destination="tKs-0K-C0M" id="pN7-zb-gkf"/>
                         <outlet property="buttonOutlet" destination="jGT-gi-wnM" id="1LY-Yw-8ba"/>
                     </connections>
                 </viewController>
@@ -613,6 +716,6 @@ l = lebar</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Owl1.png" width="400" height="400"/>
+        <image name="Owl-0" width="400" height="400"/>
     </resources>
 </document>
