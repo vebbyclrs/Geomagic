@@ -369,8 +369,8 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="1144" y="761" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yi-u3-TWs">
-                                        <rect key="frame" x="21" y="-1" width="29" height="71"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yi-u3-TWs">
+                                        <rect key="frame" x="0.0" y="-1" width="70" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                         <nil key="textColor"/>
@@ -421,6 +421,9 @@ Berapakah kelilingnya?</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZGw-JP-6O5" appends="YES" id="GJd-be-d6u"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NhI-VZ-CKQ">
                                 <rect key="frame" x="842" y="861" width="90" height="90"/>
@@ -436,6 +439,9 @@ Berapakah kelilingnya?</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3F1-4n-QpB" appends="YES" id="Y68-25-LU2"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nwr-Oj-3fi">
                                 <rect key="frame" x="582" y="861" width="90" height="90"/>
@@ -451,6 +457,9 @@ Berapakah kelilingnya?</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2QR-ph-5RC" appends="YES" id="Lkw-Bg-ge2"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -500,6 +509,21 @@ Berapakah kelilingnya?</string>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="D6s-nO-Jt5">
                     <connections>
                         <action selector="pan5right:" destination="EJe-3A-IAN" id="tfP-Iq-Fcr"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZGw-JP-6O5">
+                    <connections>
+                        <action selector="pan26option:" destination="EJe-3A-IAN" id="gy4-IN-21Y"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="2QR-ph-5RC">
+                    <connections>
+                        <action selector="pan27option:" destination="EJe-3A-IAN" id="fuD-Ax-6pM"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3F1-4n-QpB">
+                    <connections>
+                        <action selector="pan28option:" destination="EJe-3A-IAN" id="0ZY-v9-hiz"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
