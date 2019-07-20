@@ -38,7 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonAction:" destination="rMN-EQ-miF" eventType="touchUpInside" id="Zho-Q0-486"/>
-                                    <segue destination="CtK-fm-FRK" kind="show" animates="NO" id="15j-Mo-tIR"/>
+                                    <segue destination="CtK-fm-FRK" kind="show" id="DCG-Q9-Fg8"/>
                                 </connections>
                             </button>
                         </subviews>
