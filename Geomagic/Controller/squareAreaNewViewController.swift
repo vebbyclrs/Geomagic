@@ -40,7 +40,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap1(_ sender: UITapGestureRecognizer) {
-        square1.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square1.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -49,7 +49,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap2(_ sender: UITapGestureRecognizer) {
-        square2.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square2.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -58,7 +58,7 @@ class squareAreaNewViewController: UIViewController {
     }
    
     @IBAction func tap3(_ sender: UITapGestureRecognizer) {
-        square3.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square3.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -67,7 +67,7 @@ class squareAreaNewViewController: UIViewController {
     }
    
     @IBAction func tap4(_ sender: UITapGestureRecognizer) {
-        square4.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square4.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -76,7 +76,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap5(_ sender: UITapGestureRecognizer) {
-        square5.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square5.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -85,7 +85,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap6(_ sender: UITapGestureRecognizer) {
-        square6.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square6.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -94,7 +94,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap7(_ sender: UITapGestureRecognizer) {
-        square7.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square7.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -103,7 +103,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap8(_ sender: UITapGestureRecognizer) {
-        square8.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square8.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -112,7 +112,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap9(_ sender: UITapGestureRecognizer) {
-        square9.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square9.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -121,7 +121,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap10(_ sender: UITapGestureRecognizer) {
-        square10.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square10.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -130,7 +130,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap11(_ sender: UITapGestureRecognizer) {
-        square11.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square11.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -139,7 +139,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap12(_ sender: UITapGestureRecognizer) {
-        square12.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square12.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -148,7 +148,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap13(_ sender: UITapGestureRecognizer) {
-        square13.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square13.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -157,7 +157,7 @@ class squareAreaNewViewController: UIViewController {
     }
    
     @IBAction func tap14(_ sender: UITapGestureRecognizer) {
-        square14.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square14.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
@@ -166,7 +166,7 @@ class squareAreaNewViewController: UIViewController {
     }
     
     @IBAction func tap15(_ sender: UITapGestureRecognizer) {
-        square15.backgroundColor = #colorLiteral(red: 0.725949347, green: 0.5928210616, blue: 0.4657328725, alpha: 1)
+        square15.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
         }
