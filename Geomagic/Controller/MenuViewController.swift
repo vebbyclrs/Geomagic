@@ -12,6 +12,8 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var chosenShape : Shape?
+    
     
     var shapes : [Shape] = [
         Shape(shapeType: .persegi, imageAssetTittled:"Square", level: 0),
@@ -34,6 +36,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         let appData = AppData()
         self.userLevel = appData.level
         self.userLevel = 2
+        
         // Do any additional setup after loading the view.
     }
     
@@ -60,15 +63,17 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell
-//        let isLocked : Bool = userLevel < shapes[indexPath.row].level
-//
-//        if !isLocked {
-//            if let lastCell = cell {
-//                showBlueUpperLayerWithButtons(show: false, cell: lastCell)
-//            }
-//        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "subMenuSegue" {
+            let dest = segue.destination as! SubMenuViewController
+            dest.shape = self.chosenShape
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        chosenShape = shapes[indexPath.row]
+        performSegue(withIdentifier: "subMenuSegue", sender: self)
     }
     
     func showHiddenCell(cell:CollectionViewCell) {
@@ -104,6 +109,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
     }
     
+        
 }
 
 // MARK: - Button Click

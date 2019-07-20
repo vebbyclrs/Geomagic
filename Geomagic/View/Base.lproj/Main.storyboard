@@ -155,7 +155,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="248" height="248"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Locker" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-y0-CAi">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="248.00000000000003" height="248"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="248" height="248"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,9 +219,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WUy-Dm-Nm0" id="qtN-YX-eNr"/>
-                        <segue destination="IeM-Mb-b0L" kind="show" identifier="goToPengenalanPersegi" id="NMx-Jr-GGN"/>
-                        <segue destination="wmA-LV-Ix6" kind="show" identifier="goToKeliling" id="CDa-RH-TZK"/>
-                        <segue destination="Wvm-8y-bGp" kind="show" identifier="goToLuasPersegi" id="8ml-lx-gtx"/>
+                        <segue destination="Idq-6w-9FF" kind="show" identifier="subMenuSegue" id="ZMN-wQ-Mtc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atE-s1-xJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -620,12 +618,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNc-R2-Ibj">
-                                <rect key="frame" x="1233" y="84" width="73" height="71"/>
+                                <rect key="frame" x="1290" y="84" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="pvL-og-jUt" kind="unwind" unwindAction="unwindToHome:" id="HLY-fq-sUR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-Xe-Vjb">
-                                <rect key="frame" x="90" y="827" width="107" height="87"/>
+                                <rect key="frame" x="90" y="892" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="Idq-6w-9FF" eventType="touchUpInside" id="jdP-Kr-68g"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpy-XJ-SP8">
                                 <rect key="frame" x="100" y="182" width="1166" height="71"/>
@@ -749,6 +753,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pvL-og-jUt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="815.66617862371879" y="-1144.3359375"/>
         </scene>
