@@ -48,6 +48,12 @@ class PerimeterTrainingExerciseViewController: UIViewController {
          option27.isHidden = true
          option28.isHidden = true
         view.bringSubviewToFront(label9up)
+        
+        view.bringSubviewToFront(label9down)
+        
+        view.bringSubviewToFront(label5left)
+        
+        view.bringSubviewToFront(label5right)
         view.bringSubviewToFront(box1label)
         view.bringSubviewToFront(box2label)
         view.bringSubviewToFront(box3label)
