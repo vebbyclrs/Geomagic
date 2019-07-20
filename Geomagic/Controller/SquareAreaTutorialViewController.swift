@@ -31,10 +31,6 @@ class SquareAreaTutorialViewController: UIViewController {
         super.viewDidLoad()
         squareBorder()
         result.isHidden = true
-//        if resultValue == 8{
-//            performSegue(withIdentifier: "squareAreaNew", sender: nil)
-//        }
-//        squareAnimation()
         var owlImage: [UIImage] = []
         
         owlImage = createImageArray(total: 2, imagePrefix: "Owl")
@@ -87,49 +83,6 @@ class SquareAreaTutorialViewController: UIViewController {
             })
         }
     }
-    
-//    func squareAnimation(){
-//        UIView.animate(withDuration: 1, animations: {
-//            self.square1.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//            self.resultValue += 1
-//            self.result.isHidden = false
-//        }) { (true) in
-//            UIView.animate(withDuration: 1, animations: {
-//                self.square2.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                self.resultValue += 1
-//            }, completion: { (true) in
-//                UIView.animate(withDuration: 1, animations: {
-//                    self.square3.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                    self.resultValue += 1
-//                }, completion: { (true) in
-//                    UIView.animate(withDuration: 1, animations: {
-//                        self.square4.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                        self.resultValue += 1
-//                    }, completion: { (true) in
-//                        UIView.animate(withDuration: 1, animations: {
-//                            self.square5.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                            self.resultValue += 1
-//                        }, completion: { (true) in
-//                            UIView.animate(withDuration: 1, animations: {
-//                                self.square6.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                                self.resultValue += 1
-//                            }, completion: { (true) in
-//                                UIView.animate(withDuration: 1, animations: {
-//                                    self.square7.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                                    self.resultValue += 1
-//                                }, completion: { (true) in
-//                                    UIView.animate(withDuration: 1, animations: {
-//                                        self.square8.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
-//                                        self.resultValue += 1
-//                                    })
-//                                })
-//                            })
-//                        })
-//                    })
-//                })
-//            })
-//        }
-//    }
     
     func createImageArray(total: Int, imagePrefix: String) -> [UIImage]{
         
