@@ -23,3 +23,15 @@ extension UIButton {
         //apalah ini capek gue
     }
 }
+
+extension UIViewController {
+    func performSegueToReturnBack()  {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+            print ("1")
+        } else {
+            self.dismiss(animated: true, completion: nil)
+            print ("2")
+        }
+    }
+}

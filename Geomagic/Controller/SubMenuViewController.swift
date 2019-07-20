@@ -19,6 +19,10 @@ class SubMenuViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func backTapped(_ sender: Any) {
+        self.performSegueToReturnBack()
+        
+    }
     
     func prepareView() {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
