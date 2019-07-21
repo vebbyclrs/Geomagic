@@ -20,16 +20,18 @@ class PerimeterViewController: UIViewController {
     @IBOutlet weak var viewForLine: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-        viewForLine.layer.addSublayer(shapeLayer)
+    viewForLine.layer.addSublayer(shapeLayer)
         shapeLayer.strokeColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
         shapeLayer.lineWidth = 12
         shapeLayer.fillColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         viewForLine.layer.addSublayer(tempShapeLayer)
         tempShapeLayer.strokeColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
         tempShapeLayer.lineWidth = 12
-        tempShapeLayer.fillColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)}
+        tempShapeLayer.fillColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+         view.initialView()
+    
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -67,5 +69,12 @@ class PerimeterViewController: UIViewController {
         print("lokasi Akhir = \(lokasiAkhir)")
     }
 
+    
+}
+
+extension UIView{
+    func initialView () {
+        self.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+    }
     
 }
