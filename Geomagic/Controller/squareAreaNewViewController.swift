@@ -43,12 +43,19 @@ class squareAreaNewViewController: UIViewController {
         prepareView()
         squareBorder()
         resultLabel.isHidden = true
+
     }
     
     @IBAction func tap1(_ sender: UITapGestureRecognizer) {
         square1.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square1.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -58,6 +65,12 @@ class squareAreaNewViewController: UIViewController {
         square2.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square2.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -67,6 +80,12 @@ class squareAreaNewViewController: UIViewController {
         square3.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square3.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -76,6 +95,12 @@ class squareAreaNewViewController: UIViewController {
         square4.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square4.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -85,6 +110,12 @@ class squareAreaNewViewController: UIViewController {
         square5.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square5.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -94,6 +125,12 @@ class squareAreaNewViewController: UIViewController {
         square6.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square6.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -103,6 +140,12 @@ class squareAreaNewViewController: UIViewController {
         square7.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square7.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -112,6 +155,12 @@ class squareAreaNewViewController: UIViewController {
         square8.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square8.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -121,6 +170,12 @@ class squareAreaNewViewController: UIViewController {
         square9.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square9.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -130,6 +185,12 @@ class squareAreaNewViewController: UIViewController {
         square10.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square10.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -139,6 +200,12 @@ class squareAreaNewViewController: UIViewController {
         square11.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square11.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -148,6 +215,12 @@ class squareAreaNewViewController: UIViewController {
         square12.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square12.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -157,6 +230,12 @@ class squareAreaNewViewController: UIViewController {
         square13.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square13.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -166,6 +245,12 @@ class squareAreaNewViewController: UIViewController {
         square14.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square14.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -175,6 +260,12 @@ class squareAreaNewViewController: UIViewController {
         square15.backgroundColor = #colorLiteral(red: 0.5900922418, green: 0.4826520681, blue: 0.3837720156, alpha: 1)
         if resultValue < 15{
             resultValue += 1
+            if resultValue == 15{
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "squareFormula")
+                    self.show(nextVC!, sender: nil)
+                }
+            }
         }
         square15.isUserInteractionEnabled = false
         resultLabel.isHidden = false
@@ -235,4 +326,6 @@ class squareAreaNewViewController: UIViewController {
     func prepareView () {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
+    
+    
 }
