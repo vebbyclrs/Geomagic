@@ -21,6 +21,10 @@ class SquareAreaFormulaViewController: UIViewController {
         animate(imageView: birdImageView, images: owlImage)
         prepareView()
         roundedView()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "AreaFormulaTutorial")
+            self.show(nextVC!, sender: nil)
+        }
     }
     
     func roundedView(){

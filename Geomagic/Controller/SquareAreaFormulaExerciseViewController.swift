@@ -35,6 +35,7 @@ class SquareAreaFormulaExerciseViewController: UIViewController {
         owlImage = createImageArray(total: 2, imagePrefix: "Owl")
         animate(imageView: birdImageView, images: owlImage)
         prepareView()
+        roundedOption()
         boxLabel1.isHidden = true
         boxLabel2.isHidden = true
         boxLabelResult.isHidden = true
@@ -44,25 +45,34 @@ class SquareAreaFormulaExerciseViewController: UIViewController {
         super.viewDidAppear(animated)
 
         UILabel.animate(withDuration: 1, animations: {
-            self.label5.frame.origin.x = 348
-            self.label5.frame.origin.y = 740
+            self.label8.frame.origin.x = 348
+            self.label8.frame.origin.y = 740
         }) { (true) in
-            self.label5.font = self.label5.font.withSize(50)
+            self.label8.font = self.label8.font.withSize(50)
             UILabel.animate(withDuration: 1, animations: {
-                self.label8.frame.origin.x = 635
-                self.label8.frame.origin.y = 743
+                self.label5.frame.origin.x = 635
+                self.label5.frame.origin.y = 743
             }, completion: { (true) in
-                self.label8.font = self.label8.font.withSize(50)
+                self.label5.font = self.label5.font.withSize(50)
                 UIView.animate(withDuration: 1, animations: {
                     self.option40.frame.origin.x = 940
                     self.option40.frame.origin.y = 740
                 }, completion: { (true) in
-                    self.option40.alpha = 0.0
-                    self.boxLabelResult.isHidden = false
-                    self.boxLabelResult.text = "40"
+                    UIView.animate(withDuration: 1, animations: {
+                        self.option40.alpha = 0.0
+                        self.boxLabelResult.isHidden = false
+                        self.boxLabelResult.text = "40"
+                    }, completion: { (true) in
+                        self.performSegue(withIdentifier: "nextFromulaExercise", sender: animated)
+                    })
                 })
             })
         }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + UILabel.inheritedAnimationDuration) {
+//            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "FormulaExercise")
+//            self.show(nextVC!, sender: nil)
+//        }
     }
     
     func createImageArray(total: Int, imagePrefix: String) -> [UIImage]{
@@ -86,5 +96,11 @@ class SquareAreaFormulaExerciseViewController: UIViewController {
     
     func prepareView () {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+    }
+    
+    func roundedOption(){
+        option40.layer.cornerRadius = 45
+        option42.layer.cornerRadius = 45
+        option44.layer.cornerRadius = 45
     }
 }
