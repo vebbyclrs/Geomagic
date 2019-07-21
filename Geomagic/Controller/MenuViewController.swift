@@ -12,7 +12,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var chosenShape : Shape?
+    var chosenShape : ShapeType?
     
     
     var shapes : [Shape] = [
@@ -64,7 +64,6 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "subMenuSegue" {
             let dest = segue.destination as! SubMenuViewController
             dest.shapePassed = self.chosenShape
@@ -72,7 +71,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        chosenShape = shapes[indexPath.row]
+        chosenShape = shapes[indexPath.row].shapeType
         performSegue(withIdentifier: "subMenuSegue", sender: self)
     }
     

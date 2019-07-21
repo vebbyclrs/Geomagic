@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		85C6DB9A22E076E4005DC375 /* perimeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C6DB9922E076E4005DC375 /* perimeter.storyboard */; };
-		85C6DB9C22E07754005DC375 /* PerimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6DB9B22E07754005DC375 /* PerimeterViewController.swift */; };
 		ABC6C3F422DF11CE0024A04A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F322DF11CE0024A04A /* Question.swift */; };
 		ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */; };
 		ABC6C3F822DF11F00024A04A /* ExcerciseButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */; };
@@ -19,8 +18,9 @@
 		ABF0497B22DA3AA10073E30E /* Owl1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497922DA3AA10073E30E /* Owl1.png */; };
 		ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0497F22DA463A0073E30E /* BirdAnimate.swift */; };
 		CC36920A22E1B6E100CEB078 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920922E1B6E100CEB078 /* Template.swift */; };
-		CC36920C22E1D8A900CEB078 /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920B22E1D8A900CEB078 /* SubMenuViewController.swift */; };
 		CC36920E22E1E39100CEB078 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920D22E1E39100CEB078 /* MenuViewController.swift */; };
+		CC42D9D722E48B8A0094DF4A /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42D9D522E48B8A0094DF4A /* SubMenuViewController.swift */; };
+		CC42D9D822E48B8A0094DF4A /* SubmenuSegitigaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42D9D622E48B8A0094DF4A /* SubmenuSegitigaViewController.swift */; };
 		CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70B922D48893001C402C /* AppDelegate.swift */; };
 		CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70BB22D48893001C402C /* HomeViewController.swift */; };
 		CC4D70BF22D48893001C402C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70BD22D48893001C402C /* Main.storyboard */; };
@@ -50,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		85C6DB9922E076E4005DC375 /* perimeter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = perimeter.storyboard; sourceTree = "<group>"; };
-		85C6DB9B22E07754005DC375 /* PerimeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterViewController.swift; sourceTree = "<group>"; };
 		ABC6C3F322DF11CE0024A04A /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareQuestion.swift; sourceTree = "<group>"; };
 		ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseButtonExtension.swift; sourceTree = "<group>"; };
@@ -61,8 +60,9 @@
 		ABF0497922DA3AA10073E30E /* Owl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl1.png; sourceTree = "<group>"; };
 		ABF0497F22DA463A0073E30E /* BirdAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimate.swift; sourceTree = "<group>"; };
 		CC36920922E1B6E100CEB078 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
-		CC36920B22E1D8A900CEB078 /* SubMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
 		CC36920D22E1E39100CEB078 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CC42D9D522E48B8A0094DF4A /* SubMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
+		CC42D9D622E48B8A0094DF4A /* SubmenuSegitigaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmenuSegitigaViewController.swift; sourceTree = "<group>"; };
 		CC4D70B622D48893001C402C /* Geomagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geomagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D70B922D48893001C402C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4D70BB22D48893001C402C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +180,8 @@
 			children = (
 				CC36920D22E1E39100CEB078 /* MenuViewController.swift */,
 				CC4D70BB22D48893001C402C /* HomeViewController.swift */,
+				CC42D9D622E48B8A0094DF4A /* SubmenuSegitigaViewController.swift */,
+				CC42D9D522E48B8A0094DF4A /* SubMenuViewController.swift */,
 				CC4D70D222D4901D001C402C /* InformationPageViewController.swift */,
 				CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */,
 				CC4D70D622D49037001C402C /* LetsGoViewController.swift */,
@@ -193,7 +195,6 @@
 				DC16BFFB22E0B36F004802D0 /* SquareAreaExerciseViewController.swift */,
 				DC16BFFD22E1AFEB004802D0 /* SquareAreaEndViewController.swift */,
 				DC16BFFF22E1B663004802D0 /* SquareAreaFormulaViewController.swift */,
-
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,17 +292,17 @@
 				CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */,
 				DC16BFFC22E0B36F004802D0 /* SquareAreaExerciseViewController.swift in Sources */,
 				CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */,
-				CC36920C22E1D8A900CEB078 /* SubMenuViewController.swift in Sources */,
 				CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */,
 				ABC6C3FC22DF12150024A04A /* ExcerciseSquare.swift in Sources */,
 				ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
 				ABC6C3FA22DF11F40024A04A /* OptionLatihanButton.swift in Sources */,
 				DC16BFFA22E0AA38004802D0 /* SquareArea1ViewController.swift in Sources */,
-				85C6DB9C22E07754005DC375 /* PerimeterViewController.swift in Sources */,
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,
 				CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */,
+				CC42D9D722E48B8A0094DF4A /* SubMenuViewController.swift in Sources */,
 				CCA1511922D7BF44004627CE /* Shape.swift in Sources */,
+				CC42D9D822E48B8A0094DF4A /* SubmenuSegitigaViewController.swift in Sources */,
 				CCA1511B22D7C2CB004627CE /* AppData.swift in Sources */,
 				ABC6C3F422DF11CE0024A04A /* Question.swift in Sources */,
 				DC16C00022E1B663004802D0 /* SquareAreaFormulaViewController.swift in Sources */,
