@@ -34,11 +34,11 @@ class Shape {
     var shapeType : ShapeType
     var shapeImage : UIImage
     var level : Int
-    var segitiga:SegitigaTypes? {
-        didSet{
-            shapeType = .segitiga
-        }
-    }
+//    var segitiga:SegitigaTypes? {
+//        didSet{
+//            shapeType = .segitiga
+//        }
+//    }
     
     init(shapeType:ShapeType,imageAssetTittled:String, level : Int) {
         self.shapeName = shapeType.rawValue

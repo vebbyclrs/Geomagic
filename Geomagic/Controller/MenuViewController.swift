@@ -67,7 +67,7 @@ class MenuViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         if segue.identifier == "subMenuSegue" {
             let dest = segue.destination as! SubMenuViewController
-            dest.shape = self.chosenShape
+            dest.shapePassed = self.chosenShape
         }
     }
     
