@@ -69,8 +69,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="j0A-1X-K2k">
                                 <rect key="frame" x="86" y="312" width="400" height="400"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-ED-LLe">
-                                <rect key="frame" x="1085" y="470" width="175" height="84"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-ED-LLe">
+                                <rect key="frame" x="1131" y="470" width="90" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
                                 <nil key="textColor"/>
@@ -518,7 +518,7 @@ l = lebar</string>
         <!--Square Area Formula Exercise View Controller-->
         <scene sceneID="fdb-MW-hO0">
             <objects>
-                <viewController id="ZQt-D0-8dF" customClass="SquareAreaFormulaExerciseViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AreaFormulaTutorial" id="ZQt-D0-8dF" customClass="SquareAreaFormulaExerciseViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="itv-kB-iNz">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -670,7 +670,7 @@ l = lebar</string>
                         <outlet property="option40" destination="gDm-ha-ji4" id="0M9-9A-piP"/>
                         <outlet property="option42" destination="YEf-Ze-scf" id="XVf-ZY-paI"/>
                         <outlet property="option44" destination="VKj-aA-n2e" id="GSV-rG-QDE"/>
-                        <segue destination="lnE-ZZ-ufz" kind="show" id="AZr-hd-hes"/>
+                        <segue destination="lnE-ZZ-ufz" kind="show" identifier="nextFromulaExercise" id="AZr-hd-hes"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLp-eT-pCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -680,7 +680,7 @@ l = lebar</string>
         <!--Square Area Exercise-->
         <scene sceneID="oFr-a4-lnl">
             <objects>
-                <viewController title="Square Area Exercise" id="lnE-ZZ-ufz" customClass="SquareAreaExerciseViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FormulaExercise" title="Square Area Exercise" id="lnE-ZZ-ufz" customClass="SquareAreaExerciseViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B9C-gr-xsQ">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -880,7 +880,7 @@ l = lebar</string>
         <!--Square Area End View Controller-->
         <scene sceneID="Kjg-WT-dqM">
             <objects>
-                <viewController id="X6W-Io-hde" customClass="SquareAreaEndViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EndSquareArea" id="X6W-Io-hde" customClass="SquareAreaEndViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9AR-M8-IAk">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

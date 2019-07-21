@@ -66,6 +66,7 @@ class SquareAreaExerciseViewController: UIViewController {
         
         prepareView()
         roundedOption()
+        
     }
     
     @IBAction func pan4Handle(_ sender: UIPanGestureRecognizer) {
@@ -163,6 +164,10 @@ class SquareAreaExerciseViewController: UIViewController {
                 }
                 boxLabelResult.text = label20.text
                 boxLabelResult.isHidden = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "EndSquareArea")
+                    self.show(nextVC!, sender: nil)
+                }
             }else{
                 UIView.animate(withDuration: 0.3) {
                     self.option20.frame.origin = self.option20Origin
