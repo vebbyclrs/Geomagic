@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yxr-MA-8vF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MYA-np-hWo">
     <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,36 +21,24 @@
                             <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-JO-gxx">
                                 <rect key="frame" x="546" y="177.5" width="500" height="669"/>
                                 <subviews>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-jw-Dpp">
-                                        <rect key="frame" x="24.5" y="0.0" width="451" height="106"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-xn-TBu">
-                                                <rect key="frame" x="0.0" y="0.0" width="451" height="106"/>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.87843137250000003" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Qw1-xn-TBu" secondAttribute="bottom" id="6v1-C3-ve5"/>
-                                            <constraint firstItem="Qw1-xn-TBu" firstAttribute="leading" secondItem="bjU-jw-Dpp" secondAttribute="leading" id="dWx-pr-ReQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qw1-xn-TBu" secondAttribute="trailing" id="fOO-Za-gCX"/>
-                                            <constraint firstItem="Qw1-xn-TBu" firstAttribute="top" secondItem="bjU-jw-Dpp" secondAttribute="top" id="xAr-D4-Avi"/>
-                                        </constraints>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giliran Kamu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-xn-TBu">
+                                        <rect key="frame" x="103" y="0.0" width="294.5" height="356"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0o-QQ-gFl">
-                                        <rect key="frame" x="0.0" y="169" width="500" height="500"/>
+                                        <rect key="frame" x="0.0" y="419" width="500" height="250"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-bJ-5B6">
-                                                <rect key="frame" x="-12" y="-14" width="525" height="525"/>
+                                                <rect key="frame" x="-12" y="-14" width="525" height="275"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="500" id="I8L-Tb-Hvn"/>
-                                            <constraint firstAttribute="height" constant="500" id="kPf-cb-JPU"/>
+                                            <constraint firstAttribute="height" constant="250" id="kPf-cb-JPU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -73,6 +61,7 @@
                     <connections>
                         <outlet property="shapeView" destination="F0o-QQ-gFl" id="scw-Pu-2by"/>
                         <outlet property="viewForLine" destination="0gI-bJ-5B6" id="ibG-Ho-yRD"/>
+                        <segue destination="vQE-M6-nWf" kind="show" id="McR-Zs-WnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugO-eY-sOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -240,6 +229,9 @@ Berapakah kelilingnya?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yO2-xK-p2p"/>
                     </view>
+                    <connections>
+                        <segue destination="EJe-3A-IAN" kind="show" id="MVT-0v-j6A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz5-HW-ok9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,6 +480,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option26" destination="XLf-om-PR1" id="OGn-wD-p8y"/>
                         <outlet property="option27" destination="Nwr-Oj-3fi" id="EYb-Jh-nOH"/>
                         <outlet property="option28" destination="NhI-VZ-CKQ" id="v56-2n-HFA"/>
+                        <segue destination="8AY-Sj-bD1" kind="show" id="k9M-wR-lEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v56-lP-Iww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -573,6 +566,9 @@ Berapakah kelilingnya?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WgZ-QF-TYv"/>
                     </view>
+                    <connections>
+                        <segue destination="Yxr-MA-8vF" kind="show" id="yUM-7S-dtD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISW-ut-cRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -852,6 +848,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option24" destination="OnM-1B-WEd" id="bEj-wx-6gW"/>
                         <outlet property="option25" destination="6tN-qz-enV" id="hrr-VK-6c0"/>
                         <outlet property="option27" destination="VB2-zi-wGD" id="tPP-8K-Av2"/>
+                        <segue destination="mQl-tL-IrP" kind="show" id="288-Lh-0V6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XP-VX-raF" userLabel="First Responder" sceneMemberID="firstResponder"/>

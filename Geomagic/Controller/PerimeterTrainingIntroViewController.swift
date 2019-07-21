@@ -12,6 +12,7 @@ class PerimeterTrainingIntroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       view.initialView()
     }
     
 
