@@ -67,7 +67,7 @@ class PerimeterTrainingExerciseViewController: UIViewController {
         option26Origin = option26.frame.origin
         option27Origin = option27.frame.origin
         option28Origin = option28.frame.origin
-
+        view.initialView()
     }
  
     // MARK: Pan Gesture For Label and Option

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yxr-MA-8vF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vQE-M6-nWf">
     <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,36 +21,24 @@
                             <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-JO-gxx">
                                 <rect key="frame" x="546" y="177.5" width="500" height="669"/>
                                 <subviews>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-jw-Dpp">
-                                        <rect key="frame" x="24.5" y="0.0" width="451" height="106"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-xn-TBu">
-                                                <rect key="frame" x="0.0" y="0.0" width="451" height="106"/>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.87843137250000003" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Qw1-xn-TBu" secondAttribute="bottom" id="6v1-C3-ve5"/>
-                                            <constraint firstItem="Qw1-xn-TBu" firstAttribute="leading" secondItem="bjU-jw-Dpp" secondAttribute="leading" id="dWx-pr-ReQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qw1-xn-TBu" secondAttribute="trailing" id="fOO-Za-gCX"/>
-                                            <constraint firstItem="Qw1-xn-TBu" firstAttribute="top" secondItem="bjU-jw-Dpp" secondAttribute="top" id="xAr-D4-Avi"/>
-                                        </constraints>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giliran Kamu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-xn-TBu">
+                                        <rect key="frame" x="103" y="0.0" width="294.5" height="356"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0o-QQ-gFl">
-                                        <rect key="frame" x="0.0" y="169" width="500" height="500"/>
+                                        <rect key="frame" x="0.0" y="419" width="500" height="250"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-bJ-5B6">
-                                                <rect key="frame" x="-12" y="-14" width="525" height="525"/>
+                                                <rect key="frame" x="-12" y="-14" width="525" height="275"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="500" id="I8L-Tb-Hvn"/>
-                                            <constraint firstAttribute="height" constant="500" id="kPf-cb-JPU"/>
+                                            <constraint firstAttribute="height" constant="250" id="kPf-cb-JPU"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -73,6 +61,7 @@
                     <connections>
                         <outlet property="shapeView" destination="F0o-QQ-gFl" id="scw-Pu-2by"/>
                         <outlet property="viewForLine" destination="0gI-bJ-5B6" id="ibG-Ho-yRD"/>
+                        <segue destination="vQE-M6-nWf" kind="show" id="McR-Zs-WnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugO-eY-sOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,8 +76,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NhJ-XX-2L7">
-                                <rect key="frame" x="680" y="364" width="500" height="250"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhJ-XX-2L7">
+                                <rect key="frame" x="680" y="387" width="500" height="250"/>
                                 <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="Ie3-Kn-pXV"/>
@@ -96,42 +85,41 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kyG-ec-pYd">
-                                <rect key="frame" x="119" y="348" width="240" height="228"/>
+                                <rect key="frame" x="1.5" y="348" width="400" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-kE-cws">
+                            <label opaque="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-kE-cws">
                                 <rect key="frame" x="1188" y="468" width="57" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-bG-HLN">
+                            <label opaque="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-bG-HLN">
                                 <rect key="frame" x="615" y="468" width="57" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-RZ-fYS">
-                                <rect key="frame" x="902" y="314" width="57" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-RZ-fYS">
+                                <rect key="frame" x="944.5" y="323" width="14.5" height="33"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX2-WU-E20">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX2-WU-E20">
                                 <rect key="frame" x="902" y="622" width="57" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quk-Vv-hhf">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Quk-Vv-hhf">
                                 <rect key="frame" x="226" y="763" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVX-Bj-Rlw">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVX-Bj-Rlw">
                                         <rect key="frame" x="21" y="-1" width="29" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
@@ -141,11 +129,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pB4-ZF-F6O">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pB4-ZF-F6O">
                                 <rect key="frame" x="895" y="762" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qby-Mv-qkB">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qby-Mv-qkB">
                                         <rect key="frame" x="21" y="-1" width="29" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
@@ -155,11 +143,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cE4-No-y1Z">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cE4-No-y1Z">
                                 <rect key="frame" x="680" y="762" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2t-0v-2lu">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2t-0v-2lu">
                                         <rect key="frame" x="21" y="-1" width="29" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
@@ -169,11 +157,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XsB-k9-2UA">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XsB-k9-2UA">
                                 <rect key="frame" x="457" y="763" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFK-CQ-vas">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFK-CQ-vas">
                                         <rect key="frame" x="21" y="-1" width="29" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
@@ -183,12 +171,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCp-Wd-FlV">
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCp-Wd-FlV">
                                 <rect key="frame" x="1144" y="761" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92y-RD-dq2">
-                                        <rect key="frame" x="21" y="-1" width="29" height="71"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92y-RD-dq2">
+                                        <rect key="frame" x="0.0" y="-1" width="70" height="71"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                         <nil key="textColor"/>
@@ -197,37 +185,36 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.83108538389999997" green="0.82415944340000002" blue="0.78430908919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukg-cb-73S">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukg-cb-73S">
                                 <rect key="frame" x="584" y="761" width="27" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0b-xT-27c">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0b-xT-27c">
                                 <rect key="frame" x="366" y="763" width="27" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRA-uN-4Ae">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRA-uN-4Ae">
                                 <rect key="frame" x="809" y="761" width="27" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJP-bC-wmo">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJP-bC-wmo">
                                 <rect key="frame" x="1048" y="762" width="25" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-ut-i9l">
-                                <rect key="frame" x="677" y="80" width="503" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-ut-i9l">
+                                <rect key="frame" x="677" y="165.5" width="503" height="130.5"/>
                                 <string key="text">Misalkan sebuah persegi panjang memiliki 
 panjang = 7cm 
 lebar = 3cm
@@ -238,8 +225,40 @@ Berapakah kelilingnya?</string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NhJ-XX-2L7" secondAttribute="trailing" constant="166" id="GcO-Sd-tKX"/>
+                            <constraint firstItem="Mya-ut-i9l" firstAttribute="top" secondItem="yO2-xK-p2p" secondAttribute="top" constant="141.5" id="Vt1-hK-miu"/>
+                            <constraint firstItem="2FQ-RZ-fYS" firstAttribute="top" secondItem="Mya-ut-i9l" secondAttribute="bottom" constant="27" id="c8s-5T-I5V"/>
+                            <constraint firstItem="yO2-xK-p2p" firstAttribute="trailing" secondItem="Mya-ut-i9l" secondAttribute="trailing" constant="186" id="eLk-Li-T6f"/>
+                            <constraint firstItem="NhJ-XX-2L7" firstAttribute="top" secondItem="2FQ-RZ-fYS" secondAttribute="bottom" constant="31" id="fMH-Py-rOr"/>
+                            <constraint firstItem="yO2-xK-p2p" firstAttribute="trailing" secondItem="2FQ-RZ-fYS" secondAttribute="trailing" constant="407" id="oOw-1F-Tee"/>
+                            <constraint firstItem="NhJ-XX-2L7" firstAttribute="centerY" secondItem="UyV-pr-xW3" secondAttribute="centerY" id="wfZ-hU-pKH"/>
+                            <constraint firstItem="Mya-ut-i9l" firstAttribute="leading" secondItem="yO2-xK-p2p" secondAttribute="leading" constant="677" id="zWp-4f-ykw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yO2-xK-p2p"/>
                     </view>
+                    <connections>
+                        <outlet property="box1" destination="Quk-Vv-hhf" id="cWj-pf-UTk"/>
+                        <outlet property="box1label" destination="TVX-Bj-Rlw" id="UBA-hV-7a2"/>
+                        <outlet property="box2" destination="XsB-k9-2UA" id="1YU-OE-g3s"/>
+                        <outlet property="box2label" destination="bFK-CQ-vas" id="gMn-lf-r24"/>
+                        <outlet property="box3" destination="cE4-No-y1Z" id="1bQ-mu-gzU"/>
+                        <outlet property="box3label" destination="n2t-0v-2lu" id="F1S-Xz-YAK"/>
+                        <outlet property="box4" destination="pB4-ZF-F6O" id="fKR-cp-9jE"/>
+                        <outlet property="box4label" destination="qby-Mv-qkB" id="Kt2-dG-X2p"/>
+                        <outlet property="boxResult" destination="aCp-Wd-FlV" id="pqg-zB-z8H"/>
+                        <outlet property="boxResultLabel" destination="92y-RD-dq2" id="EEn-BM-tAf"/>
+                        <outlet property="label3left" destination="6eU-bG-HLN" id="fvz-Bo-FUu"/>
+                        <outlet property="label3right" destination="WFw-kE-cws" id="aQJ-eR-VWq"/>
+                        <outlet property="label7down" destination="UX2-WU-E20" id="23Y-fG-Hrq"/>
+                        <outlet property="label7up" destination="2FQ-RZ-fYS" id="SqC-iB-inK"/>
+                        <outlet property="labelEqual" destination="RJP-bC-wmo" id="kn4-MM-QNE"/>
+                        <outlet property="labelExplanation" destination="Mya-ut-i9l" id="owF-Rn-RGe"/>
+                        <outlet property="labelPlus1" destination="G0b-xT-27c" id="lwo-Cn-Ov6"/>
+                        <outlet property="labelPlus2" destination="Ukg-cb-73S" id="bSX-u2-zAH"/>
+                        <outlet property="labelPlus3" destination="WRA-uN-4Ae" id="wAr-fk-nOg"/>
+                        <segue destination="EJe-3A-IAN" kind="show" id="MVT-0v-j6A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz5-HW-ok9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,6 +507,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option26" destination="XLf-om-PR1" id="OGn-wD-p8y"/>
                         <outlet property="option27" destination="Nwr-Oj-3fi" id="EYb-Jh-nOH"/>
                         <outlet property="option28" destination="NhI-VZ-CKQ" id="v56-2n-HFA"/>
+                        <segue destination="8AY-Sj-bD1" kind="show" id="k9M-wR-lEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v56-lP-Iww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -573,6 +593,9 @@ Berapakah kelilingnya?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WgZ-QF-TYv"/>
                     </view>
+                    <connections>
+                        <segue destination="Yxr-MA-8vF" kind="show" id="yUM-7S-dtD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISW-ut-cRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -852,6 +875,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option24" destination="OnM-1B-WEd" id="bEj-wx-6gW"/>
                         <outlet property="option25" destination="6tN-qz-enV" id="hrr-VK-6c0"/>
                         <outlet property="option27" destination="VB2-zi-wGD" id="tPP-8K-Av2"/>
+                        <segue destination="mQl-tL-IrP" kind="show" id="288-Lh-0V6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XP-VX-raF" userLabel="First Responder" sceneMemberID="firstResponder"/>
