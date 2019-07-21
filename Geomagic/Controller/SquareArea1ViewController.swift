@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import  AVFoundation
 
 class SquareArea1ViewController: UIViewController {
     
     @IBOutlet weak var buttonOutlet: UIButton!
     @IBOutlet weak var birdImageView: UIImageView!
+    var backSound = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,7 @@ class SquareArea1ViewController: UIViewController {
         animate(imageView: birdImageView, images: owlImage)
         prepareView()
         customButton()
+//        initbackSound()
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -51,10 +54,24 @@ class SquareArea1ViewController: UIViewController {
     func animate(imageView: UIImageView, images: [UIImage]){
         imageView.animationImages = images
         imageView.animationDuration = 0.7
+        imageView.animationRepeatCount = 5
         imageView.startAnimating()
     }
     
     func prepareView () {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
+    
+
+//    func initbackSound(){
+//        do{
+//            backSound = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath:  Bundle.main.path(forResource: "Yuk belajar luas", ofType: "mp4")!))
+//            backSound.prepareToPlay()
+//        }
+//        catch{
+//            print(error)
+//        }
+//        backSound.play()
+//        backSound.volume = 1.0
+//    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZQt-D0-8dF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMN-EQ-miF">
     <device id="ipad12_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="svk-vj-w0Y">
-                                <rect key="frame" x="140" y="312" width="400" height="400"/>
+                                <rect key="frame" x="140" y="504" width="16" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mulai membahas mengenai rumus luas persegi yuk!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g85-eD-NJm">
                                 <rect key="frame" x="688" y="377" width="418" height="164"/>
@@ -38,13 +38,25 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonAction:" destination="rMN-EQ-miF" eventType="touchUpInside" id="Zho-Q0-486"/>
-                                    <segue destination="CtK-fm-FRK" kind="show" identifier="squareAreaNew" id="DCG-Q9-Fg8"/>
+                                    <segue destination="CtK-fm-FRK" kind="show" identifier="squareAreaNew" animates="NO" id="DCG-Q9-Fg8"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bty-H9-VFw">
+                                <rect key="frame" x="60" y="80" width="70" height="22"/>
+                                <state key="normal" title="Button" image="back button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-qt-aTH" userLabel="homeButton">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bty-H9-VFw" firstAttribute="leading" secondItem="qXr-Wy-eiX" secondAttribute="leading" constant="60" id="57o-pE-Ds8"/>
                             <constraint firstItem="svk-vj-w0Y" firstAttribute="centerY" secondItem="hTx-NZ-iSC" secondAttribute="centerY" id="6e3-Sv-EwZ"/>
+                            <constraint firstItem="qXr-Wy-eiX" firstAttribute="trailing" secondItem="jJS-qt-aTH" secondAttribute="trailing" constant="60" id="9zk-Nm-MNz"/>
+                            <constraint firstItem="bty-H9-VFw" firstAttribute="top" secondItem="qXr-Wy-eiX" secondAttribute="top" constant="60" id="JKW-ON-KNy"/>
+                            <constraint firstItem="jJS-qt-aTH" firstAttribute="top" secondItem="qXr-Wy-eiX" secondAttribute="top" constant="60" id="Uru-Ze-64v"/>
                             <constraint firstItem="svk-vj-w0Y" firstAttribute="leading" secondItem="qXr-Wy-eiX" secondAttribute="leading" constant="140" id="znf-UX-aU9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qXr-Wy-eiX"/>
@@ -67,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="j0A-1X-K2k">
-                                <rect key="frame" x="86" y="312" width="400" height="400"/>
+                                <rect key="frame" x="86" y="504" width="16" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-ED-LLe">
                                 <rect key="frame" x="1131" y="470" width="90" height="84"/>
@@ -140,11 +152,26 @@ Luas merupakan besar area atau wilayah yang ada didalamnya.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-cQ-Okb" userLabel="backButton">
+                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="rMN-EQ-miF" kind="show" animates="NO" id="Nd1-xO-Kjp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-wL-LJn" userLabel="homeButton">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="nfM-cQ-Okb" firstAttribute="leading" secondItem="1ZX-fi-7Hz" secondAttribute="leading" constant="60" id="CQI-7u-0ca"/>
                             <constraint firstItem="j0A-1X-K2k" firstAttribute="leading" secondItem="1ZX-fi-7Hz" secondAttribute="leading" constant="86" id="EE9-5x-dAq"/>
+                            <constraint firstItem="1ZX-fi-7Hz" firstAttribute="trailing" secondItem="T5F-wL-LJn" secondAttribute="trailing" constant="60" id="U8j-6C-sSm"/>
                             <constraint firstItem="j0A-1X-K2k" firstAttribute="centerY" secondItem="B11-zY-co0" secondAttribute="centerY" id="Z2J-Cb-OXa"/>
+                            <constraint firstItem="T5F-wL-LJn" firstAttribute="top" secondItem="1ZX-fi-7Hz" secondAttribute="top" constant="60" id="je7-Ww-6dM"/>
+                            <constraint firstItem="nfM-cQ-Okb" firstAttribute="top" secondItem="1ZX-fi-7Hz" secondAttribute="top" constant="60" id="kIk-Zw-yEY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1ZX-fi-7Hz"/>
                     </view>
@@ -325,7 +352,7 @@ Luas merupakan besar area atau wilayah yang ada didalamnya.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="IIe-dm-A1m">
-                                <rect key="frame" x="86" y="312" width="400" height="400"/>
+                                <rect key="frame" x="86" y="504" width="16" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Misalkan persegi panjang memiliki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDk-OF-VAR">
                                 <rect key="frame" x="536" y="143" width="496" height="70"/>
@@ -350,11 +377,26 @@ lebar = 3 cm</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuY-P6-o5a" userLabel="backButton">
+                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="CtK-fm-FRK" kind="show" animates="NO" id="5P3-EE-Ueb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-yy-MdO" userLabel="homeButton">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IIe-dm-A1m" firstAttribute="leading" secondItem="BzZ-xS-d3i" secondAttribute="leading" constant="86" id="3AG-6X-39D"/>
+                            <constraint firstItem="bHi-yy-MdO" firstAttribute="top" secondItem="BzZ-xS-d3i" secondAttribute="top" constant="60" id="SAI-zR-1om"/>
+                            <constraint firstItem="VuY-P6-o5a" firstAttribute="top" secondItem="BzZ-xS-d3i" secondAttribute="top" constant="60" id="bqM-gf-1kd"/>
                             <constraint firstItem="IIe-dm-A1m" firstAttribute="centerY" secondItem="PWt-0F-Yk4" secondAttribute="centerY" id="k6L-vq-BeL"/>
+                            <constraint firstItem="VuY-P6-o5a" firstAttribute="leading" secondItem="BzZ-xS-d3i" secondAttribute="leading" constant="60" id="kvJ-Lp-wYb"/>
+                            <constraint firstItem="BzZ-xS-d3i" firstAttribute="trailing" secondItem="bHi-yy-MdO" secondAttribute="trailing" constant="60" id="sqZ-Ic-yWL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BzZ-xS-d3i"/>
                     </view>
@@ -376,7 +418,7 @@ lebar = 3 cm</string>
                         <outlet property="square7" destination="A25-EW-kbS" id="o8b-xR-8LS"/>
                         <outlet property="square8" destination="SBd-Ue-DBg" id="CfA-f6-tr2"/>
                         <outlet property="square9" destination="0Jk-9R-Csc" id="b5O-P5-3Sg"/>
-                        <segue destination="k8f-Qs-J4P" kind="show" identifier="nextViewController" id="9ad-Pw-Dhb"/>
+                        <segue destination="k8f-Qs-J4P" kind="show" identifier="nextViewController" animates="NO" id="9ad-Pw-Dhb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fm-Jt-Gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -501,14 +543,31 @@ l = lebar</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5p-Fn-TTg" userLabel="backButton">
+                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="lTM-hH-38L" kind="show" animates="NO" id="bgW-sF-ELa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36s-JN-pei" userLabel="homeButton">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="36s-JN-pei" firstAttribute="top" secondItem="RmG-Sa-hF5" secondAttribute="top" constant="60" id="06j-rc-pT1"/>
+                            <constraint firstItem="a5p-Fn-TTg" firstAttribute="top" secondItem="RmG-Sa-hF5" secondAttribute="top" constant="60" id="5Cl-HK-kwr"/>
+                            <constraint firstItem="a5p-Fn-TTg" firstAttribute="leading" secondItem="RmG-Sa-hF5" secondAttribute="leading" constant="60" id="jdx-xn-hVG"/>
+                            <constraint firstItem="RmG-Sa-hF5" firstAttribute="trailing" secondItem="36s-JN-pei" secondAttribute="trailing" constant="60" id="kfZ-NL-QlJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RmG-Sa-hF5"/>
                     </view>
                     <connections>
                         <outlet property="birdImageView" destination="Qg4-Ak-WET" id="Bqr-f3-UuW"/>
                         <outlet property="formulaView" destination="lBj-Og-Aid" id="ibx-ck-lCK"/>
-                        <segue destination="ZQt-D0-8dF" kind="show" id="JXc-5n-sKF"/>
+                        <segue destination="ZQt-D0-8dF" kind="show" animates="NO" id="JXc-5n-sKF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMV-Sg-WxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -650,8 +709,25 @@ l = lebar</string>
                                 <color key="backgroundColor" red="0.70470577479999996" green="0.5978268981" blue="0.48233306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <gestureRecognizers/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIT-lu-Mb4" userLabel="backButton">
+                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="k8f-Qs-J4P" kind="show" animates="NO" id="8AR-2B-T9k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-Lt-qpj" userLabel="homeButton">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Gk-Lt-qpj" firstAttribute="top" secondItem="2ad-2M-5Aw" secondAttribute="top" constant="60" id="0fj-f3-bhB"/>
+                            <constraint firstItem="2ad-2M-5Aw" firstAttribute="trailing" secondItem="7Gk-Lt-qpj" secondAttribute="trailing" constant="60" id="6hI-ex-fhy"/>
+                            <constraint firstItem="DIT-lu-Mb4" firstAttribute="leading" secondItem="2ad-2M-5Aw" secondAttribute="leading" constant="60" id="A1G-VF-EQk"/>
+                            <constraint firstItem="DIT-lu-Mb4" firstAttribute="top" secondItem="2ad-2M-5Aw" secondAttribute="top" constant="60" id="TBm-yK-c39"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2ad-2M-5Aw"/>
                     </view>
                     <connections>
@@ -670,7 +746,7 @@ l = lebar</string>
                         <outlet property="option40" destination="gDm-ha-ji4" id="0M9-9A-piP"/>
                         <outlet property="option42" destination="YEf-Ze-scf" id="XVf-ZY-paI"/>
                         <outlet property="option44" destination="VKj-aA-n2e" id="GSV-rG-QDE"/>
-                        <segue destination="lnE-ZZ-ufz" kind="show" identifier="nextFromulaExercise" id="AZr-hd-hes"/>
+                        <segue destination="lnE-ZZ-ufz" kind="show" identifier="nextFromulaExercise" animates="NO" id="AZr-hd-hes"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLp-eT-pCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -827,8 +903,25 @@ l = lebar</string>
                                     <outletCollection property="gestureRecognizers" destination="qFU-YP-88J" appends="YES" id="vLU-L5-ZqA"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ik-64-P9R" userLabel="backButton">
+                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="ZQt-D0-8dF" kind="show" animates="NO" id="kdG-g0-o2F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8x-0r-hWu" userLabel="homeButton">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W8x-0r-hWu" firstAttribute="top" secondItem="HQn-eK-2ui" secondAttribute="top" constant="60" id="Gd1-Jg-LKu"/>
+                            <constraint firstItem="HQn-eK-2ui" firstAttribute="trailing" secondItem="W8x-0r-hWu" secondAttribute="trailing" constant="60" id="Jgv-YI-gua"/>
+                            <constraint firstItem="2ik-64-P9R" firstAttribute="leading" secondItem="HQn-eK-2ui" secondAttribute="leading" constant="60" id="cDg-fg-AuJ"/>
+                            <constraint firstItem="2ik-64-P9R" firstAttribute="top" secondItem="HQn-eK-2ui" secondAttribute="top" constant="60" id="kWt-XG-ewo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HQn-eK-2ui"/>
                     </view>
                     <connections>
@@ -845,7 +938,7 @@ l = lebar</string>
                         <outlet property="option18" destination="k6r-2P-tgi" id="cIn-Sm-tEG"/>
                         <outlet property="option20" destination="rTg-Oy-vlv" id="lql-5r-Zwl"/>
                         <outlet property="option22" destination="Yaw-4Q-Cvr" id="dkc-7A-U1m"/>
-                        <segue destination="X6W-Io-hde" kind="show" id="TMX-7L-DcR"/>
+                        <segue destination="X6W-Io-hde" kind="show" animates="NO" id="TMX-7L-DcR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVl-Gg-zEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -905,8 +998,19 @@ l = lebar</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdW-w0-iKz" userLabel="backButton">
+                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="lnE-ZZ-ufz" kind="show" animates="NO" id="d7v-dd-Yn0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QdW-w0-iKz" firstAttribute="top" secondItem="Dxu-ea-vpe" secondAttribute="top" constant="60" id="2ab-r0-r1Q"/>
+                            <constraint firstItem="QdW-w0-iKz" firstAttribute="leading" secondItem="Dxu-ea-vpe" secondAttribute="leading" constant="60" id="6Kh-UA-O8F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dxu-ea-vpe"/>
                     </view>
                     <connections>
@@ -921,5 +1025,14 @@ l = lebar</string>
     </scenes>
     <resources>
         <image name="Owl-0" width="400" height="400"/>
+        <image name="back button" width="107" height="87"/>
+        <image name="homeButton" width="73" height="71"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AZr-hd-hes"/>
+        <segue reference="kdG-g0-o2F"/>
+        <segue reference="8AR-2B-T9k"/>
+        <segue reference="bgW-sF-ELa"/>
+        <segue reference="DCG-Q9-Fg8"/>
+    </inferredMetricsTieBreakers>
 </document>
