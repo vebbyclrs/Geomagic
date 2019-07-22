@@ -12,40 +12,50 @@
 		ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */; };
 		ABC6C3F822DF11F00024A04A /* ExcerciseButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */; };
 		ABC6C3FA22DF11F40024A04A /* OptionLatihanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */; };
-		ABC6C3FC22DF12150024A04A /* ExcerciseSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */; };
 		ABC6C3FE22DF122E0024A04A /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC6C3FD22DF122E0024A04A /* Second.storyboard */; };
 		ABF0497A22DA3AA10073E30E /* Owl2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497822DA3AA10073E30E /* Owl2.png */; };
 		ABF0497B22DA3AA10073E30E /* Owl1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF0497922DA3AA10073E30E /* Owl1.png */; };
 		ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF0497F22DA463A0073E30E /* BirdAnimate.swift */; };
 		CC36920A22E1B6E100CEB078 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920922E1B6E100CEB078 /* Template.swift */; };
-		CC36920E22E1E39100CEB078 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36920D22E1E39100CEB078 /* MenuViewController.swift */; };
-		CC42D9D722E48B8A0094DF4A /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42D9D522E48B8A0094DF4A /* SubMenuViewController.swift */; };
-		CC42D9D822E48B8A0094DF4A /* SubmenuSegitigaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42D9D622E48B8A0094DF4A /* SubmenuSegitigaViewController.swift */; };
 		CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70B922D48893001C402C /* AppDelegate.swift */; };
-		CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70BB22D48893001C402C /* HomeViewController.swift */; };
 		CC4D70BF22D48893001C402C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70BD22D48893001C402C /* Main.storyboard */; };
 		CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70C022D48893001C402C /* Geomagic.xcdatamodeld */; };
 		CC4D70C422D48894001C402C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70C322D48894001C402C /* Assets.xcassets */; };
 		CC4D70C722D48894001C402C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4D70C522D48894001C402C /* LaunchScreen.storyboard */; };
-		CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D222D4901D001C402C /* InformationPageViewController.swift */; };
-		CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */; };
-		CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D622D49037001C402C /* LetsGoViewController.swift */; };
-		CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70D822D49045001C402C /* ExplanationShapeViewController.swift */; };
-		CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */; };
-		CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */; };
-		CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */; };
 		CCA1511922D7BF44004627CE /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1511822D7BF44004627CE /* Shape.swift */; };
 		CCA1511B22D7C2CB004627CE /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1511A22D7C2CB004627CE /* AppData.swift */; };
 		CCA1511D22D7D4AD004627CE /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1511C22D7D4AD004627CE /* RoundButton.swift */; };
+		CCCC4F8322E5808D00219C7F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6822E5808C00219C7F /* MenuViewController.swift */; };
+		CCCC4F8422E5808D00219C7F /* PerimeterTrainingFormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6922E5808C00219C7F /* PerimeterTrainingFormulaViewController.swift */; };
+		CCCC4F8522E5808D00219C7F /* SquareAreaFormulaExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6A22E5808C00219C7F /* SquareAreaFormulaExerciseViewController.swift */; };
+		CCCC4F8622E5808D00219C7F /* SquareArea1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6B22E5808C00219C7F /* SquareArea1ViewController.swift */; };
+		CCCC4F8722E5808D00219C7F /* PerimeterTrainingEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6C22E5808D00219C7F /* PerimeterTrainingEndViewController.swift */; };
+		CCCC4F8822E5808D00219C7F /* SquareAreaFormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6D22E5808D00219C7F /* SquareAreaFormulaViewController.swift */; };
+		CCCC4F8922E5808D00219C7F /* SubmenuSegitigaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6E22E5808D00219C7F /* SubmenuSegitigaViewController.swift */; };
+		CCCC4F8A22E5808D00219C7F /* ExcerciseEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F6F22E5808D00219C7F /* ExcerciseEndViewController.swift */; };
+		CCCC4F8B22E5808D00219C7F /* IntroductionShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7022E5808D00219C7F /* IntroductionShapeViewController.swift */; };
+		CCCC4F8C22E5808D00219C7F /* SquareAreaTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7122E5808D00219C7F /* SquareAreaTutorialViewController.swift */; };
+		CCCC4F8D22E5808D00219C7F /* LetsGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7222E5808D00219C7F /* LetsGoViewController.swift */; };
+		CCCC4F8E22E5808D00219C7F /* PerimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7322E5808D00219C7F /* PerimeterViewController.swift */; };
+		CCCC4F8F22E5808D00219C7F /* SubMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7422E5808D00219C7F /* SubMenuViewController.swift */; };
+		CCCC4F9022E5808D00219C7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7522E5808D00219C7F /* HomeViewController.swift */; };
+		CCCC4F9122E5808D00219C7F /* PerimeterTrainingIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7622E5808D00219C7F /* PerimeterTrainingIntroViewController.swift */; };
+		CCCC4F9222E5808D00219C7F /* SquareAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7722E5808D00219C7F /* SquareAreaViewController.swift */; };
+		CCCC4F9322E5808D00219C7F /* squareAreaNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7822E5808D00219C7F /* squareAreaNewViewController.swift */; };
+		CCCC4F9422E5808D00219C7F /* PerimeterTrainingFormulaExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7922E5808D00219C7F /* PerimeterTrainingFormulaExerciseViewController.swift */; };
+		CCCC4F9522E5808D00219C7F /* CongratsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7A22E5808D00219C7F /* CongratsPageViewController.swift */; };
+		CCCC4F9622E5808D00219C7F /* SquareAreaEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7B22E5808D00219C7F /* SquareAreaEndViewController.swift */; };
+		CCCC4F9722E5808D00219C7F /* SquareAreaExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7C22E5808D00219C7F /* SquareAreaExerciseViewController.swift */; };
+		CCCC4F9822E5808D00219C7F /* PerimeterTrainingExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7D22E5808D00219C7F /* PerimeterTrainingExerciseViewController.swift */; };
+		CCCC4F9922E5808D00219C7F /* ExplanationShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7E22E5808D00219C7F /* ExplanationShapeViewController.swift */; };
+		CCCC4F9A22E5808D00219C7F /* ExcerciseSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F7F22E5808D00219C7F /* ExcerciseSquare.swift */; };
+		CCCC4F9B22E5808D00219C7F /* StartExcerciseRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F8022E5808D00219C7F /* StartExcerciseRectangle.swift */; };
+		CCCC4F9C22E5808D00219C7F /* PerimeterShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F8122E5808D00219C7F /* PerimeterShapeViewController.swift */; };
+		CCCC4F9D22E5808D00219C7F /* InformationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCC4F8222E5808D00219C7F /* InformationPageViewController.swift */; };
 		CCDCB06F22D5E02A00EE5FDD /* backsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */; };
 		CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCB07122D7192D00EE5FDD /* MenuModel.swift */; };
 		CCDD036322D7B46D00C7FBD8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */; };
-		DC16BFFA22E0AA38004802D0 /* SquareArea1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16BFF922E0AA38004802D0 /* SquareArea1ViewController.swift */; };
-		DC16BFFC22E0B36F004802D0 /* SquareAreaExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16BFFB22E0B36F004802D0 /* SquareAreaExerciseViewController.swift */; };
-		DC16BFFE22E1AFEB004802D0 /* SquareAreaEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16BFFD22E1AFEB004802D0 /* SquareAreaEndViewController.swift */; };
-		DC16C00022E1B663004802D0 /* SquareAreaFormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16BFFF22E1B663004802D0 /* SquareAreaFormulaViewController.swift */; };
 		DC7687E622DEEA4400F547E7 /* squareArea.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7687E522DEEA4400F547E7 /* squareArea.storyboard */; };
-		DC7687E822DEEC0200F547E7 /* squareAreaNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,42 +64,52 @@
 		ABC6C3F522DF11DA0024A04A /* SquareQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareQuestion.swift; sourceTree = "<group>"; };
 		ABC6C3F722DF11F00024A04A /* ExcerciseButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseButtonExtension.swift; sourceTree = "<group>"; };
 		ABC6C3F922DF11F40024A04A /* OptionLatihanButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionLatihanButton.swift; sourceTree = "<group>"; };
-		ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseSquare.swift; sourceTree = "<group>"; };
 		ABC6C3FD22DF122E0024A04A /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		ABF0497822DA3AA10073E30E /* Owl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl2.png; sourceTree = "<group>"; };
 		ABF0497922DA3AA10073E30E /* Owl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl1.png; sourceTree = "<group>"; };
 		ABF0497F22DA463A0073E30E /* BirdAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdAnimate.swift; sourceTree = "<group>"; };
 		CC36920922E1B6E100CEB078 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
-		CC36920D22E1E39100CEB078 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		CC42D9D522E48B8A0094DF4A /* SubMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
-		CC42D9D622E48B8A0094DF4A /* SubmenuSegitigaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmenuSegitigaViewController.swift; sourceTree = "<group>"; };
 		CC4D70B622D48893001C402C /* Geomagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geomagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4D70B922D48893001C402C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC4D70BB22D48893001C402C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC4D70BE22D48893001C402C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC4D70C122D48893001C402C /* Geomagic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Geomagic.xcdatamodel; sourceTree = "<group>"; };
 		CC4D70C322D48894001C402C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4D70C622D48894001C402C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4D70C822D48894001C402C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC4D70D222D4901D001C402C /* InformationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPageViewController.swift; sourceTree = "<group>"; };
-		CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionShapeViewController.swift; sourceTree = "<group>"; };
-		CC4D70D622D49037001C402C /* LetsGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoViewController.swift; sourceTree = "<group>"; };
-		CC4D70D822D49045001C402C /* ExplanationShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationShapeViewController.swift; sourceTree = "<group>"; };
-		CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerimeterShapeViewController.swift; sourceTree = "<group>"; };
-		CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareAreaViewController.swift; sourceTree = "<group>"; };
-		CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsPageViewController.swift; sourceTree = "<group>"; };
 		CCA1511822D7BF44004627CE /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		CCA1511A22D7C2CB004627CE /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		CCA1511C22D7D4AD004627CE /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		CCCC4F6822E5808C00219C7F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6922E5808C00219C7F /* PerimeterTrainingFormulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterTrainingFormulaViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6A22E5808C00219C7F /* SquareAreaFormulaExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaFormulaExerciseViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6B22E5808C00219C7F /* SquareArea1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareArea1ViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6C22E5808D00219C7F /* PerimeterTrainingEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterTrainingEndViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6D22E5808D00219C7F /* SquareAreaFormulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaFormulaViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6E22E5808D00219C7F /* SubmenuSegitigaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmenuSegitigaViewController.swift; sourceTree = "<group>"; };
+		CCCC4F6F22E5808D00219C7F /* ExcerciseEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseEndViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7022E5808D00219C7F /* IntroductionShapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionShapeViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7122E5808D00219C7F /* SquareAreaTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaTutorialViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7222E5808D00219C7F /* LetsGoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsGoViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7322E5808D00219C7F /* PerimeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7422E5808D00219C7F /* SubMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMenuViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7522E5808D00219C7F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7622E5808D00219C7F /* PerimeterTrainingIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterTrainingIntroViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7722E5808D00219C7F /* SquareAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7822E5808D00219C7F /* squareAreaNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = squareAreaNewViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7922E5808D00219C7F /* PerimeterTrainingFormulaExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterTrainingFormulaExerciseViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7A22E5808D00219C7F /* CongratsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratsPageViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7B22E5808D00219C7F /* SquareAreaEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaEndViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7C22E5808D00219C7F /* SquareAreaExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareAreaExerciseViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7D22E5808D00219C7F /* PerimeterTrainingExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterTrainingExerciseViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7E22E5808D00219C7F /* ExplanationShapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationShapeViewController.swift; sourceTree = "<group>"; };
+		CCCC4F7F22E5808D00219C7F /* ExcerciseSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseSquare.swift; sourceTree = "<group>"; };
+		CCCC4F8022E5808D00219C7F /* StartExcerciseRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartExcerciseRectangle.swift; sourceTree = "<group>"; };
+		CCCC4F8122E5808D00219C7F /* PerimeterShapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerimeterShapeViewController.swift; sourceTree = "<group>"; };
+		CCCC4F8222E5808D00219C7F /* InformationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationPageViewController.swift; sourceTree = "<group>"; };
 		CCDCB06E22D5E02A00EE5FDD /* backsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backsound.mp3; sourceTree = "<group>"; };
 		CCDCB07122D7192D00EE5FDD /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		CCDD036222D7B46D00C7FBD8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		DC16BFF922E0AA38004802D0 /* SquareArea1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareArea1ViewController.swift; sourceTree = "<group>"; };
-		DC16BFFB22E0B36F004802D0 /* SquareAreaExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareAreaExerciseViewController.swift; sourceTree = "<group>"; };
-		DC16BFFD22E1AFEB004802D0 /* SquareAreaEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareAreaEndViewController.swift; sourceTree = "<group>"; };
-		DC16BFFF22E1B663004802D0 /* SquareAreaFormulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareAreaFormulaViewController.swift; sourceTree = "<group>"; };
 		DC7687E522DEEA4400F547E7 /* squareArea.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = squareArea.storyboard; sourceTree = "<group>"; };
-		DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squareAreaNewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,23 +198,33 @@
 		CC4D70E222D492F7001C402C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CC36920D22E1E39100CEB078 /* MenuViewController.swift */,
-				CC4D70BB22D48893001C402C /* HomeViewController.swift */,
-				CC42D9D622E48B8A0094DF4A /* SubmenuSegitigaViewController.swift */,
-				CC42D9D522E48B8A0094DF4A /* SubMenuViewController.swift */,
-				CC4D70D222D4901D001C402C /* InformationPageViewController.swift */,
-				CC4D70D422D49030001C402C /* IntroductionShapeViewController.swift */,
-				CC4D70D622D49037001C402C /* LetsGoViewController.swift */,
-				CC4D70D822D49045001C402C /* ExplanationShapeViewController.swift */,
-				CC4D70DA22D4904F001C402C /* PerimeterShapeViewController.swift */,
-				CC4D70DC22D4906F001C402C /* SquareAreaViewController.swift */,
-				CC4D70DE22D4907A001C402C /* CongratsPageViewController.swift */,
-				DC7687E722DEEC0200F547E7 /* squareAreaNewViewController.swift */,
-				ABC6C3FB22DF12150024A04A /* ExcerciseSquare.swift */,
-				DC16BFF922E0AA38004802D0 /* SquareArea1ViewController.swift */,
-				DC16BFFB22E0B36F004802D0 /* SquareAreaExerciseViewController.swift */,
-				DC16BFFD22E1AFEB004802D0 /* SquareAreaEndViewController.swift */,
-				DC16BFFF22E1B663004802D0 /* SquareAreaFormulaViewController.swift */,
+				CCCC4F7A22E5808D00219C7F /* CongratsPageViewController.swift */,
+				CCCC4F6F22E5808D00219C7F /* ExcerciseEndViewController.swift */,
+				CCCC4F7F22E5808D00219C7F /* ExcerciseSquare.swift */,
+				CCCC4F7E22E5808D00219C7F /* ExplanationShapeViewController.swift */,
+				CCCC4F7522E5808D00219C7F /* HomeViewController.swift */,
+				CCCC4F8222E5808D00219C7F /* InformationPageViewController.swift */,
+				CCCC4F7022E5808D00219C7F /* IntroductionShapeViewController.swift */,
+				CCCC4F7222E5808D00219C7F /* LetsGoViewController.swift */,
+				CCCC4F6822E5808C00219C7F /* MenuViewController.swift */,
+				CCCC4F8122E5808D00219C7F /* PerimeterShapeViewController.swift */,
+				CCCC4F6C22E5808D00219C7F /* PerimeterTrainingEndViewController.swift */,
+				CCCC4F7D22E5808D00219C7F /* PerimeterTrainingExerciseViewController.swift */,
+				CCCC4F7922E5808D00219C7F /* PerimeterTrainingFormulaExerciseViewController.swift */,
+				CCCC4F6922E5808C00219C7F /* PerimeterTrainingFormulaViewController.swift */,
+				CCCC4F7622E5808D00219C7F /* PerimeterTrainingIntroViewController.swift */,
+				CCCC4F7322E5808D00219C7F /* PerimeterViewController.swift */,
+				CCCC4F6B22E5808C00219C7F /* SquareArea1ViewController.swift */,
+				CCCC4F7B22E5808D00219C7F /* SquareAreaEndViewController.swift */,
+				CCCC4F7C22E5808D00219C7F /* SquareAreaExerciseViewController.swift */,
+				CCCC4F6A22E5808C00219C7F /* SquareAreaFormulaExerciseViewController.swift */,
+				CCCC4F6D22E5808D00219C7F /* SquareAreaFormulaViewController.swift */,
+				CCCC4F7822E5808D00219C7F /* squareAreaNewViewController.swift */,
+				CCCC4F7122E5808D00219C7F /* SquareAreaTutorialViewController.swift */,
+				CCCC4F7722E5808D00219C7F /* SquareAreaViewController.swift */,
+				CCCC4F8022E5808D00219C7F /* StartExcerciseRectangle.swift */,
+				CCCC4F6E22E5808D00219C7F /* SubmenuSegitigaViewController.swift */,
+				CCCC4F7422E5808D00219C7F /* SubMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -284,35 +314,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA1511D22D7D4AD004627CE /* RoundButton.swift in Sources */,
+				CCCC4F9822E5808D00219C7F /* PerimeterTrainingExerciseViewController.swift in Sources */,
+				CCCC4F9922E5808D00219C7F /* ExplanationShapeViewController.swift in Sources */,
 				ABF0498022DA463A0073E30E /* BirdAnimate.swift in Sources */,
-				CC4D70DB22D4904F001C402C /* PerimeterShapeViewController.swift in Sources */,
-				CC36920E22E1E39100CEB078 /* MenuViewController.swift in Sources */,
+				CCCC4F8422E5808D00219C7F /* PerimeterTrainingFormulaViewController.swift in Sources */,
+				CCCC4F8822E5808D00219C7F /* SquareAreaFormulaViewController.swift in Sources */,
+				CCCC4F9222E5808D00219C7F /* SquareAreaViewController.swift in Sources */,
 				CC36920A22E1B6E100CEB078 /* Template.swift in Sources */,
-				CC4D70D522D49031001C402C /* IntroductionShapeViewController.swift in Sources */,
-				CC4D70BC22D48893001C402C /* HomeViewController.swift in Sources */,
-				DC16BFFC22E0B36F004802D0 /* SquareAreaExerciseViewController.swift in Sources */,
-				CC4D70D922D49045001C402C /* ExplanationShapeViewController.swift in Sources */,
-				CC4D70DD22D4906F001C402C /* SquareAreaViewController.swift in Sources */,
-				ABC6C3FC22DF12150024A04A /* ExcerciseSquare.swift in Sources */,
+				CCCC4F8A22E5808D00219C7F /* ExcerciseEndViewController.swift in Sources */,
+				CCCC4F8322E5808D00219C7F /* MenuViewController.swift in Sources */,
+				CCCC4F9622E5808D00219C7F /* SquareAreaEndViewController.swift in Sources */,
 				ABC6C3F622DF11DA0024A04A /* SquareQuestion.swift in Sources */,
+				CCCC4F9C22E5808D00219C7F /* PerimeterShapeViewController.swift in Sources */,
 				CC4D70BA22D48893001C402C /* AppDelegate.swift in Sources */,
 				ABC6C3FA22DF11F40024A04A /* OptionLatihanButton.swift in Sources */,
-				DC16BFFA22E0AA38004802D0 /* SquareArea1ViewController.swift in Sources */,
+				CCCC4F9722E5808D00219C7F /* SquareAreaExerciseViewController.swift in Sources */,
+				CCCC4F8922E5808D00219C7F /* SubmenuSegitigaViewController.swift in Sources */,
 				CC4D70C222D48893001C402C /* Geomagic.xcdatamodeld in Sources */,
 				CCDCB07222D7192D00EE5FDD /* MenuModel.swift in Sources */,
-				CC42D9D722E48B8A0094DF4A /* SubMenuViewController.swift in Sources */,
+				CCCC4F9122E5808D00219C7F /* PerimeterTrainingIntroViewController.swift in Sources */,
+				CCCC4F8C22E5808D00219C7F /* SquareAreaTutorialViewController.swift in Sources */,
+				CCCC4F9522E5808D00219C7F /* CongratsPageViewController.swift in Sources */,
+				CCCC4F9022E5808D00219C7F /* HomeViewController.swift in Sources */,
+				CCCC4F9322E5808D00219C7F /* squareAreaNewViewController.swift in Sources */,
+				CCCC4F9D22E5808D00219C7F /* InformationPageViewController.swift in Sources */,
 				CCA1511922D7BF44004627CE /* Shape.swift in Sources */,
-				CC42D9D822E48B8A0094DF4A /* SubmenuSegitigaViewController.swift in Sources */,
 				CCA1511B22D7C2CB004627CE /* AppData.swift in Sources */,
 				ABC6C3F422DF11CE0024A04A /* Question.swift in Sources */,
-				DC16C00022E1B663004802D0 /* SquareAreaFormulaViewController.swift in Sources */,
 				CCDD036322D7B46D00C7FBD8 /* CollectionViewCell.swift in Sources */,
-				CC4D70DF22D4907A001C402C /* CongratsPageViewController.swift in Sources */,
-				CC4D70D722D49037001C402C /* LetsGoViewController.swift in Sources */,
-				DC16BFFE22E1AFEB004802D0 /* SquareAreaEndViewController.swift in Sources */,
-				CC4D70D322D4901D001C402C /* InformationPageViewController.swift in Sources */,
-				DC7687E822DEEC0200F547E7 /* squareAreaNewViewController.swift in Sources */,
+				CCCC4F8E22E5808D00219C7F /* PerimeterViewController.swift in Sources */,
+				CCCC4F9B22E5808D00219C7F /* StartExcerciseRectangle.swift in Sources */,
+				CCCC4F8D22E5808D00219C7F /* LetsGoViewController.swift in Sources */,
+				CCCC4F8722E5808D00219C7F /* PerimeterTrainingEndViewController.swift in Sources */,
 				ABC6C3F822DF11F00024A04A /* ExcerciseButtonExtension.swift in Sources */,
+				CCCC4F8622E5808D00219C7F /* SquareArea1ViewController.swift in Sources */,
+				CCCC4F8B22E5808D00219C7F /* IntroductionShapeViewController.swift in Sources */,
+				CCCC4F8F22E5808D00219C7F /* SubMenuViewController.swift in Sources */,
+				CCCC4F9422E5808D00219C7F /* PerimeterTrainingFormulaExerciseViewController.swift in Sources */,
+				CCCC4F8522E5808D00219C7F /* SquareAreaFormulaExerciseViewController.swift in Sources */,
+				CCCC4F9A22E5808D00219C7F /* ExcerciseSquare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
