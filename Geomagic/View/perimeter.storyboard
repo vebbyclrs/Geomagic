@@ -48,7 +48,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="6HY-Eb-KFJ">
-                                <rect key="frame" x="119" y="348" width="240" height="228"/>
+                                <rect key="frame" x="120" y="350" width="354" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -85,10 +85,6 @@
                                     <constraint firstAttribute="height" constant="250" id="xAD-2g-Oom"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kyG-ec-pYd">
-                                <rect key="frame" x="1.5" y="348" width="400" height="228"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFw-kE-cws">
                                 <rect key="frame" x="1188" y="468" width="57" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -236,7 +232,14 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="1233" y="70" width="73" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="AYV-Ma-9Rh" kind="unwind" unwindAction="unwindToHome:" id="dbz-uX-XiJ"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kyG-ec-pYd">
+                                <rect key="frame" x="120" y="350" width="354" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -275,6 +278,7 @@ Berapakah kelilingnya?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz5-HW-ok9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AYV-Ma-9Rh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2111.8594436310395" y="193.359375"/>
         </scene>
@@ -295,7 +299,7 @@ Berapakah kelilingnya?</string>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dp4-TC-nmP">
-                                <rect key="frame" x="119" y="348" width="240" height="228"/>
+                                <rect key="frame" x="119" y="348" width="354" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5T-aO-fvj">
@@ -506,6 +510,9 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="1233" y="125" width="73" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="djf-ct-2Lx" kind="unwind" unwindAction="unwindToHome:" id="qZj-Sw-vLZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -538,6 +545,7 @@ Berapakah kelilingnya?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v56-lP-Iww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="djf-ct-2Lx" userLabel="Exit" sceneMemberID="exit"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="nEY-Pf-WXz">
                     <connections>
                         <action selector="pan9up:" destination="EJe-3A-IAN" id="L5Y-6T-qOt"/>
@@ -585,7 +593,7 @@ Berapakah kelilingnya?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kH-vi-tj6">
-                                <rect key="frame" x="119" y="348" width="240" height="228"/>
+                                <rect key="frame" x="120" y="350" width="354" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-KQ-hxc">
@@ -628,6 +636,9 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="1233" y="60" width="73" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="dmE-yM-IyP" kind="unwind" unwindAction="unwindToHome:" id="p6R-dl-KnL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -641,6 +652,7 @@ Berapakah kelilingnya?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISW-ut-cRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dmE-yM-IyP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2819" y="-472"/>
         </scene>
@@ -661,7 +673,7 @@ Berapakah kelilingnya?</string>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="GWw-P3-Q8R">
-                                <rect key="frame" x="119" y="348" width="240" height="228"/>
+                                <rect key="frame" x="120" y="350" width="354" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbR-bl-KQc">
@@ -907,6 +919,9 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="1242" y="58" width="73" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="RIq-jL-A5s" kind="unwind" unwindAction="unwindToHome:" id="fvq-GC-JGD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -935,6 +950,7 @@ Berapakah kelilingnya?</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XP-VX-raF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RIq-jL-A5s" userLabel="Exit" sceneMemberID="exit"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="0J3-00-ph8">
                     <connections>
                         <action selector="pan8up:" destination="Yxr-MA-8vF" id="sAb-0c-Odu"/>
@@ -993,6 +1009,9 @@ Berapakah kelilingnya?</string>
                                 <state key="normal" title="Tutup">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="HQU-RK-jdi" kind="unwind" unwindAction="unwindToHome:" id="6dz-JV-o78"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wow kamu hebat! Sekarang kita sudah selesai belajar tentang rumus keliling persegi panjang deh.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUR-uD-QQb">
                                 <rect key="frame" x="582" y="348" width="557" height="164"/>
@@ -1013,6 +1032,9 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="1233" y="91" width="73" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="HQU-RK-jdi" kind="unwind" unwindAction="unwindToHome:" id="hRy-Zf-wP1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1020,6 +1042,7 @@ Berapakah kelilingnya?</string>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kos-Qz-SOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HQU-RK-jdi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2818.5944363103949" y="880.6640625"/>
         </scene>
@@ -1030,10 +1053,9 @@ Berapakah kelilingnya?</string>
         <image name="homeButton" width="73" height="71"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="288-Lh-0V6"/>
-        <segue reference="gzH-5C-NOb"/>
-        <segue reference="tpV-vA-8RO"/>
-        <segue reference="MVT-0v-j6A"/>
+        <segue reference="yUM-7S-dtD"/>
+        <segue reference="k9M-wR-lEP"/>
+        <segue reference="BPG-il-PGi"/>
         <segue reference="shB-8p-dZ1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -100,9 +100,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="small logo" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
-                                <rect key="frame" x="613" y="128" width="200" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small logo" translatesAutoresizingMaskIntoConstraints="NO" id="uUr-eH-jRW">
+                                <rect key="frame" x="675" y="114" width="16" height="16"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-j9-UQT">
                                 <rect key="frame" x="1233" y="84" width="73" height="71"/>
@@ -214,6 +213,8 @@
                             <constraint firstItem="WUy-Dm-Nm0" firstAttribute="leading" secondItem="sxr-TW-OTp" secondAttribute="leading" constant="60" id="XLz-a6-5tN"/>
                             <constraint firstItem="sxr-TW-OTp" firstAttribute="trailing" secondItem="Y9C-j9-UQT" secondAttribute="trailing" constant="60" id="d4z-oh-I9z"/>
                             <constraint firstItem="sxr-TW-OTp" firstAttribute="bottom" secondItem="WUy-Dm-Nm0" secondAttribute="bottom" constant="260" id="oIW-nm-zsR"/>
+                            <constraint firstItem="uUr-eH-jRW" firstAttribute="centerX" secondItem="Rry-1l-69x" secondAttribute="centerX" id="ukw-54-V9R"/>
+                            <constraint firstItem="uUr-eH-jRW" firstAttribute="top" secondItem="Y9C-j9-UQT" secondAttribute="top" constant="30" id="zRQ-wf-RJG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sxr-TW-OTp"/>
                     </view>
@@ -268,10 +269,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0h-UN-Bom">
                                 <rect key="frame" x="60" y="60" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="4nP-iv-7Ba" eventType="touchUpInside" id="c14-oD-omb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-Bk-M1Q">
                                 <rect key="frame" x="1290" y="60" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="lZp-WX-CAO" kind="unwind" unwindAction="unwindToHome:" id="kFW-Js-Z7p"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="vA3-bo-tEs">
                                 <rect key="frame" x="130" y="208" width="16" height="16"/>
@@ -299,6 +306,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmq-7A-o6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="lZp-WX-CAO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1140" y="256"/>
         </scene>
@@ -491,7 +499,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <action selector="backTapped:" destination="N18-D8-HFY" eventType="touchUpInside" id="8uQ-Vg-JCl"/>
+                                    <action selector="backTapped:" destination="N18-D8-HFY" eventType="touchUpInside" id="lcH-BE-3nM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpy-17-tBP">
@@ -499,7 +507,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
-                                    <segue destination="BjT-u9-rTJ" kind="unwind" unwindAction="unwindToHome:" id="s9e-g9-6YL"/>
+                                    <segue destination="BjT-u9-rTJ" kind="unwind" unwindAction="unwindToHome:" id="Iih-PG-dfC"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="075-0b-C96">
@@ -525,6 +533,7 @@
                         <outlet property="contentLabel" destination="f5Y-d7-433" id="oXK-Ia-czj"/>
                         <outlet property="imageView" destination="075-0b-C96" id="P7a-Cc-UcL"/>
                         <outlet property="shape" destination="Doo-Jd-HxG" id="2gB-ot-t7T"/>
+                        <segue destination="Gl1-ac-9qM" kind="show" identifier="goToNextPerimeter" id="zhX-oO-VbU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mah-EJ-yf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -536,6 +545,14 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2111.8594436310395" y="-472.26562499999994"/>
+        </scene>
+        <!--perimeter-->
+        <scene sceneID="77F-aU-ldd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="perimeter" id="Gl1-ac-9qM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIy-3M-XFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2478" y="-751"/>
         </scene>
         <!--Square Area View Controller-->
         <scene sceneID="SAQ-fk-GAw">
@@ -724,7 +741,7 @@
         <!--subMenu-->
         <scene sceneID="Q0u-Qq-nrk">
             <objects>
-                <viewController title="subMenu" id="Idq-6w-9FF" customClass="SubMenuViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="subMenuView" title="subMenu" id="Idq-6w-9FF" customClass="SubMenuViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbz-WH-T9w">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1092,6 +1109,6 @@
         <image name="small logo" width="253" height="190"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TwO-qp-bAr"/>
+        <segue reference="B3U-zl-5Aq"/>
     </inferredMetricsTieBreakers>
 </document>

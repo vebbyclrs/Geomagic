@@ -55,5 +55,14 @@ class SquareAreaEndViewController: UIViewController {
     func prepareView () {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
-
+    @IBAction func nextTapped(_ sender: Any) {
+        performSegue(withIdentifier: "kuy", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "kuy" {
+            let dest = segue.destination as! SubMenuViewController
+            dest.shapePassed = .persegiPanjang
+        }
+    }
+    
 }

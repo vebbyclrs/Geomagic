@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="svk-vj-w0Y">
-                                <rect key="frame" x="140" y="504" width="16" height="16"/>
+                                <rect key="frame" x="140" y="312" width="400" height="400"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mulai membahas mengenai rumus luas persegi yuk!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g85-eD-NJm">
                                 <rect key="frame" x="688" y="377" width="418" height="164"/>
@@ -42,11 +42,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bty-H9-VFw">
-                                <rect key="frame" x="60" y="80" width="70" height="22"/>
+                                <rect key="frame" x="60" y="80" width="161" height="87"/>
                                 <state key="normal" title="Button" image="back button"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="rMN-EQ-miF" eventType="touchUpInside" id="Tf6-Ra-APZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-qt-aTH" userLabel="homeButton">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="uQl-jK-UDc" kind="unwind" unwindAction="unwindToHome:" id="EhR-18-iwr"/>
@@ -83,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="j0A-1X-K2k">
-                                <rect key="frame" x="86" y="504" width="16" height="16"/>
+                                <rect key="frame" x="86" y="312" width="400" height="400"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-ED-LLe">
                                 <rect key="frame" x="1131" y="470" width="90" height="84"/>
@@ -157,14 +160,14 @@ Luas merupakan besar area atau wilayah yang ada didalamnya.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-cQ-Okb" userLabel="backButton">
-                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <rect key="frame" x="60" y="80" width="107" height="87"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <segue destination="rMN-EQ-miF" kind="show" animates="NO" id="Nd1-xO-Kjp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-wL-LJn" userLabel="homeButton">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="Gg4-I5-8zY" kind="unwind" unwindAction="unwindToHome:" id="Ga5-OS-aPH"/>
@@ -360,7 +363,7 @@ Luas merupakan besar area atau wilayah yang ada didalamnya.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="IIe-dm-A1m">
-                                <rect key="frame" x="86" y="504" width="16" height="16"/>
+                                <rect key="frame" x="86" y="312" width="400" height="400"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Misalkan persegi panjang memiliki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDk-OF-VAR">
                                 <rect key="frame" x="536" y="143" width="496" height="70"/>
@@ -386,14 +389,14 @@ lebar = 3 cm</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuY-P6-o5a" userLabel="backButton">
-                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <rect key="frame" x="60" y="80" width="107" height="87"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <segue destination="CtK-fm-FRK" kind="show" animates="NO" id="5P3-EE-Ueb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-yy-MdO" userLabel="homeButton">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="fvU-fj-8Ao" kind="unwind" unwindAction="unwindToHome:" id="4Tx-7P-rf7"/>
@@ -556,14 +559,14 @@ l = lebar</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5p-Fn-TTg" userLabel="backButton">
-                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <rect key="frame" x="60" y="80" width="107" height="87"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <segue destination="lTM-hH-38L" kind="show" animates="NO" id="bgW-sF-ELa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36s-JN-pei" userLabel="homeButton">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="Gnz-eg-bAq" kind="unwind" unwindAction="unwindToHome:" id="1mI-46-Ybh"/>
@@ -726,14 +729,14 @@ l = lebar</string>
                                 <gestureRecognizers/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIT-lu-Mb4" userLabel="backButton">
-                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <rect key="frame" x="60" y="80" width="107" height="87"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <segue destination="k8f-Qs-J4P" kind="show" animates="NO" id="8AR-2B-T9k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-Lt-qpj" userLabel="homeButton">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="IY6-7W-byh" kind="unwind" unwindAction="unwindToHome:" id="wQc-Z2-zmv"/>
@@ -924,14 +927,14 @@ l = lebar</string>
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ik-64-P9R" userLabel="backButton">
-                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <rect key="frame" x="60" y="80" width="107" height="87"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <segue destination="ZQt-D0-8dF" kind="show" animates="NO" id="kdG-g0-o2F"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8x-0r-hWu" userLabel="homeButton">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="nUJ-hs-VGq" kind="unwind" unwindAction="unwindToHome:" id="9MV-ee-aNJ"/>
@@ -1014,6 +1017,10 @@ l = lebar</string>
                                 <state key="normal" title="Yuk!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextTapped:" destination="X6W-Io-hde" eventType="touchUpInside" id="ZeY-aU-tyX"/>
+                                    <segue destination="KFf-KA-Uh3" kind="show" identifier="kuy" id="df1-do-t3q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wah kamu berhasil menyelesaikan tentang luas persegi panjang! Kamu hebat ^^" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKT-XT-2f9">
                                 <rect key="frame" x="619" y="360" width="483" height="164"/>
@@ -1023,14 +1030,14 @@ l = lebar</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdW-w0-iKz" userLabel="backButton">
-                                <rect key="frame" x="60" y="80" width="16" height="22"/>
+                                <rect key="frame" x="60" y="80" width="107" height="87"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <segue destination="lnE-ZZ-ufz" kind="show" animates="NO" id="d7v-dd-Yn0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAe-do-xcU">
-                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <rect key="frame" x="1233" y="80" width="73" height="71"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="Kq7-or-Yjo" kind="unwind" unwindAction="unwindToHome:" id="JQt-Z2-uYV"/>
@@ -1056,6 +1063,14 @@ l = lebar</string>
             </objects>
             <point key="canvasLocation" x="-654" y="-781"/>
         </scene>
+        <!--subMenuView-->
+        <scene sceneID="AS0-LZ-YES">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="subMenuView" id="KFf-KA-Uh3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoC-rV-PLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="-781"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Owl-0" width="400" height="400"/>
@@ -1066,7 +1081,7 @@ l = lebar</string>
         <segue reference="d7v-dd-Yn0"/>
         <segue reference="kdG-g0-o2F"/>
         <segue reference="8AR-2B-T9k"/>
-        <segue reference="bgW-sF-ELa"/>
+        <segue reference="ly1-bE-YSg"/>
         <segue reference="DCG-Q9-Fg8"/>
     </inferredMetricsTieBreakers>
 </document>

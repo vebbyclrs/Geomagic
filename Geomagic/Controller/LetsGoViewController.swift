@@ -20,6 +20,7 @@ class LetsGoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnSiap.giveShadow(x: 3, y: 3, opacity: 0.5, blur: 10, shadowColor: UIColor.black.cgColor )
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         updateContent()
         // Do any additional setup after loading the view.
     }
@@ -33,6 +34,9 @@ class LetsGoViewController: UIViewController {
     
     @IBAction func siapButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "continue", sender: self)
+    }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
     }
     
     func updateContent () {

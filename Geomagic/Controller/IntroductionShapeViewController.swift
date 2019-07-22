@@ -25,6 +25,7 @@ class IntroductionShapeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         updateTitle(shape: shapeTypePassed!)
         
 
@@ -54,6 +55,8 @@ class IntroductionShapeViewController: UIViewController {
         if tapCount == 1 {
             contentLabel.text = "Sisi-sisi persegi panjang"
             animasiSisi(shape: shape)
+        } else {
+            performSegue(withIdentifier: "goToNextPerimeter", sender: self)
         }
     }
     func addAnimationRectanglePerimeter (shape:UIView) -> CAShapeLayer{
