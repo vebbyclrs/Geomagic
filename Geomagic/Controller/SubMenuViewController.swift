@@ -33,6 +33,10 @@ class SubMenuViewController: UIViewController {
             let destination = segue.destination as! InformationPageViewController
             destination.shapePassed = self.shapePassed
         }
+        else if segue.identifier == "goToKeliling" {
+            let destination = segue.destination as! LetsGoViewController
+            destination.shapeTypePassed = self.shapePassed
+        }
         //        else if segue.identifier == "goToPengenalanSegitiga" {
         //            let destination = segue.destination as! SubmenuSegitigaViewController
         //
@@ -51,10 +55,14 @@ class SubMenuViewController: UIViewController {
     }
     
     @IBAction func kelilingTapped(_ sender: Any) {
-        print ("keliling")
+        if shapePassed == .some(.persegiPanjang) {
+            performSegue(withIdentifier: "goToKeliling", sender: self)
+        }
     }
     @IBAction func luasTapped(_ sender: Any) {
-        print ("luas")
+        if self.shapePassed == .some(.persegiPanjang) {
+            performSegue(withIdentifier: "goToSquareArea", sender: self)
+        }
     }
     @IBAction func latihanTapped(_ sender: Any) {
         if shapePassed == .some(.persegiPanjang) {
