@@ -391,6 +391,7 @@
                         <outlet property="shapeImage" destination="7Eg-xI-VxD" id="dAy-AN-JgA"/>
                         <outlet property="shapeImageContainer" destination="HTC-XP-V9N" id="lUQ-v8-gX1"/>
                         <outlet property="titleLabel" destination="qb1-Nj-bM3" id="evu-FB-E26"/>
+                        <segue destination="N18-D8-HFY" kind="show" identifier="goToIntroductionShape" id="I2w-uY-oB6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omr-Q3-6Ze" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -631,14 +632,6 @@
             </objects>
             <point key="canvasLocation" x="2111.8594436310395" y="271.875"/>
         </scene>
-        <!--Storyboard Latihan PersegiPanjang-->
-        <scene sceneID="Gpt-Ay-hh6">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="latihanPersegi" storyboardName="Second" id="BbY-bD-LCf" userLabel="Storyboard Latihan PersegiPanjang" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kgi-zn-yPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1480" y="-1345"/>
-        </scene>
         <!--subMenu-->
         <scene sceneID="Q0u-Qq-nrk">
             <objects>
@@ -794,7 +787,6 @@
                         <outlet property="titleLabel" destination="tpy-XJ-SP8" id="5Jj-jm-5Ed"/>
                         <segue destination="IeM-Mb-b0L" kind="show" identifier="goToPengenalan" id="TwO-qp-bAr"/>
                         <segue destination="kCS-IR-x2t" kind="show" identifier="goToPengenalanSegitiga" id="v5M-VB-KP2"/>
-                        <segue destination="BbY-bD-LCf" kind="show" identifier="goToLatihanPersegiPanjang" id="e2b-Su-RCa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1008,6 +1000,6 @@
         <image name="small logo" width="253" height="190"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TwO-qp-bAr"/>
+        <segue reference="B3U-zl-5Aq"/>
     </inferredMetricsTieBreakers>
 </document>

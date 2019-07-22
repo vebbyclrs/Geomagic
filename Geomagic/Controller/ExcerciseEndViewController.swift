@@ -30,9 +30,6 @@ class ExcerciseEndViewController: UIViewController {
         
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        performSegueToReturnBack()
-    }
-    
+
 
 }

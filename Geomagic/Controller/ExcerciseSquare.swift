@@ -144,9 +144,6 @@ class ExcerciseSquareViewController: UIViewController {
             backgroundQuestion.isHidden = true
         }
     }
-    @IBAction func goBack(_ sender: Any) {
-        self.performSegueToReturnBack()
-    }
     func checkAnswer(){
         //        let correctAnswer = questions.list[numOfQuestion].answer
         //

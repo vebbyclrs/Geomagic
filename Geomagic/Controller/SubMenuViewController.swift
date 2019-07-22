@@ -57,9 +57,7 @@ class SubMenuViewController: UIViewController {
         print ("luas")
     }
     @IBAction func latihanTapped(_ sender: Any) {
-        if shapePassed == .some(.persegiPanjang) {
-            performSegue(withIdentifier: "goToLatihanPersegiPanjang", sender: self)
-        }
+        print ("latihan")
     }
     
     @IBAction func backTapped(_ sender: Any) {
