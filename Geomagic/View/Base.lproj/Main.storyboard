@@ -85,7 +85,7 @@
                     <navigationItem key="navigationItem" id="O54-80-DCv"/>
                     <connections>
                         <outlet property="buttonMulai" destination="P9L-C3-pop" id="OVz-Ay-irF"/>
-                        <segue destination="CXd-QR-bwy" kind="show" identifier="nextSegue" id="sa0-gu-xH4"/>
+                        <segue destination="CXd-QR-bwy" kind="show" identifier="nextSegue" animates="NO" id="sa0-gu-xH4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -220,7 +220,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WUy-Dm-Nm0" id="qtN-YX-eNr"/>
-                        <segue destination="Idq-6w-9FF" kind="show" identifier="subMenuSegue" id="ZMN-wQ-Mtc"/>
+                        <segue destination="Idq-6w-9FF" kind="show" identifier="subMenuSegue" animates="NO" id="ZMN-wQ-Mtc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atE-s1-xJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,7 +302,7 @@
                     <connections>
                         <outlet property="btnSiap" destination="AdK-Uv-Q8B" id="hwi-xR-ftS"/>
                         <outlet property="contentLabel" destination="HPe-P6-cXm" id="M0c-Jn-X82"/>
-                        <segue destination="N18-D8-HFY" kind="show" identifier="continue" id="Zv3-Le-pKy"/>
+                        <segue destination="N18-D8-HFY" kind="show" identifier="continue" animates="NO" id="Zv3-Le-pKy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmq-7A-o6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -533,7 +533,7 @@
                         <outlet property="contentLabel" destination="f5Y-d7-433" id="oXK-Ia-czj"/>
                         <outlet property="imageView" destination="075-0b-C96" id="P7a-Cc-UcL"/>
                         <outlet property="shape" destination="Doo-Jd-HxG" id="2gB-ot-t7T"/>
-                        <segue destination="Gl1-ac-9qM" kind="show" identifier="goToNextPerimeter" id="zhX-oO-VbU"/>
+                        <segue destination="Gl1-ac-9qM" kind="show" identifier="goToNextPerimeter" animates="NO" id="zhX-oO-VbU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mah-EJ-yf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -891,11 +891,11 @@
                     </view>
                     <connections>
                         <outlet property="titleLabel" destination="tpy-XJ-SP8" id="5Jj-jm-5Ed"/>
-                        <segue destination="IeM-Mb-b0L" kind="show" identifier="goToPengenalan" id="TwO-qp-bAr"/>
-                        <segue destination="kCS-IR-x2t" kind="show" identifier="goToPengenalanSegitiga" id="v5M-VB-KP2"/>
-                        <segue destination="BbY-bD-LCf" kind="show" identifier="goToLatihanPersegiPanjang" id="e2b-Su-RCa"/>
-                        <segue destination="4nP-iv-7Ba" kind="show" identifier="goToKeliling" id="ehI-sK-Q1o"/>
-                        <segue destination="q55-xS-5r5" kind="show" identifier="goToSquareArea" id="N9V-TM-Bdq"/>
+                        <segue destination="IeM-Mb-b0L" kind="show" identifier="goToPengenalan" animates="NO" id="TwO-qp-bAr"/>
+                        <segue destination="kCS-IR-x2t" kind="show" identifier="goToPengenalanSegitiga" animates="NO" id="v5M-VB-KP2"/>
+                        <segue destination="BbY-bD-LCf" kind="show" identifier="goToLatihanPersegiPanjang" animates="NO" id="e2b-Su-RCa"/>
+                        <segue destination="4nP-iv-7Ba" kind="show" identifier="goToKeliling" animates="NO" id="ehI-sK-Q1o"/>
+                        <segue destination="q55-xS-5r5" kind="show" identifier="goToSquareArea" animates="NO" id="N9V-TM-Bdq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1090,7 +1090,7 @@
                         <viewLayoutGuide key="safeArea" id="pCm-R8-Xl1"/>
                     </view>
                     <connections>
-                        <segue destination="IeM-Mb-b0L" kind="show" identifier="goToIntroduction" id="B3U-zl-5Aq"/>
+                        <segue destination="IeM-Mb-b0L" kind="show" identifier="goToIntroduction" animates="NO" id="B3U-zl-5Aq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKc-aR-D51" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1109,6 +1109,6 @@
         <image name="small logo" width="253" height="190"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B3U-zl-5Aq"/>
+        <segue reference="TwO-qp-bAr"/>
     </inferredMetricsTieBreakers>
 </document>

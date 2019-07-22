@@ -225,7 +225,7 @@ Berapakah kelilingnya?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="MYA-np-hWo" kind="show" id="jLI-r2-AWX"/>
+                                    <segue destination="MYA-np-hWo" kind="show" animates="NO" id="jLI-r2-AWX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-b9-Zch" userLabel="homeButton">
@@ -274,7 +274,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="labelPlus1" destination="G0b-xT-27c" id="lwo-Cn-Ov6"/>
                         <outlet property="labelPlus2" destination="Ukg-cb-73S" id="bSX-u2-zAH"/>
                         <outlet property="labelPlus3" destination="WRA-uN-4Ae" id="wAr-fk-nOg"/>
-                        <segue destination="EJe-3A-IAN" kind="show" identifier="moveToTrainingExercise" id="MVT-0v-j6A"/>
+                        <segue destination="EJe-3A-IAN" kind="show" identifier="moveToTrainingExercise" animates="NO" id="MVT-0v-j6A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz5-HW-ok9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,7 +503,7 @@ Berapakah kelilingnya?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="vQE-M6-nWf" kind="show" id="shB-8p-dZ1"/>
+                                    <segue destination="vQE-M6-nWf" kind="show" animates="NO" id="shB-8p-dZ1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-QA-NCh" userLabel="homeButton">
@@ -541,7 +541,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option26" destination="XLf-om-PR1" id="OGn-wD-p8y"/>
                         <outlet property="option27" destination="Nwr-Oj-3fi" id="EYb-Jh-nOH"/>
                         <outlet property="option28" destination="NhI-VZ-CKQ" id="v56-2n-HFA"/>
-                        <segue destination="8AY-Sj-bD1" kind="show" identifier="moveToTrainingFormula" id="k9M-wR-lEP"/>
+                        <segue destination="8AY-Sj-bD1" kind="show" identifier="moveToTrainingFormula" animates="NO" id="k9M-wR-lEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v56-lP-Iww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -629,7 +629,7 @@ Berapakah kelilingnya?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="EJe-3A-IAN" kind="show" id="BPG-il-PGi"/>
+                                    <segue destination="EJe-3A-IAN" kind="show" animates="NO" id="BPG-il-PGi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6f-6M-Vb4" userLabel="homeButton">
@@ -648,7 +648,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="formulaView" destination="KYg-KQ-hxc" id="EdF-sm-whf"/>
                         <outlet property="labelExplanation" destination="XMo-4m-K5g" id="bHz-zT-rSJ"/>
                         <outlet property="labelIntroduction" destination="MDn-T9-ug4" id="Mhl-Yj-RsM"/>
-                        <segue destination="Yxr-MA-8vF" kind="show" identifier="moveToTrainingFormulaExercise" id="yUM-7S-dtD"/>
+                        <segue destination="Yxr-MA-8vF" kind="show" identifier="moveToTrainingFormulaExercise" animates="NO" id="yUM-7S-dtD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISW-ut-cRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -912,7 +912,7 @@ Berapakah kelilingnya?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="8AY-Sj-bD1" kind="show" id="tpV-vA-8RO"/>
+                                    <segue destination="8AY-Sj-bD1" kind="show" animates="NO" id="tpV-vA-8RO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu7-hx-qrG" userLabel="homeButton">
@@ -946,7 +946,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option24" destination="OnM-1B-WEd" id="bEj-wx-6gW"/>
                         <outlet property="option25" destination="6tN-qz-enV" id="hrr-VK-6c0"/>
                         <outlet property="option27" destination="VB2-zi-wGD" id="tPP-8K-Av2"/>
-                        <segue destination="mQl-tL-IrP" kind="show" identifier="moveToTrainingEnd" id="288-Lh-0V6"/>
+                        <segue destination="mQl-tL-IrP" kind="show" identifier="moveToTrainingEnd" animates="NO" id="288-Lh-0V6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XP-VX-raF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1025,7 +1025,7 @@ Berapakah kelilingnya?</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="Yxr-MA-8vF" kind="show" id="gzH-5C-NOb"/>
+                                    <segue destination="Yxr-MA-8vF" kind="show" animates="NO" id="gzH-5C-NOb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-pl-aGH" userLabel="homeButton">
@@ -1054,7 +1054,7 @@ Berapakah kelilingnya?</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yUM-7S-dtD"/>
-        <segue reference="k9M-wR-lEP"/>
+        <segue reference="tpV-vA-8RO"/>
         <segue reference="BPG-il-PGi"/>
         <segue reference="shB-8p-dZ1"/>
     </inferredMetricsTieBreakers>
