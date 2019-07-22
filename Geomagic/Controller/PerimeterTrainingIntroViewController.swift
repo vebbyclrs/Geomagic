@@ -36,11 +36,11 @@ class PerimeterTrainingIntroViewController: UIViewController {
        super.viewDidLoad()
   
         // MARK: Animate Label Explanation
-        UIView.animate(withDuration: 3,delay:1,animations: {
+        UIView.animate(withDuration: 3,delay:3,animations: {
             self.labelExplanation.alpha = 1
-        }){ _ in
+        }){_ in
             // MARK: Turn Off Label Explanation
-            UIView.animate(withDuration: 3, delay:3,animations: {
+            UIView.animate(withDuration: 3, delay:20,animations: {
                 self.labelExplanation.alpha = 0
             }){_ in
                 // MARK: Turn On Label on Rectangle Shape and Box Answer & Box Result
@@ -82,9 +82,12 @@ class PerimeterTrainingIntroViewController: UIViewController {
                                     // MARK: Show Result
                                     self.box4label.isHidden = false
                                     
-                                    UILabel.animate(withDuration: 2, animations: {
+                                    UIView.animate(withDuration: 2, animations: {
                                         self.boxResultLabel.alpha = 1
-                                    })
+                                    }){_ in
+                                        self.performSegue(withIdentifier: "moveToTrainingExercise", sender: self)
+                                    }
+                                    
                                 }
                             }
                         }
@@ -94,6 +97,8 @@ class PerimeterTrainingIntroViewController: UIViewController {
         }
         
        view.initialView()
+      
+        
     }
     
 
