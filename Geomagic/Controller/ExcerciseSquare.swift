@@ -79,7 +79,7 @@ class ExcerciseSquareViewController: UIViewController {
             }
             //            score -= 5
         }
-       
+        
         
     }
     
@@ -143,6 +143,9 @@ class ExcerciseSquareViewController: UIViewController {
             kllButton3.isHidden = true
             backgroundQuestion.isHidden = true
         }
+    }
+    @IBAction func goBack(_ sender: Any) {
+        self.performSegueToReturnBack()
     }
     func checkAnswer(){
         //        let correctAnswer = questions.list[numOfQuestion].answer
