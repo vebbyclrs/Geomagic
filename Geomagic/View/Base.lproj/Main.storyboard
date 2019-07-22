@@ -155,7 +155,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="248" height="248"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Locker" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-y0-CAi">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="248.00000000000003" height="248"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="248" height="248"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -236,14 +236,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgw-UD-U29" userLabel="homeButton">
-                                <rect key="frame" x="1233" y="84" width="73" height="71"/>
+                                <rect key="frame" x="1290" y="84" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="Yvj-Qp-M9g" kind="unwind" unwindAction="unwindToHome:" id="YbL-KN-6fx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBp-pa-v7e" userLabel="backButton">
-                                <rect key="frame" x="60" y="84" width="107" height="87"/>
+                                <rect key="frame" x="60" y="84" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="IeM-Mb-b0L" eventType="touchUpInside" id="GJN-nm-sS2"/>
@@ -257,7 +257,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgX-5B-pwf" userLabel="Right container">
-                                <rect key="frame" x="608.5" y="155" width="757.5" height="849"/>
+                                <rect key="frame" x="608.5" y="106" width="757.5" height="898"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTC-XP-V9N" userLabel="image Container">
                                         <rect key="frame" x="149" y="153" width="460" height="370"/>
@@ -344,10 +344,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAd-Kb-CtJ" userLabel="left container">
-                                <rect key="frame" x="0.0" y="171" width="682.5" height="833"/>
+                                <rect key="frame" x="0.0" y="106" width="682.5" height="898"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl-0" translatesAutoresizingMaskIntoConstraints="NO" id="6Cq-Fc-HNS">
-                                        <rect key="frame" x="164.5" y="189.5" width="354" height="354"/>
+                                        <rect key="frame" x="164.5" y="222" width="354" height="354"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="354" id="160-Mp-cbE"/>
                                             <constraint firstAttribute="width" constant="354" id="cCJ-LJ-egx"/>
@@ -391,7 +391,6 @@
                         <outlet property="shapeImage" destination="7Eg-xI-VxD" id="dAy-AN-JgA"/>
                         <outlet property="shapeImageContainer" destination="HTC-XP-V9N" id="lUQ-v8-gX1"/>
                         <outlet property="titleLabel" destination="qb1-Nj-bM3" id="evu-FB-E26"/>
-                        <segue destination="N18-D8-HFY" kind="show" identifier="goToIntroductionShape" id="I2w-uY-oB6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omr-Q3-6Ze" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -632,6 +631,14 @@
             </objects>
             <point key="canvasLocation" x="2111.8594436310395" y="271.875"/>
         </scene>
+        <!--Storyboard Latihan PersegiPanjang-->
+        <scene sceneID="Gpt-Ay-hh6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="latihanPersegi" storyboardName="Second" id="BbY-bD-LCf" userLabel="Storyboard Latihan PersegiPanjang" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kgi-zn-yPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="-1345"/>
+        </scene>
         <!--subMenu-->
         <scene sceneID="Q0u-Qq-nrk">
             <objects>
@@ -641,14 +648,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNc-R2-Ibj">
-                                <rect key="frame" x="1233" y="84" width="73" height="71"/>
+                                <rect key="frame" x="1290" y="84" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="pvL-og-jUt" kind="unwind" unwindAction="unwindToHome:" id="eeV-r1-Hs7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-Xe-Vjb">
-                                <rect key="frame" x="60" y="84" width="107" height="87"/>
+                                <rect key="frame" x="60" y="84" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <action selector="backTapped:" destination="Idq-6w-9FF" eventType="touchUpInside" id="jdP-Kr-68g"/>
@@ -787,6 +794,7 @@
                         <outlet property="titleLabel" destination="tpy-XJ-SP8" id="5Jj-jm-5Ed"/>
                         <segue destination="IeM-Mb-b0L" kind="show" identifier="goToPengenalan" id="TwO-qp-bAr"/>
                         <segue destination="kCS-IR-x2t" kind="show" identifier="goToPengenalanSegitiga" id="v5M-VB-KP2"/>
+                        <segue destination="BbY-bD-LCf" kind="show" identifier="goToLatihanPersegiPanjang" id="e2b-Su-RCa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcs-UA-Mhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -803,14 +811,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4k-bs-FRr" userLabel="homeButton">
-                                <rect key="frame" x="1233" y="84" width="73" height="71"/>
+                                <rect key="frame" x="1290" y="84" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
                                 <connections>
                                     <segue destination="GPF-7l-Wtc" kind="unwind" unwindAction="unwindToHome:" id="e7R-zk-7Ff"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgl-ah-GCO" userLabel="backButton">
-                                <rect key="frame" x="60" y="84" width="107" height="87"/>
+                                <rect key="frame" x="60" y="84" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="kCS-IR-x2t" eventType="touchUpInside" id="O4a-f0-OJP"/>
@@ -1000,6 +1008,6 @@
         <image name="small logo" width="253" height="190"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B3U-zl-5Aq"/>
+        <segue reference="TwO-qp-bAr"/>
     </inferredMetricsTieBreakers>
 </document>

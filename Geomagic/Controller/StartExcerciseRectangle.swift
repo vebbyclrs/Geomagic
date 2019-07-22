@@ -26,6 +26,9 @@ class StartExcerciseViewController: UIViewController {
         owlImage.startAnimating()
         
     }
-
-
+    @IBAction func goBack(_ sender: Any) {
+        self.performSegueToReturnBack()
+    }
+    
+    
 }
