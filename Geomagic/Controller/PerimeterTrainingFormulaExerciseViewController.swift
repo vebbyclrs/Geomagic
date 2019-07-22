@@ -250,6 +250,7 @@ class PerimeterTrainingFormulaExerciseViewController: UIViewController {
                 }
                 boxResultLabel.text = label24.text
                 boxResultLabel.isHidden = false
+            performSegue(withIdentifier: "moveToTrainingEnd", sender: self)
             }else{
                 UIView.animate(withDuration: 0.3) {
                     self.option24.frame.origin = self.option24Origin

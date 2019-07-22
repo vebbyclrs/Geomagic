@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vQE-M6-nWf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MYA-np-hWo">
     <device id="ipad12_9rounded" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -33,6 +33,7 @@
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gI-bJ-5B6">
                                                 <rect key="frame" x="-12" y="-14" width="525" height="275"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.81806880235671997" green="0.7165648341178894" blue="0.51368904113769531" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,7 +62,7 @@
                     <connections>
                         <outlet property="shapeView" destination="F0o-QQ-gFl" id="scw-Pu-2by"/>
                         <outlet property="viewForLine" destination="0gI-bJ-5B6" id="ibG-Ho-yRD"/>
-                        <segue destination="vQE-M6-nWf" kind="show" id="McR-Zs-WnS"/>
+                        <segue destination="vQE-M6-nWf" kind="show" identifier="moveToTrainingIntro" animates="NO" id="McR-Zs-WnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugO-eY-sOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,7 +79,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhJ-XX-2L7">
                                 <rect key="frame" x="680" y="387" width="500" height="250"/>
-                                <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.81806880235671997" green="0.7165648341178894" blue="0.51368904113769531" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="Ie3-Kn-pXV"/>
                                     <constraint firstAttribute="height" constant="250" id="xAD-2g-Oom"/>
@@ -223,6 +224,19 @@ Berapakah kelilingnya?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTa-mi-Ukg" userLabel="backButton">
+                                <rect key="frame" x="60" y="70" width="107" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="MYA-np-hWo" kind="show" id="jLI-r2-AWX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3J-b9-Zch" userLabel="homeButton">
+                                <rect key="frame" x="1233" y="70" width="73" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -257,7 +271,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="labelPlus1" destination="G0b-xT-27c" id="lwo-Cn-Ov6"/>
                         <outlet property="labelPlus2" destination="Ukg-cb-73S" id="bSX-u2-zAH"/>
                         <outlet property="labelPlus3" destination="WRA-uN-4Ae" id="wAr-fk-nOg"/>
-                        <segue destination="EJe-3A-IAN" kind="show" id="MVT-0v-j6A"/>
+                        <segue destination="EJe-3A-IAN" kind="show" identifier="moveToTrainingExercise" id="MVT-0v-j6A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zz5-HW-ok9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -274,7 +288,7 @@ Berapakah kelilingnya?</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nae-AM-TsH">
                                 <rect key="frame" x="680" y="387" width="500" height="250"/>
-                                <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.81806880235671997" green="0.7165648341178894" blue="0.51368904113769531" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="9Yt-nn-gBP"/>
                                     <constraint firstAttribute="height" constant="250" id="Von-Np-qXQ"/>
@@ -480,6 +494,19 @@ Berapakah kelilingnya?</string>
                                     <outletCollection property="gestureRecognizers" destination="2QR-ph-5RC" appends="YES" id="Lkw-Bg-ge2"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24J-cg-fI0" userLabel="backButton">
+                                <rect key="frame" x="60" y="125" width="107" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="vQE-M6-nWf" kind="show" id="shB-8p-dZ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-QA-NCh" userLabel="homeButton">
+                                <rect key="frame" x="1233" y="125" width="73" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -507,7 +534,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option26" destination="XLf-om-PR1" id="OGn-wD-p8y"/>
                         <outlet property="option27" destination="Nwr-Oj-3fi" id="EYb-Jh-nOH"/>
                         <outlet property="option28" destination="NhI-VZ-CKQ" id="v56-2n-HFA"/>
-                        <segue destination="8AY-Sj-bD1" kind="show" id="k9M-wR-lEP"/>
+                        <segue destination="8AY-Sj-bD1" kind="show" identifier="moveToTrainingFormula" id="k9M-wR-lEP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v56-lP-Iww" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -561,7 +588,7 @@ Berapakah kelilingnya?</string>
                                 <rect key="frame" x="119" y="348" width="240" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-KQ-hxc">
+                            <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KYg-KQ-hxc">
                                 <rect key="frame" x="584" y="409" width="570" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -575,26 +602,42 @@ Berapakah kelilingnya?</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selain dengan menambahkan ke 4 sisinya, rumus keliling persegi panjang bisa di hitung dengan :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDn-T9-ug4">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selain dengan menambahkan ke 4 sisinya, rumus keliling persegi panjang bisa di hitung dengan :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDn-T9-ug4">
                                 <rect key="frame" x="676" y="185" width="387" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keterangan : p = Panjang l = lebar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMo-4m-K5g">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keterangan : p = Panjang l = lebar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMo-4m-K5g">
                                 <rect key="frame" x="798" y="544" width="143" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn7-Vg-H9J" userLabel="backButton">
+                                <rect key="frame" x="60" y="60" width="107" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="EJe-3A-IAN" kind="show" id="BPG-il-PGi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6f-6M-Vb4" userLabel="homeButton">
+                                <rect key="frame" x="1233" y="60" width="73" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WgZ-QF-TYv"/>
                     </view>
                     <connections>
-                        <segue destination="Yxr-MA-8vF" kind="show" id="yUM-7S-dtD"/>
+                        <outlet property="formulaView" destination="KYg-KQ-hxc" id="EdF-sm-whf"/>
+                        <outlet property="labelExplanation" destination="XMo-4m-K5g" id="bHz-zT-rSJ"/>
+                        <outlet property="labelIntroduction" destination="MDn-T9-ug4" id="Mhl-Yj-RsM"/>
+                        <segue destination="Yxr-MA-8vF" kind="show" identifier="moveToTrainingFormulaExercise" id="yUM-7S-dtD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISW-ut-cRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -611,7 +654,7 @@ Berapakah kelilingnya?</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-JN-gGN">
                                 <rect key="frame" x="680" y="387" width="500" height="250"/>
-                                <color key="backgroundColor" red="0.84313725490000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.81806880235671997" green="0.7165648341178894" blue="0.51368904113769531" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="RNg-8i-fp3"/>
                                     <constraint firstAttribute="height" constant="250" id="tVL-Gh-RJo"/>
@@ -852,6 +895,19 @@ Berapakah kelilingnya?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voe-zb-jrT" userLabel="backButton">
+                                <rect key="frame" x="69" y="58" width="107" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="8AY-Sj-bD1" kind="show" id="tpV-vA-8RO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu7-hx-qrG" userLabel="homeButton">
+                                <rect key="frame" x="1242" y="58" width="73" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -875,7 +931,7 @@ Berapakah kelilingnya?</string>
                         <outlet property="option24" destination="OnM-1B-WEd" id="bEj-wx-6gW"/>
                         <outlet property="option25" destination="6tN-qz-enV" id="hrr-VK-6c0"/>
                         <outlet property="option27" destination="VB2-zi-wGD" id="tPP-8K-Av2"/>
-                        <segue destination="mQl-tL-IrP" kind="show" id="288-Lh-0V6"/>
+                        <segue destination="mQl-tL-IrP" kind="show" identifier="moveToTrainingEnd" id="288-Lh-0V6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2XP-VX-raF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -945,13 +1001,23 @@ Berapakah kelilingnya?</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpV-CW-nrf" userLabel="backButton">
+                                <rect key="frame" x="60" y="91" width="107" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back button"/>
+                                <connections>
+                                    <segue destination="Yxr-MA-8vF" kind="show" id="gzH-5C-NOb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-pl-aGH" userLabel="homeButton">
+                                <rect key="frame" x="1233" y="91" width="73" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="homeButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iWQ-cn-pZ4"/>
                     </view>
-                    <connections>
-                        <outlet property="buttonOutlet" destination="tnl-GM-sNc" id="DjZ-ZX-osl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kos-Qz-SOC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -960,5 +1026,14 @@ Berapakah kelilingnya?</string>
     </scenes>
     <resources>
         <image name="Owl1.png" width="400" height="400"/>
+        <image name="back button" width="107" height="87"/>
+        <image name="homeButton" width="73" height="71"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="288-Lh-0V6"/>
+        <segue reference="gzH-5C-NOb"/>
+        <segue reference="tpV-vA-8RO"/>
+        <segue reference="MVT-0v-j6A"/>
+        <segue reference="shB-8p-dZ1"/>
+    </inferredMetricsTieBreakers>
 </document>

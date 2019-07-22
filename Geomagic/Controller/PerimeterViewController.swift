@@ -9,6 +9,8 @@
 import UIKit
 
 class PerimeterViewController: UIViewController {
+    //hanya untuk validasi sementara
+    var countLine = 0
     var count = 0
     var path = UIBezierPath()
     var pathSimpen = UIBezierPath()
@@ -67,6 +69,10 @@ class PerimeterViewController: UIViewController {
         pathSimpen.append(path)
         shapeLayer.path = pathSimpen.cgPath
         print("lokasi Akhir = \(lokasiAkhir)")
+        countLine = countLine+1
+        if countLine == 4{
+            performSegue(withIdentifier: "moveToTrainingIntro", sender: self)
+        }
     }
 
     
