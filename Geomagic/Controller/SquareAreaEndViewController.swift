@@ -58,6 +58,9 @@ class SquareAreaEndViewController: UIViewController {
     @IBAction func nextTapped(_ sender: Any) {
         performSegue(withIdentifier: "kuy", sender: self)
     }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "kuy" {
             let dest = segue.destination as! SubMenuViewController

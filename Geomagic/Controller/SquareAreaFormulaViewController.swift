@@ -53,4 +53,10 @@ class SquareAreaFormulaViewController: UIViewController {
     func prepareView () {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
+    @IBAction func viewTappedGoToNext(_ sender: Any) {
+        performSegue(withIdentifier: "next", sender: self)
+    }
 }
