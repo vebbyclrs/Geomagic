@@ -10,73 +10,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start Excercise View Controller-->
         <scene sceneID="wr1-14-9xi">
             <objects>
-                <viewController id="jef-1C-31J" sceneMemberID="viewController">
+                <viewController id="jef-1C-31J" customClass="StartExcerciseViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x2z-Tg-kty">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzx-9U-OqL">
-                                <rect key="frame" x="171" y="216" width="300" height="300"/>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fZ-Gj-CYX" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                <rect key="frame" x="824" y="519" width="335" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbG-iH-0dj">
-                                <rect key="frame" x="738" y="271" width="451" height="207"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sekarang kita akan berlatih menjawab soal keliling dan luas persegi. Sudah siap?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKo-EU-m7L">
-                                        <rect key="frame" x="0.0" y="0.0" width="451" height="207"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.87843137250000003" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="ZKo-EU-m7L" secondAttribute="bottom" id="0bL-HF-XI1"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="leading" secondItem="CbG-iH-0dj" secondAttribute="leading" id="6De-bl-MY3"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZKo-EU-m7L" secondAttribute="bottom" id="9ug-g7-bQu"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="top" secondItem="CbG-iH-0dj" secondAttribute="topMargin" id="FAE-Sc-pzl"/>
-                                    <constraint firstAttribute="width" constant="451" id="FyN-Bc-GIF"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="top" secondItem="CbG-iH-0dj" secondAttribute="top" id="Knr-9H-fd3"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="trailing" secondItem="CbG-iH-0dj" secondAttribute="trailingMargin" id="LV0-jN-61l"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZKo-EU-m7L" secondAttribute="bottom" id="Mbh-aQ-AJB"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZKo-EU-m7L" secondAttribute="trailing" id="QVf-KY-sSz"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="leading" secondItem="CbG-iH-0dj" secondAttribute="leadingMargin" id="Tna-VI-PSA"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="centerY" secondItem="CbG-iH-0dj" secondAttribute="centerY" id="WyW-Ie-rOT"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="centerX" secondItem="CbG-iH-0dj" secondAttribute="centerX" id="Ygl-9M-wNn"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZKo-EU-m7L" secondAttribute="trailing" id="ifu-mW-osY"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="top" secondItem="CbG-iH-0dj" secondAttribute="top" id="m3J-rO-Kvg"/>
-                                    <constraint firstItem="ZKo-EU-m7L" firstAttribute="leading" secondItem="CbG-iH-0dj" secondAttribute="leading" id="q8T-QK-RPQ"/>
-                                    <constraint firstAttribute="height" constant="207" id="wHE-Dq-DpF"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fZ-Gj-CYX" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
-                                <rect key="frame" x="738" y="532" width="451" height="113"/>
-                                <color key="backgroundColor" red="0.85016542669999995" green="0.70215576889999998" blue="0.69411426779999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="2th-lV-WPM"/>
-                                    <constraint firstAttribute="width" constant="451" id="Y38-xN-LvM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="S I A P"/>
+                                <color key="backgroundColor" red="0.92062610387802124" green="0.84460657835006714" blue="0.73723828792572021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="MULAI">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="sha-Ka-3M1" kind="show" id="0Uf-qW-UC1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latihan dimulai!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKo-EU-m7L">
+                                <rect key="frame" x="766" y="329" width="451" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzx-9U-OqL">
+                                <rect key="frame" x="191" y="293" width="480" height="439"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="293-Bt-ZLJ" firstAttribute="trailing" secondItem="CbG-iH-0dj" secondAttribute="trailing" constant="177" id="EVR-J7-B4w"/>
-                            <constraint firstItem="293-Bt-ZLJ" firstAttribute="trailing" secondItem="2fZ-Gj-CYX" secondAttribute="trailing" constant="177" id="Hsn-Iy-B62"/>
-                            <constraint firstItem="CbG-iH-0dj" firstAttribute="top" secondItem="293-Bt-ZLJ" secondAttribute="top" constant="247" id="R0W-F4-Ggg"/>
-                            <constraint firstItem="293-Bt-ZLJ" firstAttribute="trailing" secondItem="2fZ-Gj-CYX" secondAttribute="trailing" constant="177" id="dzl-29-Q1t"/>
-                            <constraint firstItem="2fZ-Gj-CYX" firstAttribute="top" secondItem="CbG-iH-0dj" secondAttribute="bottom" constant="54" id="g11-dH-6ag"/>
-                            <constraint firstItem="2fZ-Gj-CYX" firstAttribute="top" secondItem="CbG-iH-0dj" secondAttribute="bottom" constant="54" id="nFc-J7-GZe"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="293-Bt-ZLJ"/>
                     </view>
+                    <connections>
+                        <outlet property="owlImage" destination="lzx-9U-OqL" id="I9Q-fq-80Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbI-vR-3HJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -196,6 +172,18 @@
                                     <action selector="answerPressed:" destination="sha-Ka-3M1" eventType="touchUpInside" id="VOK-zT-lmK"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q79-wK-oBg">
+                                <rect key="frame" x="560" y="789" width="246" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94044893979999999" green="0.88346534970000001" blue="0.80390977860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <state key="normal" title="Lanjut">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wgt-bE-SaI" kind="show" id="oWT-rV-35l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -207,9 +195,11 @@
                         <viewLayoutGuide key="safeArea" id="5qV-oF-4BF"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundQuestion" destination="Wes-HX-Hs3" id="gBb-p4-hyG"/>
                         <outlet property="kllButton1" destination="fpy-9l-XCR" id="udr-4w-k0E"/>
                         <outlet property="kllButton2" destination="hCj-0L-ulH" id="7wq-vz-Qe8"/>
                         <outlet property="kllButton3" destination="Ut2-Df-3X2" id="7WW-mO-nzY"/>
+                        <outlet property="lanjutButton" destination="q79-wK-oBg" id="AsJ-7K-Gfq"/>
                         <outlet property="length1Label" destination="2nL-cd-enW" id="Awc-2y-ctG"/>
                         <outlet property="lengthLabel" destination="P5r-MB-dM3" id="oLN-Tj-KDD"/>
                         <outlet property="questionLabel" destination="alb-gh-vEq" id="fQx-k9-KXr"/>
@@ -382,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="816" y="2176"/>
         </scene>
-        <!--View Controller-->
+        <!--Excercise End View Controller-->
         <scene sceneID="dcV-Xa-HJa">
             <objects>
-                <viewController id="Wgt-bE-SaI" sceneMemberID="viewController">
+                <viewController id="Wgt-bE-SaI" customClass="ExcerciseEndViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ce8-IM-FEK">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,32 +384,33 @@
                                 <rect key="frame" x="484" y="143" width="399" height="405"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmc-y6-Dc1">
-                                <rect key="frame" x="458" y="631" width="451" height="207"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="YEY! Kamu telah mengerti tentang persegi. Kamu pintar!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7y-Iz-pAJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="443" height="207"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.87843137250000003" green="0.96470588239999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="s7y-Iz-pAJ" secondAttribute="trailing" id="h2z-dN-fKd"/>
-                                    <constraint firstAttribute="bottom" secondItem="s7y-Iz-pAJ" secondAttribute="bottom" id="qwJ-Ju-cTd"/>
-                                    <constraint firstItem="s7y-Iz-pAJ" firstAttribute="top" secondItem="tmc-y6-Dc1" secondAttribute="top" id="uz8-W6-W09"/>
-                                    <constraint firstItem="s7y-Iz-pAJ" firstAttribute="leading" secondItem="tmc-y6-Dc1" secondAttribute="leading" id="xRJ-0Z-bml"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YEY! Kamu telah mengerti tentang persegi. Kamu pintar!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7y-Iz-pAJ">
+                                <rect key="frame" x="462" y="601" width="443" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNq-b5-OMe" customClass="RoundButton" customModule="Geomagic" customModuleProvider="target">
+                                <rect key="frame" x="572" y="816" width="223" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94044893980026245" green="0.88346534967422485" blue="0.8039097785949707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <state key="normal" title="Selesai">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Rj7-oo-hBQ"/>
                     </view>
+                    <connections>
+                        <outlet property="owlImage" destination="wsY-3k-jtY" id="fhg-rD-tKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkJ-yG-rx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="144"/>
+            <point key="canvasLocation" x="1456.9546120058565" y="143.5546875"/>
         </scene>
     </scenes>
     <resources>
