@@ -32,7 +32,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="sha-Ka-3M1" kind="show" id="0Uf-qW-UC1"/>
+                                    <segue destination="sha-Ka-3M1" kind="show" animates="NO" id="0Uf-qW-UC1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latihan dimulai!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKo-EU-m7L">
@@ -222,7 +222,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wgt-bE-SaI" kind="show" id="oWT-rV-35l"/>
+                                    <segue destination="Wgt-bE-SaI" kind="show" animates="NO" id="oWT-rV-35l"/>
                                 </connections>
                             </button>
                         </subviews>

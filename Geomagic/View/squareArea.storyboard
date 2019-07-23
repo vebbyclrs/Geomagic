@@ -13,7 +13,7 @@
         <!--Square Area1 View Controller-->
         <scene sceneID="c9f-sF-mmV">
             <objects>
-                <viewController id="rMN-EQ-miF" customClass="SquareArea1ViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="squareAreaStart" id="rMN-EQ-miF" customClass="SquareArea1ViewController" customModule="Geomagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hTx-NZ-iSC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bty-H9-VFw">
                                 <rect key="frame" x="60" y="80" width="70" height="22"/>
                                 <state key="normal" title="Button" image="back button"/>
+                                <connections>
+                                    <action selector="backTapped:" destination="rMN-EQ-miF" eventType="touchUpInside" id="Tf6-Ra-APZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-qt-aTH" userLabel="homeButton">
                                 <rect key="frame" x="1290" y="80" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="uQl-jK-UDc" kind="unwind" unwindAction="unwindToHome:" id="EhR-18-iwr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,6 +73,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERJ-Ss-xit" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uQl-jK-UDc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3397.0717423133233" y="-781.0546875"/>
         </scene>
@@ -156,12 +163,15 @@ Luas merupakan besar area atau wilayah yang ada didalamnya.</string>
                                 <rect key="frame" x="60" y="80" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="rMN-EQ-miF" kind="show" animates="NO" id="Nd1-xO-Kjp"/>
+                                    <action selector="backTapped:" destination="CtK-fm-FRK" eventType="touchUpInside" id="Wg0-cf-Zqw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5F-wL-LJn" userLabel="homeButton">
                                 <rect key="frame" x="1290" y="80" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="Gg4-I5-8zY" kind="unwind" unwindAction="unwindToHome:" id="Ga5-OS-aPH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -191,6 +201,7 @@ Luas merupakan besar area atau wilayah yang ada didalamnya.</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDg-jU-m7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gg4-I5-8zY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3397.0717423133233" y="-8.203125"/>
         </scene>
@@ -381,12 +392,15 @@ lebar = 3 cm</string>
                                 <rect key="frame" x="60" y="80" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="CtK-fm-FRK" kind="show" animates="NO" id="5P3-EE-Ueb"/>
+                                    <action selector="backTapped:" destination="lTM-hH-38L" eventType="touchUpInside" id="H17-CT-GZ0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-yy-MdO" userLabel="homeButton">
                                 <rect key="frame" x="1290" y="80" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="fvU-fj-8Ao" kind="unwind" unwindAction="unwindToHome:" id="4Tx-7P-rf7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -422,6 +436,7 @@ lebar = 3 cm</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fm-Jt-Gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fvU-fj-8Ao" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="MCF-SI-Ae1">
                     <connections>
                         <action selector="tap1:" destination="lTM-hH-38L" id="6lT-gq-yQ2"/>
@@ -547,15 +562,19 @@ l = lebar</string>
                                 <rect key="frame" x="60" y="80" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="lTM-hH-38L" kind="show" animates="NO" id="bgW-sF-ELa"/>
+                                    <action selector="backTapped:" destination="k8f-Qs-J4P" eventType="touchUpInside" id="XKO-nV-qYA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36s-JN-pei" userLabel="homeButton">
                                 <rect key="frame" x="1290" y="80" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="Gnz-eg-bAq" kind="unwind" unwindAction="unwindToHome:" id="1mI-46-Ybh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="36s-JN-pei" firstAttribute="top" secondItem="RmG-Sa-hF5" secondAttribute="top" constant="60" id="06j-rc-pT1"/>
                             <constraint firstItem="a5p-Fn-TTg" firstAttribute="top" secondItem="RmG-Sa-hF5" secondAttribute="top" constant="60" id="5Cl-HK-kwr"/>
@@ -563,6 +582,9 @@ l = lebar</string>
                             <constraint firstItem="RmG-Sa-hF5" firstAttribute="trailing" secondItem="36s-JN-pei" secondAttribute="trailing" constant="60" id="kfZ-NL-QlJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RmG-Sa-hF5"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="C9W-ds-Kpc" appends="YES" id="b1g-mc-HeX"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="birdImageView" destination="Qg4-Ak-WET" id="Bqr-f3-UuW"/>
@@ -571,6 +593,8 @@ l = lebar</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMV-Sg-WxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gnz-eg-bAq" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="C9W-ds-Kpc"/>
             </objects>
             <point key="canvasLocation" x="-2049" y="-781"/>
         </scene>
@@ -713,12 +737,15 @@ l = lebar</string>
                                 <rect key="frame" x="60" y="80" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="k8f-Qs-J4P" kind="show" animates="NO" id="8AR-2B-T9k"/>
+                                    <action selector="backTapped:" destination="ZQt-D0-8dF" eventType="touchUpInside" id="Vsk-B7-2FM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-Lt-qpj" userLabel="homeButton">
                                 <rect key="frame" x="1290" y="80" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="IY6-7W-byh" kind="unwind" unwindAction="unwindToHome:" id="wQc-Z2-zmv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -750,6 +777,7 @@ l = lebar</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLp-eT-pCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IY6-7W-byh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2049.0483162518299" y="13.4765625"/>
         </scene>
@@ -907,12 +935,15 @@ l = lebar</string>
                                 <rect key="frame" x="60" y="80" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="ZQt-D0-8dF" kind="show" animates="NO" id="kdG-g0-o2F"/>
+                                    <action selector="backTapped:" destination="lnE-ZZ-ufz" eventType="touchUpInside" id="atl-hP-20I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8x-0r-hWu" userLabel="homeButton">
                                 <rect key="frame" x="1290" y="80" width="16" height="22"/>
                                 <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="nUJ-hs-VGq" kind="unwind" unwindAction="unwindToHome:" id="9MV-ee-aNJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -942,6 +973,7 @@ l = lebar</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVl-Gg-zEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nUJ-hs-VGq" userLabel="Exit" sceneMemberID="exit"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="vn6-Ml-Gk3" userLabel="Pan 4">
                     <connections>
                         <action selector="pan4Handle:" destination="lnE-ZZ-ufz" id="fGc-du-RlI"/>
@@ -990,6 +1022,10 @@ l = lebar</string>
                                 <state key="normal" title="Yuk!">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextTapped:" destination="X6W-Io-hde" eventType="touchUpInside" id="ZeY-aU-tyX"/>
+                                    <segue destination="KFf-KA-Uh3" kind="show" identifier="kuy" id="df1-do-t3q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wah kamu berhasil menyelesaikan tentang luas persegi panjang! Kamu hebat ^^" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKT-XT-2f9">
                                 <rect key="frame" x="619" y="360" width="483" height="164"/>
@@ -1002,7 +1038,14 @@ l = lebar</string>
                                 <rect key="frame" x="60" y="80" width="16" height="22"/>
                                 <state key="normal" image="back button"/>
                                 <connections>
-                                    <segue destination="lnE-ZZ-ufz" kind="show" animates="NO" id="d7v-dd-Yn0"/>
+                                    <action selector="backTapped:" destination="X6W-Io-hde" eventType="touchUpInside" id="OjW-7T-e5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAe-do-xcU">
+                                <rect key="frame" x="1290" y="80" width="16" height="22"/>
+                                <state key="normal" image="homeButton"/>
+                                <connections>
+                                    <segue destination="Kq7-or-Yjo" kind="unwind" unwindAction="unwindToHome:" id="JQt-Z2-uYV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1010,6 +1053,8 @@ l = lebar</string>
                         <constraints>
                             <constraint firstItem="QdW-w0-iKz" firstAttribute="top" secondItem="Dxu-ea-vpe" secondAttribute="top" constant="60" id="2ab-r0-r1Q"/>
                             <constraint firstItem="QdW-w0-iKz" firstAttribute="leading" secondItem="Dxu-ea-vpe" secondAttribute="leading" constant="60" id="6Kh-UA-O8F"/>
+                            <constraint firstItem="FAe-do-xcU" firstAttribute="top" secondItem="Dxu-ea-vpe" secondAttribute="top" constant="60" id="CNq-rG-hG5"/>
+                            <constraint firstItem="Dxu-ea-vpe" firstAttribute="trailing" secondItem="FAe-do-xcU" secondAttribute="trailing" constant="60" id="e0Y-iP-Sn9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dxu-ea-vpe"/>
                     </view>
@@ -1019,8 +1064,17 @@ l = lebar</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcy-Yc-wWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Kq7-or-Yjo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-654" y="-781"/>
+        </scene>
+        <!--subMenuView-->
+        <scene sceneID="AS0-LZ-YES">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="subMenuView" id="KFf-KA-Uh3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoC-rV-PLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="-781"/>
         </scene>
     </scenes>
     <resources>
@@ -1028,11 +1082,4 @@ l = lebar</string>
         <image name="back button" width="107" height="87"/>
         <image name="homeButton" width="73" height="71"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="AZr-hd-hes"/>
-        <segue reference="kdG-g0-o2F"/>
-        <segue reference="8AR-2B-T9k"/>
-        <segue reference="bgW-sF-ELa"/>
-        <segue reference="DCG-Q9-Fg8"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -128,4 +128,7 @@ class SquareAreaTutorialViewController: UIViewController {
         square8.layer.borderWidth = 1
         square8.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
 }

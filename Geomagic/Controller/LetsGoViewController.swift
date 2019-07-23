@@ -10,22 +10,38 @@ import UIKit
 
 class LetsGoViewController: UIViewController {
 
+    @IBOutlet var contentLabel: UILabel!
+    @IBOutlet var btnSiap: RoundButton!
+    var shapeTypePassed : ShapeType? {
+        didSet{
+            print (shapeTypePassed!.rawValue)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btnSiap.giveShadow(x: 3, y: 3, opacity: 0.5, blur: 10, shadowColor: UIColor.black.cgColor )
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        updateContent()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "continue" {
+            let dest = segue.destination as! IntroductionShapeViewController
+            dest.shapeTypePassed = self.shapeTypePassed
+        }
     }
-    */
+    
+    @IBAction func siapButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "continue", sender: self)
+    }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
+    
+    func updateContent () {
+        self.contentLabel.text = "Sekarang kita akan membahas mengenai rumus keliling persegi panjang. Sudah siap??"
+    }
 
 }
 

@@ -230,6 +230,9 @@ class SquareAreaExerciseViewController: UIViewController {
         }
     }
     
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
     func roundedOption(){
         option18.layer.cornerRadius = 45
         option22.layer.cornerRadius = 45

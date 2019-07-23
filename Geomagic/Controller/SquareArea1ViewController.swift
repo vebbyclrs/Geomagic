@@ -27,6 +27,9 @@ class SquareArea1ViewController: UIViewController {
 //        initbackSound()
     }
     
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
     @IBAction func buttonAction(_ sender: UIButton) {
     }
     

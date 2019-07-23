@@ -16,15 +16,15 @@ class PerimeterTrainingFormulaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        UIView.animate(withDuration: 3,delay:1,animations: {
+        UIView.animate(withDuration: 3,delay:0.5,animations: {
             self.labelIntroduction.alpha = 1
         }){_ in
             
-            UIView.animate(withDuration: 3,delay:5,animations: {
+            UIView.animate(withDuration: 3,delay:4,animations: {
                 self.formulaView.alpha = 1
             }){_ in
                 
-                UIView.animate(withDuration: 3,delay:5,animations: {
+                UIView.animate(withDuration: 3,delay:4,animations: {
                     self.labelExplanation.alpha = 1
                     
                     self.performSegue(withIdentifier: "moveToTrainingFormulaExercise", sender: self)

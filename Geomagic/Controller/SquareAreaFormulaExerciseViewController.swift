@@ -103,4 +103,7 @@ class SquareAreaFormulaExerciseViewController: UIViewController {
         option42.layer.cornerRadius = 45
         option44.layer.cornerRadius = 45
     }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
 }

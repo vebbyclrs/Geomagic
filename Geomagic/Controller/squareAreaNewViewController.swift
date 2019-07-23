@@ -327,5 +327,8 @@ class squareAreaNewViewController: UIViewController {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
     }
     
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
     
 }

@@ -21,7 +21,7 @@ class SquareAreaFormulaViewController: UIViewController {
         animate(imageView: birdImageView, images: owlImage)
         prepareView()
         roundedView()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "AreaFormulaTutorial")
             self.show(nextVC!, sender: nil)
         }
@@ -52,5 +52,11 @@ class SquareAreaFormulaViewController: UIViewController {
     
     func prepareView () {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+    }
+    @IBAction func backTapped(_ sender: Any) {
+        performSegueToReturnBack()
+    }
+    @IBAction func viewTappedGoToNext(_ sender: Any) {
+        performSegue(withIdentifier: "next", sender: self)
     }
 }
